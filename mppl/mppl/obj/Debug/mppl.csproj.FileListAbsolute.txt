@@ -1,0 +1,10 @@
+D:\5109100123\mppl\mppl\bin\mppl.dll
+D:\5109100123\mppl\mppl\bin\mppl.pdb
+D:\5109100123\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
+D:\5109100123\mppl\mppl\obj\Debug\mppl.dll
+D:\5109100123\mppl\mppl\obj\Debug\mppl.pdb
+E:\dropbox\Dropbox\mppl\dari yanuar\mppl\mppl\bin\mppl.dll
+E:\dropbox\Dropbox\mppl\dari yanuar\mppl\mppl\bin\mppl.pdb
+E:\dropbox\Dropbox\mppl\dari yanuar\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
+E:\dropbox\Dropbox\mppl\dari yanuar\mppl\mppl\obj\Debug\mppl.dll
+E:\dropbox\Dropbox\mppl\dari yanuar\mppl\mppl\obj\Debug\mppl.pdb
