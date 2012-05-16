@@ -14,7 +14,7 @@ namespace mppl.Control
             hash = new List<int>();
             int[] buffer;
             int counter = 0;
-            int window=4;
+            int window=10;
             int r=0, min=0;
             fingerprint = new List<int>();
             setHash(input,hash);
@@ -61,7 +61,7 @@ namespace mppl.Control
             int prime = primeRollingHash(input.Trim(), 0, 4, 1000);
             string tempString;
             tempString = input.Substring(1, 5);
-            for (int i = 0; tempString != null; i++)
+            for (int i = 1; tempString != null; i++)
             {
                 prime = rollHashRight(prime, input, i - 1, i + 4, 1000);
                 hash.Add(prime);

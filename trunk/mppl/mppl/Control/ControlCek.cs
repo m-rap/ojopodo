@@ -15,6 +15,10 @@ namespace mppl.Control
     {
         List<int> finger;
         String teks;
+        public ControlCek()
+        {
+            finger = new List<int>();
+        }
         public bool upload(FileUpload input,string path)
         {
                 try
@@ -23,9 +27,13 @@ namespace mppl.Control
                     {
                         if (input.PostedFile.ContentLength < 4096000)
                         {
-                            String filename = Path.GetFileName(input.FileName);
-                            input.SaveAs(path);
+                           // String filename = Path.GetFileName(input.FileName);
+                            Stream coba = input.FileContent;
+                            ekstrakPdf(coba);
+                            finger = Winnowing.getFingerprint(teks);
                             return true;
+                            //input.SaveAs(path);
+                            //return true;
                         }
                         else
                         {
@@ -43,11 +51,12 @@ namespace mppl.Control
                     return false;
                 }
         }
-        void ekstrakPdf(string path)
+        void ekstrakPdf(Stream path)
         {
             PdfReader reader = new PdfReader(path);
             for (int i = 1; i <= reader.NumberOfPages; i++)
                 teks += PdfTextExtractor.GetTextFromPage(reader, i);
+            int k;
         }
         void createFingerPrint(string input)
         {
