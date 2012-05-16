@@ -11,3 +11,7 @@ E:\dropbox\Dropbox\mppl\dari yanuar\mppl\mppl\obj\Debug\mppl.pdb
 E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
 E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\obj\Debug\mppl.dll
 E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\obj\Debug\mppl.pdb
+E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\bin\mppl.dll
+E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\bin\mppl.pdb
+E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\bin\itextsharp.dll
+E:\dropbox\Dropbox\mppl\svn project\mppl\mppl\bin\itextsharp.xtra.dll
