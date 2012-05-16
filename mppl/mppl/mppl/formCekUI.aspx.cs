@@ -6,17 +6,18 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
 using System.Windows.Forms;
-
+using mppl.Control;
 namespace mppl.mppl
 {
     public partial class formCekUI : System.Web.UI.Page
     {
         protected bool check;
-
+        ControlCek controlC;
         protected void Page_Load(object sender, EventArgs e)
         {
             Panel2.Visible = false;
             Panel1.Visible = true;
+            controlC = new ControlCek();
         }
 
         /*protected void rdo_modeUpload_CheckedChanged(object sender, EventArgs e)
@@ -60,6 +61,8 @@ namespace mppl.mppl
         }
         protected void periksa(object sender, EventArgs e)
         {
+            controlC.upload(upl_file, Server.MapPath("~/") + Path.GetFileName(upl_file.FileName));
+            /*
                 if (upl_file.HasFile)
                 {
                     try
@@ -87,7 +90,7 @@ namespace mppl.mppl
                         MessageBox.Show("file gagal diupload karena : " + ex);
                     }
                 }
-            
+            */
         }
     }
 }

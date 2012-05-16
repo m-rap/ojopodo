@@ -38,7 +38,7 @@ namespace mppl.Control
                     {
                         for (int i = 0; i < window; i++)
                             if (buffer[i] < buffer[min]) min = i;
-                        fingerprint.Add(h[min]);
+                        fingerprint.Add(buffer[min]);
                     }
                     else
                     {
@@ -51,8 +51,9 @@ namespace mppl.Control
                     counter++;
                     r = (r + 1) % window;
                     if (counter < hash.Count)
-                        h[r] = hash[counter];
+                        buffer[r] = hash[counter];
             }
+            return fingerprint;
         }
         static void setHash(string input, List<int> hash)
         {
