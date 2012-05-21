@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Text.RegularExpressions;
 
-namespace ReadPDF
+namespace mppl.Control
 {
     public class Winnowing
     {
