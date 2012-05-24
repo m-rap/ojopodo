@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ojopodoModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ojopodoModelStoreContainer">
+          <EntitySet Name="dokumen" EntityType="ojopodoModel.Store.dokumen" store:Type="Tables" Schema="ojopodo" />
+          <EntitySet Name="user" EntityType="ojopodoModel.Store.user" store:Type="Tables" Schema="ojopodo" />
+        </EntityContainer>
+        <EntityType Name="dokumen">
+          <Key>
+            <PropertyRef Name="id_dokumen" />
+          </Key>
+          <Property Name="id_dokumen" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="judul" Type="varchar" MaxLength="200" />
+          <Property Name="pengarang" Type="varchar" MaxLength="200" />
+          <Property Name="alamat_fingerprint" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="namauser" Type="varchar" MaxLength="50" />
+          <Property Name="katasandi" Type="varchar" MaxLength="64" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ojopodoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ojopodoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="dokumen" EntityType="ojopodoModel.dokumen" />
+          <EntitySet Name="user" EntityType="ojopodoModel.user" />
+        </EntityContainer>
+        <EntityType Name="dokumen">
+          <Key>
+            <PropertyRef Name="id_dokumen" />
+          </Key>
+          <Property Name="id_dokumen" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="judul" Type="String" />
+          <Property Name="pengarang" Type="String" />
+          <Property Name="alamat_fingerprint" Type="String" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="namauser" Type="String" />
+          <Property Name="katasandi" Type="String" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ojopodoModelStoreContainer" CdmEntityContainer="ojopodoEntities">
+          <EntitySetMapping Name="dokumen"><EntityTypeMapping TypeName="ojopodoModel.dokumen"><MappingFragment StoreEntitySet="dokumen">
+            <ScalarProperty Name="id_dokumen" ColumnName="id_dokumen" />
+            <ScalarProperty Name="judul" ColumnName="judul" />
+            <ScalarProperty Name="pengarang" ColumnName="pengarang" />
+            <ScalarProperty Name="alamat_fingerprint" ColumnName="alamat_fingerprint" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="user"><EntityTypeMapping TypeName="ojopodoModel.user"><MappingFragment StoreEntitySet="user">
+            <ScalarProperty Name="id_user" ColumnName="id_user" />
+            <ScalarProperty Name="namauser" ColumnName="namauser" />
+            <ScalarProperty Name="katasandi" ColumnName="katasandi" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="ojopodoModel.dokumen" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojopodoModel.user" Width="1.5" PointX="2.75" PointY="0.75" Height="1.5956835937499996" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
