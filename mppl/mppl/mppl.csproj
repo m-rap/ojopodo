@@ -66,6 +66,10 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="FormDokumen.aspx" />
+    <Content Include="images\ITS ECO CAMPUS trans.png" />
+    <Content Include="images\Logo AREK-ITS trans.png" />
+    <Content Include="images\Logo ITS Biru kecil.png" />
+    <Content Include="images\Logo.png" />
     <Content Include="mppl\formCekUI.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -126,7 +130,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entiti\ModelDokumen.cs" />
+    <Compile Include="Entitas\ModelDokumen.cs" />
     <Compile Include="FormDokumen.aspx.cs">
       <DependentUpon>FormDokumen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,7 +141,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Entiti\Model.Designer.cs">
+    <Compile Include="Entitas\Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
@@ -166,7 +170,7 @@
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Entiti\Model.edmx">
+    <EntityDeploy Include="Entitas\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
