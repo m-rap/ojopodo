@@ -122,6 +122,13 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlCek.cs" />
+    <Compile Include="Control\controlTambah.cs" />
+    <Compile Include="Control\formCekUI.cs" />
+    <Compile Include="Control\hasilCekDokumenUI.cs" />
+    <Compile Include="Control\menuUtama.cs" />
+    <Compile Include="Control\penjelajahDirektoriUI.cs" />
+    <Compile Include="Control\prosesCekUI.cs" />
+    <Compile Include="Control\tambahUI.cs" />
     <Compile Include="Control\Winnowing.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
