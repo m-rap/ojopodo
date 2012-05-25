@@ -29,7 +29,8 @@ namespace mppl.Control
                         {
                            // String filename = Path.GetFileName(input.FileName);
                             Stream coba = input.FileContent;
-                            ekstrakPdf(coba);
+                            if(input.PostedFile.ContentType=="application/pdf")
+                                ekstrakPdf(coba);
                             finger = Winnowing.getFingerprint(teks);
                             return true;
                             //input.SaveAs(path);
@@ -56,7 +57,6 @@ namespace mppl.Control
             PdfReader reader = new PdfReader(path);
             for (int i = 1; i <= reader.NumberOfPages; i++)
                 teks += PdfTextExtractor.GetTextFromPage(reader, i);
-            int k;
         }
         void createFingerPrint(string input)
         {
