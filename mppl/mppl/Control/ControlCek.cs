@@ -32,9 +32,8 @@ namespace mppl.Control
                             if(input.PostedFile.ContentType=="application/pdf")
                                 ekstrakPdf(coba);
                             finger = Winnowing.getFingerprint(teks);
+                            finger.Sort();
                             return true;
-                            //input.SaveAs(path);
-                            //return true;
                         }
                         else
                         {
@@ -61,6 +60,28 @@ namespace mppl.Control
         void createFingerPrint(string input)
         {
             finger = Winnowing.getFingerprint(input);
+        }
+        //menghitung koefisien jaccard (similaritas antar fingerprint)
+        double cekJaccard(List<int> input, List<int> db)
+        {
+            double counterIntersect = 0; 
+            //int counterUnion = 0;
+            foreach (var i in input)
+            {
+                foreach (var j in db)
+                {
+                    if (i == j)
+                    {
+                        counterIntersect++;
+                        break;
+                    }
+                    else if (i > j)
+                    {
+                        break;
+                    }
+                }
+            }
+            return counterIntersect/(double)input.Count;
         }
     }
 }
