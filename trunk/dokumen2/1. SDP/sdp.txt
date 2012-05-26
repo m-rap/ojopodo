@@ -1,0 +1,7 @@
+2 maret 	-> start
+15 maret -> deliverable 1
+29 maret -> deliverable 2
+12 April   -> deliverable 3
+26 April    -> deliverable 4
+10 Mei     -> deliverable 5
+24 Mei -> deliverable 6 _> final demo
