@@ -1,0 +1,11 @@
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\TestProject2.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\TestProject2.pdb
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\itextsharp.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\itextsharp.xtra.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\mppl.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\mppl.pdb
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\mppl_Accessor.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\bin\Debug\mppl_Accessor.pdb
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\obj\Debug\ResolveAssemblyReference.cache
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\obj\Debug\TestProject2.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\obj\Debug\TestProject2.pdb

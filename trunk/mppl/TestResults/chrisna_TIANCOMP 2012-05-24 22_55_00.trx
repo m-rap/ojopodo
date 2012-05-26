@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="039bc7b6-e5bc-4bce-bb32-23be35da04fa" name="chrisna@TIANCOMP 2012-05-24 22:55:00" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_55_00">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:55:00.7664527+07:00" queuing="2012-05-24T22:55:01.4804935+07:00" start="2012-05-24T22:55:01.6525033+07:00" finish="2012-05-24T22:55:02.7645669+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="hasilCekDokumenUiConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="f7b316c3-6ca9-cb65-3b0b-d56276d7bb99">
+      <Execution id="c2236aea-3619-4ddb-885c-819412ec94ef" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.hasilCekDokumenUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="hasilCekDokumenUiConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanHasilTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="e3f6b427-c2b5-581d-7a03-7e51570a39c8">
+      <Execution id="2c78befb-0d9b-44ee-b063-d67f1c793821" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.hasilCekDokumenUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanHasilTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e3f6b427-c2b5-581d-7a03-7e51570a39c8" executionId="2c78befb-0d9b-44ee-b063-d67f1c793821" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7b316c3-6ca9-cb65-3b0b-d56276d7bb99" executionId="c2236aea-3619-4ddb-885c-819412ec94ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2c78befb-0d9b-44ee-b063-d67f1c793821" testId="e3f6b427-c2b5-581d-7a03-7e51570a39c8" testName="tampilkanHasilTest" computerName="TIANCOMP" startTime="2012-05-24T22:55:01.7275076+07:00" endTime="2012-05-24T22:55:02.7105639+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c78befb-0d9b-44ee-b063-d67f1c793821">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c2236aea-3619-4ddb-885c-819412ec94ef" testId="f7b316c3-6ca9-cb65-3b0b-d56276d7bb99" testName="hasilCekDokumenUiConstructorTest" computerName="TIANCOMP" startTime="2012-05-24T22:55:02.7165642+07:00" endTime="2012-05-24T22:55:02.7255647+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2236aea-3619-4ddb-885c-819412ec94ef">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

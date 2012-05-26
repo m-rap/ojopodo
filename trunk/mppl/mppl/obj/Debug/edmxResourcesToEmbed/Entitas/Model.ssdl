@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ojopodoModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ojopodoModelStoreContainer">
+    <EntitySet Name="dokumen" EntityType="ojopodoModel.Store.dokumen" store:Type="Tables" Schema="ojopodo" />
+    <EntitySet Name="user" EntityType="ojopodoModel.Store.user" store:Type="Tables" Schema="ojopodo" />
+  </EntityContainer>
+  <EntityType Name="dokumen">
+    <Key>
+      <PropertyRef Name="id_dokumen" />
+    </Key>
+    <Property Name="id_dokumen" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="judul" Type="varchar" MaxLength="200" />
+    <Property Name="pengarang" Type="varchar" MaxLength="200" />
+    <Property Name="alamat_fingerprint" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id_user" />
+    </Key>
+    <Property Name="id_user" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="namauser" Type="varchar" MaxLength="50" />
+    <Property Name="katasandi" Type="varchar" MaxLength="64" />
+  </EntityType>
+</Schema>

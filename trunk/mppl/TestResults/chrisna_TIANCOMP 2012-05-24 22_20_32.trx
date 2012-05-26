@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ecc33ed8-47fd-4914-80e8-608c2c7abb5f" name="chrisna@TIANCOMP 2012-05-24 22:20:32" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_20_32">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:20:32.2019936+07:00" queuing="2012-05-24T22:20:34.5511280+07:00" start="2012-05-24T22:20:34.6081313+07:00" finish="2012-05-24T22:20:58.9205218+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" error="0" failed="2" timeout="0" aborted="0" inconclusive="3" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="updateTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="2b05458b-2669-42a0-265b-f0a0096a393d">
+      <Execution id="5bb0c0a8-ac4f-422f-b903-dc2a895696a7" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getByIdTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="11a0b8b6-517e-3449-94b4-b6aa24b0e43f">
+      <Execution id="2ef006d0-b0fa-4e12-ba76-ef8fb434569f" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIdTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="0398c8bc-6b96-9d98-5b07-3f3fafbbb174">
+      <Execution id="af5a7655-30c0-4e0d-b7ad-2177c7ef48c5" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ModelDokumenConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="85923523-7d8a-8fcb-ff3d-8f4645ed1586">
+      <Execution id="a4b220ba-b72c-4649-8851-e94fb7b5b31b" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ModelDokumenConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="insertTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="1bcaa719-fb49-1cc1-cff8-ba102164e4e7">
+      <Execution id="4b532433-527b-4225-a8ee-5d8879f588dd" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="insertTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0398c8bc-6b96-9d98-5b07-3f3fafbbb174" executionId="af5a7655-30c0-4e0d-b7ad-2177c7ef48c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11a0b8b6-517e-3449-94b4-b6aa24b0e43f" executionId="2ef006d0-b0fa-4e12-ba76-ef8fb434569f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bcaa719-fb49-1cc1-cff8-ba102164e4e7" executionId="4b532433-527b-4225-a8ee-5d8879f588dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b05458b-2669-42a0-265b-f0a0096a393d" executionId="5bb0c0a8-ac4f-422f-b903-dc2a895696a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85923523-7d8a-8fcb-ff3d-8f4645ed1586" executionId="a4b220ba-b72c-4649-8851-e94fb7b5b31b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="af5a7655-30c0-4e0d-b7ad-2177c7ef48c5" testId="0398c8bc-6b96-9d98-5b07-3f3fafbbb174" testName="getTest" computerName="TIANCOMP" duration="00:00:03.6506004" startTime="2012-05-24T22:20:34.8441448+07:00" endTime="2012-05-24T22:20:46.9708384+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af5a7655-30c0-4e0d-b7ad-2177c7ef48c5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;System.Data.Objects.ObjectQuery`1[mppl.Entitas.dokumen]&gt;. </Message>
+          <StackTrace>   at TestProject2.ModelDokumenTest.getTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\ModelDokumenTest.cs:line 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2ef006d0-b0fa-4e12-ba76-ef8fb434569f" testId="11a0b8b6-517e-3449-94b4-b6aa24b0e43f" testName="getByIdTest" computerName="TIANCOMP" duration="00:00:09.8844958" startTime="2012-05-24T22:20:46.9758387+07:00" endTime="2012-05-24T22:20:57.0864169+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ef006d0-b0fa-4e12-ba76-ef8fb434569f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject2.ModelDokumenTest.getByIdTest threw exception: 
+System.InvalidOperationException: Sequence contains no elements</Message>
+          <StackTrace>    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at mppl.Entitas.ModelDokumen.getById(Int64 id) in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\Entitas\ModelDokumen.cs:line 41
+   at TestProject2.ModelDokumenTest.getByIdTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\ModelDokumenTest.cs:line 121
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4b532433-527b-4225-a8ee-5d8879f588dd" testId="1bcaa719-fb49-1cc1-cff8-ba102164e4e7" testName="insertTest" computerName="TIANCOMP" duration="00:00:01.2561338" startTime="2012-05-24T22:20:57.0884171+07:00" endTime="2012-05-24T22:20:58.5224991+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b532433-527b-4225-a8ee-5d8879f588dd">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject2.ModelDokumenTest.insertTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\ModelDokumenTest.cs:line 143
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5bb0c0a8-ac4f-422f-b903-dc2a895696a7" testId="2b05458b-2669-42a0-265b-f0a0096a393d" testName="updateTest" computerName="TIANCOMP" duration="00:00:00.0141279" startTime="2012-05-24T22:20:58.5344998+07:00" endTime="2012-05-24T22:20:58.7215105+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bb0c0a8-ac4f-422f-b903-dc2a895696a7">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject2.ModelDokumenTest.updateTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\ModelDokumenTest.cs:line 164
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a4b220ba-b72c-4649-8851-e94fb7b5b31b" testId="85923523-7d8a-8fcb-ff3d-8f4645ed1586" testName="ModelDokumenConstructorTest" computerName="TIANCOMP" duration="00:00:00.0020865" startTime="2012-05-24T22:20:58.7265108+07:00" endTime="2012-05-24T22:20:58.8695189+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4b220ba-b72c-4649-8851-e94fb7b5b31b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at TestProject2.ModelDokumenTest.ModelDokumenConstructorTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\ModelDokumenTest.cs:line 82
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

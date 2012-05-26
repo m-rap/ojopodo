@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a3ae50e3-319f-4b9b-999a-ab6ff373bd29" name="chrisna@TIANCOMP 2012-05-24 22:39:04" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_39_04">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:39:04.6287647+07:00" queuing="2012-05-24T22:39:08.7059979+07:00" start="2012-05-24T22:39:08.7339995+07:00" finish="2012-05-24T22:39:17.4915004+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="uploadDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="1c58633c-d189-7f46-745a-73c2bc8ac956">
+      <Execution id="c8498a20-522e-4c2e-9925-2868dbc81993" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="uploadDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tambahUIConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="380e6108-d79b-4b3b-1d75-88697b5807ae">
+      <Execution id="b2dbab42-4403-452e-ab6b-639eeaab7c4d" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tambahUIConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="isiDataDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="7d0e268c-5343-fe7f-2b52-2465929a2ea0">
+      <Execution id="0355b3cd-03aa-4805-98aa-388d0972e7c2" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="isiDataDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1c58633c-d189-7f46-745a-73c2bc8ac956" executionId="c8498a20-522e-4c2e-9925-2868dbc81993" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="380e6108-d79b-4b3b-1d75-88697b5807ae" executionId="b2dbab42-4403-452e-ab6b-639eeaab7c4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d0e268c-5343-fe7f-2b52-2465929a2ea0" executionId="0355b3cd-03aa-4805-98aa-388d0972e7c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c8498a20-522e-4c2e-9925-2868dbc81993" testId="1c58633c-d189-7f46-745a-73c2bc8ac956" testName="uploadDokumenTest" computerName="TIANCOMP" duration="00:00:00.0204212" startTime="2012-05-24T22:39:08.7840024+07:00" endTime="2012-05-24T22:39:15.2063697+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8498a20-522e-4c2e-9925-2868dbc81993">
+    </UnitTestResult>
+    <UnitTestResult executionId="b2dbab42-4403-452e-ab6b-639eeaab7c4d" testId="380e6108-d79b-4b3b-1d75-88697b5807ae" testName="tambahUIConstructorTest" computerName="TIANCOMP" duration="00:00:00.0175933" startTime="2012-05-24T22:39:15.2133701+07:00" endTime="2012-05-24T22:39:17.3804941+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2dbab42-4403-452e-ab6b-639eeaab7c4d">
+    </UnitTestResult>
+    <UnitTestResult executionId="0355b3cd-03aa-4805-98aa-388d0972e7c2" testId="7d0e268c-5343-fe7f-2b52-2465929a2ea0" testName="isiDataDokumenTest" computerName="TIANCOMP" duration="00:00:00.0003278" startTime="2012-05-24T22:39:17.3844943+07:00" endTime="2012-05-24T22:39:17.4544983+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0355b3cd-03aa-4805-98aa-388d0972e7c2">
+    </UnitTestResult>
+  </Results>
+</TestRun>
