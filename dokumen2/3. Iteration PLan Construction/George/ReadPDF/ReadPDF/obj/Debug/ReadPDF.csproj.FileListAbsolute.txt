@@ -1,0 +1,13 @@
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\bin\ReadPDF.dll
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\bin\ReadPDF.pdb
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\bin\itextsharp.dll
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\bin\itextsharp.xtra.dll
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\obj\Debug\ReadPDF.dll
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\obj\Debug\ReadPDF.pdb
+C:\Users\SatelliteM645\Desktop\Document\ReadPDF\ReadPDF\bin\SautinSoft.PdfFocus.dll
+C:\Users\sukmasuk2006\Desktop\George\ReadPDF\ReadPDF\bin\ReadPDF.dll
+C:\Users\sukmasuk2006\Desktop\George\ReadPDF\ReadPDF\bin\ReadPDF.pdb
+C:\Users\sukmasuk2006\Desktop\George\ReadPDF\ReadPDF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sukmasuk2006\Desktop\George\ReadPDF\ReadPDF\obj\Debug\ReadPDF.dll
+C:\Users\sukmasuk2006\Desktop\George\ReadPDF\ReadPDF\obj\Debug\ReadPDF.pdb
