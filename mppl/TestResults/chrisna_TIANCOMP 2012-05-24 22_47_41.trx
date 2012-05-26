@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0d79f912-0d52-44a0-bc3e-f682587b8542" name="chrisna@TIANCOMP 2012-05-24 22:47:41" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_47_41">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:47:41.3183177+07:00" queuing="2012-05-24T22:47:43.0914191+07:00" start="2012-05-24T22:47:43.4864417+07:00" finish="2012-05-24T22:48:14.8992384+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="TIANCOMP" outcome="Warning" timestamp="2012-05-24T22:47:42.0113573+07:00">
+        <Text>Deployment is currently disabled. The deployment item 'mppl.dll' on test 'TestProject2.ControlCekTest.ekstrakPdfTest' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ekstrakPdfTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="b2b6bf34-5d27-7871-c044-b864c55d1bbe">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="dd039bb4-4d82-421e-880e-1ef6153ccd2b" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ekstrakPdfTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ControlCekConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="081bdbf6-b6cf-49e4-99f0-f336be370645">
+      <Execution id="685006e3-a01d-4110-81f6-c05984ebb2e5" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ControlCekConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="uploadTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="fb2baaf1-10c4-c978-111e-182bac5bcfcf">
+      <Execution id="0542dad1-865a-472d-9f5e-1d43341d49ed" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="uploadTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="createFingerPrintTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="65d1fb28-ce52-ca15-ac3b-99d2be3735b6">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="ff20297f-2895-47af-ad4d-e89100acabdd" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createFingerPrintTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="081bdbf6-b6cf-49e4-99f0-f336be370645" executionId="685006e3-a01d-4110-81f6-c05984ebb2e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65d1fb28-ce52-ca15-ac3b-99d2be3735b6" executionId="ff20297f-2895-47af-ad4d-e89100acabdd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2b6bf34-5d27-7871-c044-b864c55d1bbe" executionId="dd039bb4-4d82-421e-880e-1ef6153ccd2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb2baaf1-10c4-c978-111e-182bac5bcfcf" executionId="0542dad1-865a-472d-9f5e-1d43341d49ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="685006e3-a01d-4110-81f6-c05984ebb2e5" testId="081bdbf6-b6cf-49e4-99f0-f336be370645" testName="ControlCekConstructorTest" computerName="TIANCOMP" duration="00:00:00.0193561" startTime="2012-05-24T22:47:43.5624460+07:00" endTime="2012-05-24T22:48:12.0150734+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="685006e3-a01d-4110-81f6-c05984ebb2e5">
+    </UnitTestResult>
+    <UnitTestResult executionId="ff20297f-2895-47af-ad4d-e89100acabdd" testId="65d1fb28-ce52-ca15-ac3b-99d2be3735b6" testName="createFingerPrintTest" computerName="TIANCOMP" duration="00:00:00.0491728" startTime="2012-05-24T22:48:12.0190736+07:00" endTime="2012-05-24T22:48:13.9711853+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff20297f-2895-47af-ad4d-e89100acabdd">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject2.ControlCekTest.createFingerPrintTest threw exception: 
+System.IndexOutOfRangeException: Index was outside the bounds of the array.</Message>
+          <StackTrace>   at mppl.Control.ControlCek_Accessor.createFingerPrint(String input)
+   at TestProject2.ControlCekTest.createFingerPrintTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\ControlCekTest.cs:line 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd039bb4-4d82-421e-880e-1ef6153ccd2b" testId="b2b6bf34-5d27-7871-c044-b864c55d1bbe" testName="ekstrakPdfTest" computerName="TIANCOMP" duration="00:00:00.2960447" startTime="2012-05-24T22:48:13.9811859+07:00" endTime="2012-05-24T22:48:14.3542072+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd039bb4-4d82-421e-880e-1ef6153ccd2b">
+    </UnitTestResult>
+    <UnitTestResult executionId="0542dad1-865a-472d-9f5e-1d43341d49ed" testId="fb2baaf1-10c4-c978-111e-182bac5bcfcf" testName="uploadTest" computerName="TIANCOMP" duration="00:00:00.0074996" startTime="2012-05-24T22:48:14.3562073+07:00" endTime="2012-05-24T22:48:14.4222111+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0542dad1-865a-472d-9f5e-1d43341d49ed">
+      <Output>
+        <StdOut>file gagal diupload karena : System.NullReferenceException: Object reference not set to an instance of an object.
+   at mppl.Control.ControlCek.upload(FileUpload input, String path) in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\Control\ControlCek.cs:line 26</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

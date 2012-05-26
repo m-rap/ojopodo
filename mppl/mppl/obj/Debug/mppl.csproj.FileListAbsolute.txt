@@ -1,0 +1,7 @@
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.pdb
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\itextsharp.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\itextsharp.xtra.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\obj\Debug\mppl.dll
+D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\obj\Debug\mppl.pdb

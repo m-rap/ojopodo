@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="feb2bcef-25cf-4d39-a022-5d01c501ef6c" name="chrisna@TIANCOMP 2012-05-24 22:56:51" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_56_51">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:56:51.3657786+07:00" queuing="2012-05-24T22:56:51.4437830+07:00" start="2012-05-24T22:56:51.4547837+07:00" finish="2012-05-24T22:56:51.5597897+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="TIANCOMP" outcome="Warning" timestamp="2012-05-24T22:56:51.4437830+07:00">
+        <Text>Deployment is currently disabled. The deployment item 'mppl.dll' on test 'TestProject2.ControlCekTest.ekstrakPdfTest' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ekstrakPdfTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="b2b6bf34-5d27-7871-c044-b864c55d1bbe">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="0e34786e-3c90-47c3-9c90-b2cbdb79a703" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ekstrakPdfTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ControlCekConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="081bdbf6-b6cf-49e4-99f0-f336be370645">
+      <Execution id="3f7d93e6-c9ea-422b-8db1-51afa8f69f1b" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ControlCekConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="uploadTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="fb2baaf1-10c4-c978-111e-182bac5bcfcf">
+      <Execution id="9ba4dfe1-a236-4b63-a42c-791e4b058f0f" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="uploadTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="createFingerPrintTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="65d1fb28-ce52-ca15-ac3b-99d2be3735b6">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="98d622bf-417f-4e4c-9d78-0121520039c6" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createFingerPrintTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="081bdbf6-b6cf-49e4-99f0-f336be370645" executionId="3f7d93e6-c9ea-422b-8db1-51afa8f69f1b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65d1fb28-ce52-ca15-ac3b-99d2be3735b6" executionId="98d622bf-417f-4e4c-9d78-0121520039c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2b6bf34-5d27-7871-c044-b864c55d1bbe" executionId="0e34786e-3c90-47c3-9c90-b2cbdb79a703" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb2baaf1-10c4-c978-111e-182bac5bcfcf" executionId="9ba4dfe1-a236-4b63-a42c-791e4b058f0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3f7d93e6-c9ea-422b-8db1-51afa8f69f1b" testId="081bdbf6-b6cf-49e4-99f0-f336be370645" testName="ControlCekConstructorTest" computerName="TIANCOMP" startTime="2012-05-24T22:56:51.4847854+07:00" endTime="2012-05-24T22:56:51.4877856+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f7d93e6-c9ea-422b-8db1-51afa8f69f1b">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="98d622bf-417f-4e4c-9d78-0121520039c6" testId="65d1fb28-ce52-ca15-ac3b-99d2be3735b6" testName="createFingerPrintTest" computerName="TIANCOMP" startTime="2012-05-24T22:56:51.5047865+07:00" endTime="2012-05-24T22:56:51.5207874+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98d622bf-417f-4e4c-9d78-0121520039c6">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0e34786e-3c90-47c3-9c90-b2cbdb79a703" testId="b2b6bf34-5d27-7871-c044-b864c55d1bbe" testName="ekstrakPdfTest" computerName="TIANCOMP" startTime="2012-05-24T22:56:51.5367884+07:00" endTime="2012-05-24T22:56:51.5417886+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e34786e-3c90-47c3-9c90-b2cbdb79a703">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9ba4dfe1-a236-4b63-a42c-791e4b058f0f" testId="fb2baaf1-10c4-c978-111e-182bac5bcfcf" testName="uploadTest" computerName="TIANCOMP" startTime="2012-05-24T22:56:51.5467889+07:00" endTime="2012-05-24T22:56:51.5527893+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ba4dfe1-a236-4b63-a42c-791e4b058f0f">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

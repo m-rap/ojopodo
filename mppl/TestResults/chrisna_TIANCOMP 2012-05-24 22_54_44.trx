@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a1e96924-9008-40fc-be82-4c39a0153067" name="chrisna@TIANCOMP 2012-05-24 22:54:44" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_54_44">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:54:44.4645202+07:00" queuing="2012-05-24T22:54:50.6628748+07:00" start="2012-05-24T22:54:50.9678922+07:00" finish="2012-05-24T22:54:52.4719782+07:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="42" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="41" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="TIANCOMP" outcome="Error" timestamp="2012-05-24T22:54:52.4629777+07:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="setujuBatalCekTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="6214e58f-9145-acdf-2369-49c797787222">
+      <Execution id="fd2efee9-c66d-4fd7-8314-be49ffbb2590" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setujuBatalCekTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getByIdTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="11a0b8b6-517e-3449-94b4-b6aa24b0e43f">
+      <Execution id="974fab3f-4796-421e-bfa7-1c5e5dfecb59" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getByIdTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="uploadDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="1c58633c-d189-7f46-745a-73c2bc8ac956">
+      <Execution id="282e2eeb-0854-464a-a035-7c915e48398c" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="uploadDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanKonfirmasiBatalTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="ab2b4e2d-0e8e-d089-6401-526ffbdc7005">
+      <Execution id="2c22e408-5425-4648-ac14-48f80f1c638b" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanKonfirmasiBatalTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tekanBatalTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="646eff43-91cf-e8c8-52fb-f9c5ad11e7f2">
+      <Execution id="1c134aae-bbf8-436f-a16d-5592d23790c4" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tekanBatalTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanHasilTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="e3f6b427-c2b5-581d-7a03-7e51570a39c8">
+      <Execution id="577a3792-a781-48bf-87bc-2cf3166bd337" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.hasilCekDokumenUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanHasilTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanKonfirmasiBatalCekTest1" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="d006c7c5-6a8c-0048-fecf-45dd47684e33">
+      <Execution id="e7aae7aa-7b4e-43e5-8d42-81ba0771efa2" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanKonfirmasiBatalCekTest1" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="simpanTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="606e1268-e2ae-e9a9-0462-ac7f52ce1c5f">
+      <Execution id="7d8dffca-f7c3-4346-ac71-df90b40474ba" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.controlTambahTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="simpanTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="updateTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="2b05458b-2669-42a0-265b-f0a0096a393d">
+      <Execution id="58ed5bb5-f57a-4e63-a149-e5451c795045" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="pilihCekDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="ee2d4e2e-8c2c-c2a8-9060-2fd4da3dca4c">
+      <Execution id="ba97c8de-afb8-4f90-8eed-37f976ca3401" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.menuUtamaUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pilihCekDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tambahUIConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="380e6108-d79b-4b3b-1d75-88697b5807ae">
+      <Execution id="0d12b251-5773-45fd-868a-a81d9eb31ab8" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tambahUIConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ControlCekConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="081bdbf6-b6cf-49e4-99f0-f336be370645">
+      <Execution id="079a62c5-dcc6-4c04-a4a8-c799f24f8fd4" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ControlCekConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="insertTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="1bcaa719-fb49-1cc1-cff8-ba102164e4e7">
+      <Execution id="6b8471fc-a440-4d61-af46-7919445e394d" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="insertTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="setujuBatalCekTest1" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="2a3b770d-9df8-f0e4-4e3d-d4895d035b91">
+      <Execution id="3ea4277f-e79c-4a22-811e-4ce4a8653036" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setujuBatalCekTest1" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getFingerprintTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="69773ab7-eeed-a849-da98-e2f091e54fb2">
+      <Execution id="b6ac68d3-e7e1-411a-8df2-334aca07579a" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getFingerprintTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="uploadTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="fb2baaf1-10c4-c978-111e-182bac5bcfcf">
+      <Execution id="079cdd9b-bb35-42cd-9a6a-6bf52bd5a8d7" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="uploadTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanKonfirmasiBatalCekTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="3dd04a9a-5865-58e9-cd0f-6276d39b40f2">
+      <Execution id="1b81618c-579f-4037-b5ab-635420f8353d" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanKonfirmasiBatalCekTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="formCekUIConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="fa9e1b31-365f-f67e-ab00-96e063b8c7c2">
+      <Execution id="e555ac27-9d75-4c5e-9336-6365f1bef096" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.formCekUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="formCekUIConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="pilihModeFileTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="fc2d59e7-2976-02db-413a-2cdba087f6d2">
+      <Execution id="3a8acff8-1851-4ae8-9755-c3f3f9f13a9d" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.formCekUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pilihModeFileTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tekanBatalTest1" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="d3240ef7-eafd-c143-6c04-416ff28a9f99">
+      <Execution id="0d2f357f-eaf1-4c6e-89f0-878b1a9a7681" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tekanBatalTest1" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanKemajuanTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="ed30a599-ad27-4551-e708-9963fda8fa65">
+      <Execution id="35961e37-735f-4b84-a501-8e622568aef3" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanKemajuanTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanKemajuanTest1" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="eade35ce-1d0d-3ccd-56d1-ce7a9a79260e">
+      <Execution id="e3079684-6191-45fb-988a-b77b39b6effc" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanKemajuanTest1" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanKonfirmasiBatalTest1" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="75bd2c86-7df5-af67-d323-d4e68456f7d6">
+      <Execution id="8491bf84-5b5d-4ad2-a615-d0bc91a5cbd5" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanKonfirmasiBatalTest1" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="rollHashRightTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="d0be2a1b-146a-63d1-0134-b0aaacded6df">
+      <Execution id="39d33a4e-a8ce-4042-ae05-23f205aa9250" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="rollHashRightTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="PenjelajahDirektoriUiConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="65d0434f-f0a5-99d5-e83c-4d1cfb69a9a9">
+      <Execution id="013916a2-8f73-4447-96df-53bd3b6141f1" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.PenjelajahDirektoriUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PenjelajahDirektoriUiConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="isiDataDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="7d0e268c-5343-fe7f-2b52-2465929a2ea0">
+      <Execution id="d6579372-1854-4763-ae03-0ddeaa9fcbe7" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="isiDataDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="0398c8bc-6b96-9d98-5b07-3f3fafbbb174">
+      <Execution id="d9c4f18d-42df-412a-9ab5-19253b06dad9" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="menuUtamaUIConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="db46635a-c39c-bd8d-b0b6-a0672a310324">
+      <Execution id="92ceb7a0-0ddc-44d9-b825-76824b7703fd" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.menuUtamaUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="menuUtamaUIConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="hasilCekDokumenUiConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="f7b316c3-6ca9-cb65-3b0b-d56276d7bb99">
+      <Execution id="40d7ff7e-bfc1-44ab-902f-181f4c0ebb7b" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.hasilCekDokumenUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="hasilCekDokumenUiConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ekstrakPdfTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="b2b6bf34-5d27-7871-c044-b864c55d1bbe">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="1198dd2c-ae00-4fc4-a004-0f191947665f" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ekstrakPdfTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="controlTambahConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="86601b2e-43db-2fe2-36e8-be0b3a78dbe2">
+      <Execution id="9d69611f-e139-47c1-b96b-25d9a15c498a" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.controlTambahTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="controlTambahConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="prosesCekUiConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="f2007434-ce6d-54df-c2eb-a1ab0bc0fa04">
+      <Execution id="6713ee8e-1771-4702-8ded-8345b9c8e577" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="prosesCekUiConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tampilkanDirektoriTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="8f16abe5-f34d-1113-b553-619f972f23f8">
+      <Execution id="caa8b887-bbf3-439c-9d9b-f9d01319bf37" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.PenjelajahDirektoriUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tampilkanDirektoriTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="pilihDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="cd5f66a4-1649-71a8-b970-8c5a4bee2167">
+      <Execution id="8e760556-b30c-4c9b-a7f0-a9f5dbd1ca42" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.PenjelajahDirektoriUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pilihDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="WinnowingConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="64ad4b4e-ba6f-e06b-11be-8345bb24fabf">
+      <Execution id="71d3f772-4586-4a64-b8c4-327971b9a687" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WinnowingConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="primeRollingHashTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="f827ecbb-9b3f-3337-ba7b-52af22e53528">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="8fd6cfad-4489-412c-a232-9d0791461a34" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="primeRollingHashTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ModelDokumenConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="85923523-7d8a-8fcb-ff3d-8f4645ed1586">
+      <Execution id="b26a1fd1-1398-4991-ad1f-b6f5204680d0" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ModelDokumenTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ModelDokumenConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="setHashTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="0df9a5a7-4d10-427d-900c-76cba404630d">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="93de5db8-002b-41ae-8ac5-5ed146f65c9f" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setHashTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="pilihModeTeksTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="62c1693d-bab3-3882-cb61-aae989bfe7d6">
+      <Execution id="8fefc05a-4a41-46dd-827f-01569c747a46" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.formCekUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pilihModeTeksTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="prosesCekUiConstructorTest1" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="029ed198-0a15-2932-de69-c14e0a743bbe">
+      <Execution id="e01345cf-8969-42f3-ace4-373554dd167b" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.prosesCekUiTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="prosesCekUiConstructorTest1" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tekanTombolCekTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="670b3134-0340-dc18-729c-7ad8c4da9d0a">
+      <Execution id="154779c9-e411-40ce-b0cf-c55f2547b411" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.formCekUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tekanTombolCekTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="createFingerPrintTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="65d1fb28-ce52-ca15-ac3b-99d2be3735b6">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="55de8f6c-a3cd-489e-96b4-5ea5cdcc450c" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.ControlCekTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createFingerPrintTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fb2baaf1-10c4-c978-111e-182bac5bcfcf" executionId="079cdd9b-bb35-42cd-9a6a-6bf52bd5a8d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2b6bf34-5d27-7871-c044-b864c55d1bbe" executionId="1198dd2c-ae00-4fc4-a004-0f191947665f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65d1fb28-ce52-ca15-ac3b-99d2be3735b6" executionId="55de8f6c-a3cd-489e-96b4-5ea5cdcc450c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="081bdbf6-b6cf-49e4-99f0-f336be370645" executionId="079a62c5-dcc6-4c04-a4a8-c799f24f8fd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64ad4b4e-ba6f-e06b-11be-8345bb24fabf" executionId="71d3f772-4586-4a64-b8c4-327971b9a687" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69773ab7-eeed-a849-da98-e2f091e54fb2" executionId="b6ac68d3-e7e1-411a-8df2-334aca07579a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f827ecbb-9b3f-3337-ba7b-52af22e53528" executionId="8fd6cfad-4489-412c-a232-9d0791461a34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0be2a1b-146a-63d1-0134-b0aaacded6df" executionId="39d33a4e-a8ce-4042-ae05-23f205aa9250" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0df9a5a7-4d10-427d-900c-76cba404630d" executionId="93de5db8-002b-41ae-8ac5-5ed146f65c9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86601b2e-43db-2fe2-36e8-be0b3a78dbe2" executionId="9d69611f-e139-47c1-b96b-25d9a15c498a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="606e1268-e2ae-e9a9-0462-ac7f52ce1c5f" executionId="7d8dffca-f7c3-4346-ac71-df90b40474ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c58633c-d189-7f46-745a-73c2bc8ac956" executionId="282e2eeb-0854-464a-a035-7c915e48398c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="380e6108-d79b-4b3b-1d75-88697b5807ae" executionId="0d12b251-5773-45fd-868a-a81d9eb31ab8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d0e268c-5343-fe7f-2b52-2465929a2ea0" executionId="d6579372-1854-4763-ae03-0ddeaa9fcbe7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85923523-7d8a-8fcb-ff3d-8f4645ed1586" executionId="b26a1fd1-1398-4991-ad1f-b6f5204680d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0398c8bc-6b96-9d98-5b07-3f3fafbbb174" executionId="d9c4f18d-42df-412a-9ab5-19253b06dad9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11a0b8b6-517e-3449-94b4-b6aa24b0e43f" executionId="974fab3f-4796-421e-bfa7-1c5e5dfecb59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bcaa719-fb49-1cc1-cff8-ba102164e4e7" executionId="6b8471fc-a440-4d61-af46-7919445e394d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b05458b-2669-42a0-265b-f0a0096a393d" executionId="58ed5bb5-f57a-4e63-a149-e5451c795045" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2007434-ce6d-54df-c2eb-a1ab0bc0fa04" executionId="6713ee8e-1771-4702-8ded-8345b9c8e577" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6214e58f-9145-acdf-2369-49c797787222" executionId="fd2efee9-c66d-4fd7-8314-be49ffbb2590" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed30a599-ad27-4551-e708-9963fda8fa65" executionId="35961e37-735f-4b84-a501-8e622568aef3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab2b4e2d-0e8e-d089-6401-526ffbdc7005" executionId="2c22e408-5425-4648-ac14-48f80f1c638b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3dd04a9a-5865-58e9-cd0f-6276d39b40f2" executionId="1b81618c-579f-4037-b5ab-635420f8353d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="646eff43-91cf-e8c8-52fb-f9c5ad11e7f2" executionId="1c134aae-bbf8-436f-a16d-5592d23790c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="029ed198-0a15-2932-de69-c14e0a743bbe" executionId="e01345cf-8969-42f3-ace4-373554dd167b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a3b770d-9df8-f0e4-4e3d-d4895d035b91" executionId="3ea4277f-e79c-4a22-811e-4ce4a8653036" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eade35ce-1d0d-3ccd-56d1-ce7a9a79260e" executionId="e3079684-6191-45fb-988a-b77b39b6effc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="75bd2c86-7df5-af67-d323-d4e68456f7d6" executionId="8491bf84-5b5d-4ad2-a615-d0bc91a5cbd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d006c7c5-6a8c-0048-fecf-45dd47684e33" executionId="e7aae7aa-7b4e-43e5-8d42-81ba0771efa2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3240ef7-eafd-c143-6c04-416ff28a9f99" executionId="0d2f357f-eaf1-4c6e-89f0-878b1a9a7681" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7b316c3-6ca9-cb65-3b0b-d56276d7bb99" executionId="40d7ff7e-bfc1-44ab-902f-181f4c0ebb7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e3f6b427-c2b5-581d-7a03-7e51570a39c8" executionId="577a3792-a781-48bf-87bc-2cf3166bd337" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65d0434f-f0a5-99d5-e83c-4d1cfb69a9a9" executionId="013916a2-8f73-4447-96df-53bd3b6141f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd5f66a4-1649-71a8-b970-8c5a4bee2167" executionId="8e760556-b30c-4c9b-a7f0-a9f5dbd1ca42" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f16abe5-f34d-1113-b553-619f972f23f8" executionId="caa8b887-bbf3-439c-9d9b-f9d01319bf37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fa9e1b31-365f-f67e-ab00-96e063b8c7c2" executionId="e555ac27-9d75-4c5e-9336-6365f1bef096" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc2d59e7-2976-02db-413a-2cdba087f6d2" executionId="3a8acff8-1851-4ae8-9755-c3f3f9f13a9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62c1693d-bab3-3882-cb61-aae989bfe7d6" executionId="8fefc05a-4a41-46dd-827f-01569c747a46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="670b3134-0340-dc18-729c-7ad8c4da9d0a" executionId="154779c9-e411-40ce-b0cf-c55f2547b411" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db46635a-c39c-bd8d-b0b6-a0672a310324" executionId="92ceb7a0-0ddc-44d9-b825-76824b7703fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee2d4e2e-8c2c-c2a8-9060-2fd4da3dca4c" executionId="ba97c8de-afb8-4f90-8eed-37f976ca3401" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="079cdd9b-bb35-42cd-9a6a-6bf52bd5a8d7" testId="fb2baaf1-10c4-c978-111e-182bac5bcfcf" testName="uploadTest" computerName="TIANCOMP" duration="00:00:01.2820733" startTime="2012-05-24T22:54:51.1839046+07:00" endTime="2012-05-24T22:54:52.4659779+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="079cdd9b-bb35-42cd-9a6a-6bf52bd5a8d7">
+    </UnitTestResult>
+    <UnitTestResult executionId="1198dd2c-ae00-4fc4-a004-0f191947665f" testId="b2b6bf34-5d27-7871-c044-b864c55d1bbe" testName="ekstrakPdfTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1198dd2c-ae00-4fc4-a004-0f191947665f">
+    </UnitTestResult>
+    <UnitTestResult executionId="55de8f6c-a3cd-489e-96b4-5ea5cdcc450c" testId="65d1fb28-ce52-ca15-ac3b-99d2be3735b6" testName="createFingerPrintTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55de8f6c-a3cd-489e-96b4-5ea5cdcc450c">
+    </UnitTestResult>
+    <UnitTestResult executionId="079a62c5-dcc6-4c04-a4a8-c799f24f8fd4" testId="081bdbf6-b6cf-49e4-99f0-f336be370645" testName="ControlCekConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="079a62c5-dcc6-4c04-a4a8-c799f24f8fd4">
+    </UnitTestResult>
+    <UnitTestResult executionId="71d3f772-4586-4a64-b8c4-327971b9a687" testId="64ad4b4e-ba6f-e06b-11be-8345bb24fabf" testName="WinnowingConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71d3f772-4586-4a64-b8c4-327971b9a687">
+    </UnitTestResult>
+    <UnitTestResult executionId="b6ac68d3-e7e1-411a-8df2-334aca07579a" testId="69773ab7-eeed-a849-da98-e2f091e54fb2" testName="getFingerprintTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6ac68d3-e7e1-411a-8df2-334aca07579a">
+    </UnitTestResult>
+    <UnitTestResult executionId="8fd6cfad-4489-412c-a232-9d0791461a34" testId="f827ecbb-9b3f-3337-ba7b-52af22e53528" testName="primeRollingHashTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fd6cfad-4489-412c-a232-9d0791461a34">
+    </UnitTestResult>
+    <UnitTestResult executionId="39d33a4e-a8ce-4042-ae05-23f205aa9250" testId="d0be2a1b-146a-63d1-0134-b0aaacded6df" testName="rollHashRightTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39d33a4e-a8ce-4042-ae05-23f205aa9250">
+    </UnitTestResult>
+    <UnitTestResult executionId="93de5db8-002b-41ae-8ac5-5ed146f65c9f" testId="0df9a5a7-4d10-427d-900c-76cba404630d" testName="setHashTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93de5db8-002b-41ae-8ac5-5ed146f65c9f">
+    </UnitTestResult>
+    <UnitTestResult executionId="9d69611f-e139-47c1-b96b-25d9a15c498a" testId="86601b2e-43db-2fe2-36e8-be0b3a78dbe2" testName="controlTambahConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d69611f-e139-47c1-b96b-25d9a15c498a">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d8dffca-f7c3-4346-ac71-df90b40474ba" testId="606e1268-e2ae-e9a9-0462-ac7f52ce1c5f" testName="simpanTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d8dffca-f7c3-4346-ac71-df90b40474ba">
+    </UnitTestResult>
+    <UnitTestResult executionId="282e2eeb-0854-464a-a035-7c915e48398c" testId="1c58633c-d189-7f46-745a-73c2bc8ac956" testName="uploadDokumenTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="282e2eeb-0854-464a-a035-7c915e48398c">
+    </UnitTestResult>
+    <UnitTestResult executionId="0d12b251-5773-45fd-868a-a81d9eb31ab8" testId="380e6108-d79b-4b3b-1d75-88697b5807ae" testName="tambahUIConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d12b251-5773-45fd-868a-a81d9eb31ab8">
+    </UnitTestResult>
+    <UnitTestResult executionId="d6579372-1854-4763-ae03-0ddeaa9fcbe7" testId="7d0e268c-5343-fe7f-2b52-2465929a2ea0" testName="isiDataDokumenTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6579372-1854-4763-ae03-0ddeaa9fcbe7">
+    </UnitTestResult>
+    <UnitTestResult executionId="b26a1fd1-1398-4991-ad1f-b6f5204680d0" testId="85923523-7d8a-8fcb-ff3d-8f4645ed1586" testName="ModelDokumenConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b26a1fd1-1398-4991-ad1f-b6f5204680d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="d9c4f18d-42df-412a-9ab5-19253b06dad9" testId="0398c8bc-6b96-9d98-5b07-3f3fafbbb174" testName="getTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9c4f18d-42df-412a-9ab5-19253b06dad9">
+    </UnitTestResult>
+    <UnitTestResult executionId="974fab3f-4796-421e-bfa7-1c5e5dfecb59" testId="11a0b8b6-517e-3449-94b4-b6aa24b0e43f" testName="getByIdTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="974fab3f-4796-421e-bfa7-1c5e5dfecb59">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b8471fc-a440-4d61-af46-7919445e394d" testId="1bcaa719-fb49-1cc1-cff8-ba102164e4e7" testName="insertTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b8471fc-a440-4d61-af46-7919445e394d">
+    </UnitTestResult>
+    <UnitTestResult executionId="58ed5bb5-f57a-4e63-a149-e5451c795045" testId="2b05458b-2669-42a0-265b-f0a0096a393d" testName="updateTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58ed5bb5-f57a-4e63-a149-e5451c795045">
+    </UnitTestResult>
+    <UnitTestResult executionId="6713ee8e-1771-4702-8ded-8345b9c8e577" testId="f2007434-ce6d-54df-c2eb-a1ab0bc0fa04" testName="prosesCekUiConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6713ee8e-1771-4702-8ded-8345b9c8e577">
+    </UnitTestResult>
+    <UnitTestResult executionId="fd2efee9-c66d-4fd7-8314-be49ffbb2590" testId="6214e58f-9145-acdf-2369-49c797787222" testName="setujuBatalCekTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd2efee9-c66d-4fd7-8314-be49ffbb2590">
+    </UnitTestResult>
+    <UnitTestResult executionId="35961e37-735f-4b84-a501-8e622568aef3" testId="ed30a599-ad27-4551-e708-9963fda8fa65" testName="tampilkanKemajuanTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35961e37-735f-4b84-a501-8e622568aef3">
+    </UnitTestResult>
+    <UnitTestResult executionId="2c22e408-5425-4648-ac14-48f80f1c638b" testId="ab2b4e2d-0e8e-d089-6401-526ffbdc7005" testName="tampilkanKonfirmasiBatalTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c22e408-5425-4648-ac14-48f80f1c638b">
+    </UnitTestResult>
+    <UnitTestResult executionId="1b81618c-579f-4037-b5ab-635420f8353d" testId="3dd04a9a-5865-58e9-cd0f-6276d39b40f2" testName="tampilkanKonfirmasiBatalCekTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b81618c-579f-4037-b5ab-635420f8353d">
+    </UnitTestResult>
+    <UnitTestResult executionId="1c134aae-bbf8-436f-a16d-5592d23790c4" testId="646eff43-91cf-e8c8-52fb-f9c5ad11e7f2" testName="tekanBatalTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c134aae-bbf8-436f-a16d-5592d23790c4">
+    </UnitTestResult>
+    <UnitTestResult executionId="e01345cf-8969-42f3-ace4-373554dd167b" testId="029ed198-0a15-2932-de69-c14e0a743bbe" testName="prosesCekUiConstructorTest1" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e01345cf-8969-42f3-ace4-373554dd167b">
+    </UnitTestResult>
+    <UnitTestResult executionId="3ea4277f-e79c-4a22-811e-4ce4a8653036" testId="2a3b770d-9df8-f0e4-4e3d-d4895d035b91" testName="setujuBatalCekTest1" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ea4277f-e79c-4a22-811e-4ce4a8653036">
+    </UnitTestResult>
+    <UnitTestResult executionId="e3079684-6191-45fb-988a-b77b39b6effc" testId="eade35ce-1d0d-3ccd-56d1-ce7a9a79260e" testName="tampilkanKemajuanTest1" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3079684-6191-45fb-988a-b77b39b6effc">
+    </UnitTestResult>
+    <UnitTestResult executionId="8491bf84-5b5d-4ad2-a615-d0bc91a5cbd5" testId="75bd2c86-7df5-af67-d323-d4e68456f7d6" testName="tampilkanKonfirmasiBatalTest1" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8491bf84-5b5d-4ad2-a615-d0bc91a5cbd5">
+    </UnitTestResult>
+    <UnitTestResult executionId="e7aae7aa-7b4e-43e5-8d42-81ba0771efa2" testId="d006c7c5-6a8c-0048-fecf-45dd47684e33" testName="tampilkanKonfirmasiBatalCekTest1" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7aae7aa-7b4e-43e5-8d42-81ba0771efa2">
+    </UnitTestResult>
+    <UnitTestResult executionId="0d2f357f-eaf1-4c6e-89f0-878b1a9a7681" testId="d3240ef7-eafd-c143-6c04-416ff28a9f99" testName="tekanBatalTest1" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d2f357f-eaf1-4c6e-89f0-878b1a9a7681">
+    </UnitTestResult>
+    <UnitTestResult executionId="40d7ff7e-bfc1-44ab-902f-181f4c0ebb7b" testId="f7b316c3-6ca9-cb65-3b0b-d56276d7bb99" testName="hasilCekDokumenUiConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40d7ff7e-bfc1-44ab-902f-181f4c0ebb7b">
+    </UnitTestResult>
+    <UnitTestResult executionId="577a3792-a781-48bf-87bc-2cf3166bd337" testId="e3f6b427-c2b5-581d-7a03-7e51570a39c8" testName="tampilkanHasilTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="577a3792-a781-48bf-87bc-2cf3166bd337">
+    </UnitTestResult>
+    <UnitTestResult executionId="013916a2-8f73-4447-96df-53bd3b6141f1" testId="65d0434f-f0a5-99d5-e83c-4d1cfb69a9a9" testName="PenjelajahDirektoriUiConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="013916a2-8f73-4447-96df-53bd3b6141f1">
+    </UnitTestResult>
+    <UnitTestResult executionId="8e760556-b30c-4c9b-a7f0-a9f5dbd1ca42" testId="cd5f66a4-1649-71a8-b970-8c5a4bee2167" testName="pilihDokumenTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e760556-b30c-4c9b-a7f0-a9f5dbd1ca42">
+    </UnitTestResult>
+    <UnitTestResult executionId="caa8b887-bbf3-439c-9d9b-f9d01319bf37" testId="8f16abe5-f34d-1113-b553-619f972f23f8" testName="tampilkanDirektoriTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caa8b887-bbf3-439c-9d9b-f9d01319bf37">
+    </UnitTestResult>
+    <UnitTestResult executionId="e555ac27-9d75-4c5e-9336-6365f1bef096" testId="fa9e1b31-365f-f67e-ab00-96e063b8c7c2" testName="formCekUIConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e555ac27-9d75-4c5e-9336-6365f1bef096">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a8acff8-1851-4ae8-9755-c3f3f9f13a9d" testId="fc2d59e7-2976-02db-413a-2cdba087f6d2" testName="pilihModeFileTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a8acff8-1851-4ae8-9755-c3f3f9f13a9d">
+    </UnitTestResult>
+    <UnitTestResult executionId="8fefc05a-4a41-46dd-827f-01569c747a46" testId="62c1693d-bab3-3882-cb61-aae989bfe7d6" testName="pilihModeTeksTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fefc05a-4a41-46dd-827f-01569c747a46">
+    </UnitTestResult>
+    <UnitTestResult executionId="154779c9-e411-40ce-b0cf-c55f2547b411" testId="670b3134-0340-dc18-729c-7ad8c4da9d0a" testName="tekanTombolCekTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="154779c9-e411-40ce-b0cf-c55f2547b411">
+    </UnitTestResult>
+    <UnitTestResult executionId="92ceb7a0-0ddc-44d9-b825-76824b7703fd" testId="db46635a-c39c-bd8d-b0b6-a0672a310324" testName="menuUtamaUIConstructorTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92ceb7a0-0ddc-44d9-b825-76824b7703fd">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba97c8de-afb8-4f90-8eed-37f976ca3401" testId="ee2d4e2e-8c2c-c2a8-9060-2fd4da3dca4c" testName="pilihCekDokumenTest" computerName="TIANCOMP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba97c8de-afb8-4f90-8eed-37f976ca3401">
+    </UnitTestResult>
+  </Results>
+</TestRun>

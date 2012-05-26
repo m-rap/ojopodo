@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1bd91833-776e-4095-a81d-51c84ef9ee04" name="chrisna@TIANCOMP 2012-05-25 15:28:09" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-25 15_28_09">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-25T15:28:09.2027032+07:00" queuing="2012-05-25T15:28:09.2497059+07:00" start="2012-05-25T15:28:09.2657068+07:00" finish="2012-05-25T15:28:09.5517232+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" error="0" failed="5" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="rollHashRightTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="d0be2a1b-146a-63d1-0134-b0aaacded6df">
+      <Execution id="10765401-a868-417b-a3e1-26159b867822" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="rollHashRightTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getFingerprintTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="69773ab7-eeed-a849-da98-e2f091e54fb2">
+      <Execution id="2a8b6720-8a8a-4ca3-857e-7df3e8dc0634" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getFingerprintTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="WinnowingConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="64ad4b4e-ba6f-e06b-11be-8345bb24fabf">
+      <Execution id="27ac93fd-9f17-4ac6-a1e4-9aee0f06ce95" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WinnowingConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="primeRollingHashTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="f827ecbb-9b3f-3337-ba7b-52af22e53528">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="ff1a6fa9-05fd-4512-af6c-103867c79b97" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="primeRollingHashTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="setHashTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="0df9a5a7-4d10-427d-900c-76cba404630d">
+      <DeploymentItems>
+        <DeploymentItem filename="mppl.dll" />
+      </DeploymentItems>
+      <Execution id="dd4d3981-d0ea-4182-8925-4bc70f074a21" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.WinnowingTest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setHashTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0df9a5a7-4d10-427d-900c-76cba404630d" executionId="dd4d3981-d0ea-4182-8925-4bc70f074a21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64ad4b4e-ba6f-e06b-11be-8345bb24fabf" executionId="27ac93fd-9f17-4ac6-a1e4-9aee0f06ce95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69773ab7-eeed-a849-da98-e2f091e54fb2" executionId="2a8b6720-8a8a-4ca3-857e-7df3e8dc0634" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0be2a1b-146a-63d1-0134-b0aaacded6df" executionId="10765401-a868-417b-a3e1-26159b867822" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f827ecbb-9b3f-3337-ba7b-52af22e53528" executionId="ff1a6fa9-05fd-4512-af6c-103867c79b97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dd4d3981-d0ea-4182-8925-4bc70f074a21" testId="0df9a5a7-4d10-427d-900c-76cba404630d" testName="setHashTest" computerName="TIANCOMP" startTime="2012-05-25T15:28:09.3337107+07:00" endTime="2012-05-25T15:28:09.3527118+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd4d3981-d0ea-4182-8925-4bc70f074a21">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="27ac93fd-9f17-4ac6-a1e4-9aee0f06ce95" testId="64ad4b4e-ba6f-e06b-11be-8345bb24fabf" testName="WinnowingConstructorTest" computerName="TIANCOMP" startTime="2012-05-25T15:28:09.3757131+07:00" endTime="2012-05-25T15:28:09.4047148+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27ac93fd-9f17-4ac6-a1e4-9aee0f06ce95">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a8b6720-8a8a-4ca3-857e-7df3e8dc0634" testId="69773ab7-eeed-a849-da98-e2f091e54fb2" testName="getFingerprintTest" computerName="TIANCOMP" startTime="2012-05-25T15:28:09.4117152+07:00" endTime="2012-05-25T15:28:09.4687185+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a8b6720-8a8a-4ca3-857e-7df3e8dc0634">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="10765401-a868-417b-a3e1-26159b867822" testId="d0be2a1b-146a-63d1-0134-b0aaacded6df" testName="rollHashRightTest" computerName="TIANCOMP" startTime="2012-05-25T15:28:09.4727187+07:00" endTime="2012-05-25T15:28:09.5007203+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10765401-a868-417b-a3e1-26159b867822">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff1a6fa9-05fd-4512-af6c-103867c79b97" testId="f827ecbb-9b3f-3337-ba7b-52af22e53528" testName="primeRollingHashTest" computerName="TIANCOMP" startTime="2012-05-25T15:28:09.5057206+07:00" endTime="2012-05-25T15:28:09.5397225+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff1a6fa9-05fd-4512-af6c-103867c79b97">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

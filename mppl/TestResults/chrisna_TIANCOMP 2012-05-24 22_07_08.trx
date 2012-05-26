@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3626f7af-6111-407c-8c79-3b95825ae3f4" name="chrisna@TIANCOMP 2012-05-24 22:07:08" runUser="TIANCOMP\chrisna" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3df5505e-b0c9-4ce6-83fc-f06cb2fb1d4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="chrisna_TIANCOMP 2012-05-24 22_07_08">
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.xtra.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\bin\mppl.dll" />
+      <DeploymentItem filename="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl\itextsharp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-24T22:07:08.1690056+07:00" queuing="2012-05-24T22:07:38.8817622+07:00" start="2012-05-24T22:07:39.0247704+07:00" finish="2012-05-24T22:07:43.2420116+07:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="3" executed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="3" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="uploadDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="1c58633c-d189-7f46-745a-73c2bc8ac956">
+      <Execution id="9d8d839b-d91f-4a21-8add-019f09fcf2b1" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="uploadDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="tambahUIConstructorTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="380e6108-d79b-4b3b-1d75-88697b5807ae">
+      <Execution id="9c694b4f-6b33-48e7-a41b-e18eac086a9c" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tambahUIConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="isiDataDokumenTest" storage="d:\tian\kuliah\semester 6\mppl\fp\mppl\testproject2\bin\debug\testproject2.dll" id="7d0e268c-5343-fe7f-2b52-2465929a2ea0">
+      <Execution id="2e33e217-7899-481e-bdbb-7a2345186d01" />
+      <TestMethod codeBase="D:/TIAN/KULIAH/SEMESTER 6/MPPL/FP/mppl/TestProject2/bin/Debug/TestProject2.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject2.tambahUITest, TestProject2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="isiDataDokumenTest" />
+      <AspNet webSiteUrl="http://localhost:1904/">
+        <Host pathToWebApp="D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\mppl" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1c58633c-d189-7f46-745a-73c2bc8ac956" executionId="9d8d839b-d91f-4a21-8add-019f09fcf2b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="380e6108-d79b-4b3b-1d75-88697b5807ae" executionId="9c694b4f-6b33-48e7-a41b-e18eac086a9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d0e268c-5343-fe7f-2b52-2465929a2ea0" executionId="2e33e217-7899-481e-bdbb-7a2345186d01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9d8d839b-d91f-4a21-8add-019f09fcf2b1" testId="1c58633c-d189-7f46-745a-73c2bc8ac956" testName="uploadDokumenTest" computerName="TIANCOMP" duration="00:00:00.0440816" startTime="2012-05-24T22:07:39.0597724+07:00" endTime="2012-05-24T22:07:41.3229019+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d8d839b-d91f-4a21-8add-019f09fcf2b1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject2.tambahUITest.uploadDokumenTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\tambahUITest.cs:line 82
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9c694b4f-6b33-48e7-a41b-e18eac086a9c" testId="380e6108-d79b-4b3b-1d75-88697b5807ae" testName="tambahUIConstructorTest" computerName="TIANCOMP" duration="00:00:00.1170218" startTime="2012-05-24T22:07:41.3399028+07:00" endTime="2012-05-24T22:07:43.0670016+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c694b4f-6b33-48e7-a41b-e18eac086a9c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at TestProject2.tambahUITest.tambahUIConstructorTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\tambahUITest.cs:line 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2e33e217-7899-481e-bdbb-7a2345186d01" testId="7d0e268c-5343-fe7f-2b52-2465929a2ea0" testName="isiDataDokumenTest" computerName="TIANCOMP" duration="00:00:00.0015607" startTime="2012-05-24T22:07:43.0710019+07:00" endTime="2012-05-24T22:07:43.2070096+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e33e217-7899-481e-bdbb-7a2345186d01">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject2.tambahUITest.isiDataDokumenTest() in D:\TIAN\KULIAH\SEMESTER 6\MPPL\FP\mppl\TestProject2\tambahUITest.cs:line 115
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
