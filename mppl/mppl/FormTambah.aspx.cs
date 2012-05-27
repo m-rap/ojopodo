@@ -27,10 +27,12 @@ namespace mppl
             {
                 try
                 {
+                    //tipe file yang dapat diupload adalah pdf,doc, dan docx
                     if (FileUploadControl.PostedFile.ContentType == "application/pdf" ||
                     FileUploadControl.PostedFile.ContentType == "application/msword" ||
                     FileUploadControl.PostedFile.ContentType == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
                     {
+                        //ukuran file maksimal adalah 4MB
                         if (FileUploadControl.PostedFile.ContentLength < 4096000)
                         {
                             string filename = Path.GetFileName(FileUploadControl.FileName);
@@ -49,10 +51,12 @@ namespace mppl
                     StatusLabel.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
                 }
             }
-            string pdfcontent = "";
+            string pdfTextContent = "";
+            //mengambil teks dalam pdf
             for (int i = 1; i <= reader.NumberOfPages; i++)
-                pdfcontent += PdfTextExtractor.GetTextFromPage(reader, i);
-            List<int> finger = Winnowing.getFingerprint(pdfcontent);
+                pdfTextContent += PdfTextExtractor.GetTextFromPage(reader, i);
+            //mengambil fingerprint dari file
+            List<int> fingerPrint = Winnowing.getFingerprint(pdfTextContent);
             StatusLabel.Visible = true;
         }
     }

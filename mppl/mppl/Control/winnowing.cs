@@ -60,15 +60,15 @@ namespace mppl.Control
         {
             Regex regexp = new Regex("[^a-zA-Z0-9]");
             input = regexp.Replace(input, "");
-            int prime = primeRollingHash(input.Trim(), 0, 4);
+            int prime = primeRollingHash(input.Trim(), 0, 64);
             string tempString;
-            tempString = input.Substring(1, 5);
+            tempString = input.Substring(1, 65);
             for (int i = 1; tempString != null; i++)
             {
-                prime = rollHashRight(prime, input, i - 1, i + 4);
+                prime = rollHashRight(prime, input, i - 1, i + 64);
                 hash.Add(prime);
-                if (i + 5 < input.Length)
-                    tempString = input.Substring(i + 1, 5);
+                if (i + 65 < input.Length)
+                    tempString = input.Substring(i + 1, 65);
                 else
                     tempString = null;
             }

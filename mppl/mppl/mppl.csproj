@@ -66,6 +66,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="FormDokumen.aspx" />
+    <Content Include="FormTambah.aspx" />
     <Content Include="images\ITS ECO CAMPUS trans.png" />
     <Content Include="images\Logo AREK-ITS trans.png" />
     <Content Include="images\Logo ITS Biru kecil.png" />
@@ -122,13 +123,6 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlCek.cs" />
-    <Compile Include="Control\controlTambah.cs" />
-    <Compile Include="Control\formCekUI.cs" />
-    <Compile Include="Control\hasilCekDokumenUi.cs" />
-    <Compile Include="Control\menuUtamaUI.cs" />
-    <Compile Include="Control\PenjelajahDirektoriUi.cs" />
-    <Compile Include="Control\prosesCekUi.cs" />
-    <Compile Include="Control\tambahUI.cs" />
     <Compile Include="Control\Winnowing.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -144,6 +138,13 @@
     </Compile>
     <Compile Include="FormDokumen.aspx.designer.cs">
       <DependentUpon>FormDokumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambah.aspx.cs">
+      <DependentUpon>FormTambah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormTambah.aspx.designer.cs">
+      <DependentUpon>FormTambah.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
