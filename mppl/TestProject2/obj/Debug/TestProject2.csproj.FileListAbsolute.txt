@@ -20,3 +20,5 @@ C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\TestProject2\b
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\TestProject2\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\TestProject2\obj\Debug\TestProject2.dll
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\TestProject2\obj\Debug\TestProject2.pdb
+D:\mppl fp\mppl\TestProject2\obj\Debug\ResolveAssemblyReference.cache
+D:\mppl fp\mppl\TestProject2\obj\Debug\TestProject2.dll

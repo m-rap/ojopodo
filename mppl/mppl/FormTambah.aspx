@@ -12,7 +12,7 @@
     
         <asp:FileUpload ID="FileUploadControl" runat="server" />
         <br />
-        <asp:Button ID="UploadBtn" runat="server" onclick="Upload" Text="Button" />
+        <asp:Button ID="UploadBtn" runat="server" onclick="UploadClick" Text="Button" />
         <br />
         <asp:Label ID="StatusLabel" runat="server" Text="Label" Visible="False"></asp:Label>
     
