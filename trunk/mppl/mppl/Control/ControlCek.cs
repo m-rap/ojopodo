@@ -19,7 +19,7 @@ namespace mppl.Control
         {
             finger = new List<int>();
         }
-        public bool upload(FileUpload input,string path)
+        public bool upload(FileUpload input)
         {
                 try
                 {

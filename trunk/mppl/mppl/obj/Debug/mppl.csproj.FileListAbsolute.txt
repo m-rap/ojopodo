@@ -5,3 +5,10 @@ F:\Semester 6\MPPL B\svn project\mppl\mppl\bin\itextsharp.dll
 F:\Semester 6\MPPL B\svn project\mppl\mppl\bin\itextsharp.xtra.dll
 F:\Semester 6\MPPL B\svn project\mppl\mppl\obj\Debug\mppl.dll
 F:\Semester 6\MPPL B\svn project\mppl\mppl\obj\Debug\mppl.pdb
+D:\mppl fp\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
+D:\mppl fp\mppl\mppl\obj\Debug\mppl.dll
+D:\mppl fp\mppl\mppl\bin\mppl.dll
+D:\mppl fp\mppl\mppl\bin\mppl.pdb
+D:\mppl fp\mppl\mppl\bin\itextsharp.dll
+D:\mppl fp\mppl\mppl\bin\itextsharp.xtra.dll
+D:\mppl fp\mppl\mppl\obj\Debug\mppl.pdb
