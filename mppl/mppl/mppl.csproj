@@ -67,6 +67,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="FormDokumen.aspx" />
     <Content Include="FormTambah.aspx" />
+    <Content Include="HasilCekDokumenUI.aspx" />
     <Content Include="images\ITS ECO CAMPUS trans.png" />
     <Content Include="images\Logo AREK-ITS trans.png" />
     <Content Include="images\Logo ITS Biru kecil.png" />
@@ -153,6 +154,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HasilCekDokumenUI.aspx.cs">
+      <DependentUpon>HasilCekDokumenUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HasilCekDokumenUI.aspx.designer.cs">
+      <DependentUpon>HasilCekDokumenUI.aspx</DependentUpon>
     </Compile>
     <Compile Include="mppl\formCekUI.aspx.cs">
       <DependentUpon>formCekUI.aspx</DependentUpon>
