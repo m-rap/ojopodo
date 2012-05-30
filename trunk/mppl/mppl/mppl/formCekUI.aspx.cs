@@ -61,7 +61,7 @@ namespace mppl.mppl
         }
         protected void periksa(object sender, EventArgs e)
         {
-            controlC.upload(upl_file, Server.MapPath("~/") + Path.GetFileName(upl_file.FileName));
+            controlC.upload(upl_file);
             /*
                 if (upl_file.HasFile)
                 {
