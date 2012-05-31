@@ -8,6 +8,7 @@ using System.IO;
 using iTextSharp.text.pdf.parser;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
+using mppl.Entitas;
 
 namespace mppl.Control
 {
@@ -27,12 +28,31 @@ namespace mppl.Control
                     {
                         if (input.PostedFile.ContentLength < 4096000)
                         {
+                            Dictionary<dokumen,double> hasil;//berisi dokumen dokumen yang mirip
+                            hasil = new Dictionary<dokumen, double>();
                            // String filename = Path.GetFileName(input.FileName);
                             Stream coba = input.FileContent;
                             if(input.PostedFile.ContentType=="application/pdf")
                                 ekstrakPdf(coba);
                             finger = Winnowing.getFingerprint(teks);
                             finger.Sort();
+                            //queri fingerprint dari db
+                            ModelDokumen dokumens = new ModelDokumen();
+                            List<dokumen> db = dokumens.get().ToList<dokumen>();
+                            //panggil fungsi cekKemiripan dengan parameter list fingerprint dari file yang diupload sama yang didb
+                            foreach (var i in db)
+                            {
+                                string[] read = File.ReadAllLines(i.alamat_fingerprint);
+                                List<int> fingerprintdb = Array.ConvertAll<string,int>(read,new Converter<string,int>(Convert.ToInt32)).ToList<int>();
+                                var result = cekKemiripan(finger, fingerprintdb);
+                                if ( result > 0.5)
+                                {
+                                    //hasil fungsi masukan ke list
+                                    hasil[i] = result;
+                                }
+                            }
+                            //sorting list trus kembalikan List tersebut sebagai return value
+                            
                             return true;
                         }
                         else
@@ -61,11 +81,12 @@ namespace mppl.Control
         {
             finger = Winnowing.getFingerprint(input);
         }
-        //menghitung koefisien jaccard (similaritas antar fingerprint)
-        double cekJaccard(List<int> input, List<int> db)
+        //cek kemiriman antar 2 dokumen
+        double cekKemiripan(List<int> input, List<int> db)
         {
-            double counterIntersect = 0; 
+            double counterIntersect = 0;
             //int counterUnion = 0;
+
             foreach (var i in input)
             {
                 foreach (var j in db)
@@ -75,13 +96,11 @@ namespace mppl.Control
                         counterIntersect++;
                         break;
                     }
-                    else if (i > j)
-                    {
+                    if (j > i)
                         break;
-                    }
                 }
             }
-            return counterIntersect/(double)input.Count;
+            return counterIntersect / input.Count;
         }
     }
 }
