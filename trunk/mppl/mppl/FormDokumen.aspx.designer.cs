@@ -13,48 +13,30 @@ namespace mppl {
     public partial class FormDokumen {
         
         /// <summary>
-        /// GridView_Dokumen control.
+        /// FileUploadControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView_Dokumen;
+        protected global::System.Web.UI.WebControls.FileUpload FileUploadControl;
         
         /// <summary>
-        /// TextBox_Judul control.
+        /// UploadBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Judul;
+        protected global::System.Web.UI.WebControls.Button UploadBtn;
         
         /// <summary>
-        /// TextBox_Pengarang control.
+        /// StatusLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Pengarang;
-        
-        /// <summary>
-        /// TextBox_AlamatFingerprint control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_AlamatFingerprint;
-        
-        /// <summary>
-        /// Button_Submit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Submit;
+        protected global::System.Web.UI.WebControls.Label StatusLabel;
     }
 }
