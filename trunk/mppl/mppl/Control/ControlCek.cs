@@ -10,6 +10,9 @@ using iTextSharp.text.pdf;
 using iTextSharp.text;
 using mppl.Entitas;
 using Microsoft.Office.Interop.Word;
+using System.Security;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace mppl.Control
 {
@@ -17,61 +20,92 @@ namespace mppl.Control
     {
         List<int> finger;
         String teks;
+        
         public ControlCek()
         {
             finger = new List<int>();
         }
-        public bool upload(FileUpload input)
+
+        public bool upload(FileUpload input, string judul, string pengarang)
         {
-                try
+            if (cek(input))
+            {
+                ModelDokumen dokumens = new ModelDokumen();
+                //generate filepath
+                MD5 md5 = MD5.Create();
+                byte[] dataNamaFile = md5.ComputeHash(Encoding.UTF8.GetBytes(judul));
+                StringBuilder sbNamaFile = new StringBuilder();
+                for (int i = 0; i < dataNamaFile.Length; i++)
                 {
-                    if (input.PostedFile.ContentType == "application/msword" || input.PostedFile.ContentType == "application/pdf")
+                    sbNamaFile.Append(dataNamaFile[i].ToString("x2"));
+                }
+                string namafile = sbNamaFile.ToString();
+                string direktoriProject = "~/";
+                string direktoriUpload = "fingerprint_dokumen/";
+
+                //proses menulis ke file mulai dari sini (buat San)
+                //
+                //berakhir di sini
+
+                //insert dokumen ke database
+                dokumens.insert(judul, pengarang, namafile);
+                return true;
+            }
+            return false;
+        }
+
+        public bool cek(FileUpload input)
+        {
+            try
+            {
+                if (input.PostedFile.ContentType == "application/msword" || input.PostedFile.ContentType == "application/pdf")
+                {
+                    if (input.PostedFile.ContentLength < 4096000)
                     {
-                        if (input.PostedFile.ContentLength < 4096000)
+                        Dictionary<dokumen, double> hasil;//berisi dokumen dokumen yang mirip
+                        hasil = new Dictionary<dokumen, double>();
+                        // String filename = Path.GetFileName(input.FileName);
+                        Stream coba = input.FileContent;
+                        if (input.PostedFile.ContentType == "application/pdf")
+                            ekstrakPdf(coba);
+                        finger = Winnowing.getFingerprint(teks);
+                        finger.Sort();
+                        //queri fingerprint dari db
+                        ModelDokumen dokumens = new ModelDokumen();
+                        List<dokumen> db = dokumens.get().ToList<dokumen>();
+                        //panggil fungsi cekKemiripan dengan parameter list fingerprint dari file yang diupload sama yang didb
+                        foreach (var i in db)
                         {
-                            Dictionary<dokumen,double> hasil;//berisi dokumen dokumen yang mirip
-                            hasil = new Dictionary<dokumen, double>();
-                           // String filename = Path.GetFileName(input.FileName);
-                            Stream coba = input.FileContent;
-                            if(input.PostedFile.ContentType=="application/pdf")
-                                ekstrakPdf(coba);
-                            finger = Winnowing.getFingerprint(teks);
-                            finger.Sort();
-                            //queri fingerprint dari db
-                            ModelDokumen dokumens = new ModelDokumen();
-                            List<dokumen> db = dokumens.get().ToList<dokumen>();
-                            //panggil fungsi cekKemiripan dengan parameter list fingerprint dari file yang diupload sama yang didb
-                            foreach (var i in db)
+                            string[] read = File.ReadAllLines(i.alamat_fingerprint);
+                            List<int> fingerprintdb = Array.ConvertAll<string, int>(read, new Converter<string, int>(Convert.ToInt32)).ToList<int>();
+                            var result = cekKemiripan(finger, fingerprintdb);
+                            if (result > 0.5)
                             {
-                                string[] read = File.ReadAllLines(i.alamat_fingerprint);
-                                List<int> fingerprintdb = Array.ConvertAll<string,int>(read,new Converter<string,int>(Convert.ToInt32)).ToList<int>();
-                                var result = cekKemiripan(finger, fingerprintdb);
-                                if ( result > 0.5)
-                                {
-                                    //hasil fungsi masukan ke list
-                                    hasil[i] = result;
-                                }
+                                //hasil fungsi masukan ke list
+                                hasil[i] = result;
                             }
-                            //sorting list trus kembalikan List tersebut sebagai return value
-                            
-                            return true;
                         }
-                        else
-                        {
-                            return false;
-                        }
+
+                        //sorting list trus kembalikan List tersebut sebagai return value
+                        return true;
                     }
                     else
                     {
                         return false;
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    Console.WriteLine("file gagal diupload karena : " + ex);
                     return false;
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("file gagal diupload karena : " + ex);
+                return false;
+            }
         }
+        
         void ekstrakPdf(Stream path)
         {
             PdfReader reader = new PdfReader(path);
