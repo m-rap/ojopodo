@@ -2,8 +2,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:FileUpload ID="FileUploadControl" runat="server" />
-    <br />
+    <table>
+        <tr>
+            <td>Judul:</td>
+            <td><asp:TextBox ID="TextBox_Judul" runat="server"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Pengarang:</td>
+            <td><asp:TextBox ID="TextBox_Pengarang" runat="server"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Dokumen:</td>
+            <td><asp:FileUpload ID="FileUploadControl" runat="server" /></td>
+        </tr>
+    </table>
     <asp:Button ID="UploadBtn" runat="server" onclick="UploadClick" Text="Button" />
     <br />
     <asp:Label ID="StatusLabel" runat="server" Text="Label" Visible="False"></asp:Label>
