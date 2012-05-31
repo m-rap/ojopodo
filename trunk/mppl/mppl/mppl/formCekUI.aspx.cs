@@ -61,7 +61,7 @@ namespace mppl.mppl
         }
         protected void periksa(object sender, EventArgs e)
         {
-            controlC.upload(upl_file);
+            controlC.cek(upl_file);
             /*
                 if (upl_file.HasFile)
                 {
