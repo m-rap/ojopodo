@@ -16,12 +16,5 @@ namespace mppl
             GridView_Dokumen.DataSource = modelDokumen.get();
             GridView_Dokumen.DataBind();
         }
-
-        protected void Button_Submit_Click(object sender, EventArgs e)
-        {
-            ModelDokumen modelDokumen = new ModelDokumen();
-            modelDokumen.insert(TextBox_Judul.Text, TextBox_Pengarang.Text, TextBox_AlamatFingerprint.Text);
-            Response.Redirect(Request.RawUrl); 
-        }
     }
 }

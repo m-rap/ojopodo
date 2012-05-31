@@ -65,7 +65,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="FormDokumen.aspx" />
+    <Content Include="LihatDokumen.aspx" />
     <Content Include="FormTambah.aspx" />
     <Content Include="HasilCekDokumenUI.aspx" />
     <Content Include="images\ITS ECO CAMPUS trans.png" />
@@ -133,12 +133,12 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entitas\ModelDokumen.cs" />
-    <Compile Include="FormDokumen.aspx.cs">
-      <DependentUpon>FormDokumen.aspx</DependentUpon>
+    <Compile Include="LihatDokumen.aspx.cs">
+      <DependentUpon>LihatDokumen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FormDokumen.aspx.designer.cs">
-      <DependentUpon>FormDokumen.aspx</DependentUpon>
+    <Compile Include="LihatDokumen.aspx.designer.cs">
+      <DependentUpon>LihatDokumen.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormTambah.aspx.cs">
       <DependentUpon>FormTambah.aspx</DependentUpon>
@@ -180,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="fingerprint_dokumen\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
