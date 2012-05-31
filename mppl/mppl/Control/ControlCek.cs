@@ -9,6 +9,7 @@ using iTextSharp.text.pdf.parser;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using mppl.Entitas;
+using Microsoft.Office.Interop.Word;
 
 namespace mppl.Control
 {
@@ -76,6 +77,31 @@ namespace mppl.Control
             PdfReader reader = new PdfReader(path);
             for (int i = 1; i <= reader.NumberOfPages; i++)
                 teks += PdfTextExtractor.GetTextFromPage(reader, i);
+        }
+        void ekstrakDoc(string filepath)
+        {
+            try
+            {
+                object fileName = filepath;
+
+                Microsoft.Office.Interop.Word.Application appClass = new Microsoft.Office.Interop.Word.Application();
+                object missing = System.Reflection.Missing.Value;
+                object visible = true;
+                object readOnly = false;
+
+                Microsoft.Office.Interop.Word.Document wordDoc = appClass.Documents.Open(ref fileName, ref missing, ref readOnly,
+                    ref missing, ref missing, ref missing, ref missing,
+                    ref missing, ref missing, ref missing,
+                    visible, ref missing, ref missing, ref missing, ref missing);
+
+                teks = wordDoc.Content.Text;
+
+                appClass.Application.Quit(ref missing, ref missing, ref missing);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ekstrak word gagal karena : " + ex);
+            }
         }
         void createFingerPrint(string input)
         {
