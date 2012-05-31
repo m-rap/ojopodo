@@ -13,30 +13,48 @@ namespace mppl {
     public partial class FormDokumen {
         
         /// <summary>
-        /// FileUploadControl control.
+        /// GridView_Dokumen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUploadControl;
+        protected global::System.Web.UI.WebControls.GridView GridView_Dokumen;
         
         /// <summary>
-        /// UploadBtn control.
+        /// TextBox_Judul control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UploadBtn;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Judul;
         
         /// <summary>
-        /// StatusLabel control.
+        /// TextBox_Pengarang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label StatusLabel;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Pengarang;
+        
+        /// <summary>
+        /// TextBox_AlamatFingerprint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_AlamatFingerprint;
+        
+        /// <summary>
+        /// Button_Submit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Submit;
     }
 }
