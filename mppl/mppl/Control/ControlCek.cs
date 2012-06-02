@@ -45,6 +45,8 @@ namespace mppl.Control
 
                 //proses menulis ke file mulai dari sini (buat San)
                 //
+                //*fullpath nya pake direktoriProject+direktoriUpload+namafile
+                //
                 //berakhir di sini
 
                 //insert dokumen ke database
