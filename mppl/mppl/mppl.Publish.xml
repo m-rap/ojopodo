@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="C:\inetpub\wwwroot\ojopodo" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="bin/mppl.pdb" publishTime="06/02/2012 21:50:44" />
+    <file relUrl="bin/mppl.pdb" publishTime="06/02/2012 21:52:28" />
     <file relUrl="images/Logo.png" publishTime="05/26/2012 12:50:57" />
     <file relUrl="LihatDokumen.aspx" publishTime="05/31/2012 12:18:52" />
     <file relUrl="Global.asax" publishTime="05/26/2012 12:51:45" />
@@ -23,9 +23,9 @@
     <file relUrl="bin/itextsharp.xtra.dll" publishTime="05/26/2012 12:51:28" />
     <file relUrl="images/ITS ECO CAMPUS trans.png" publishTime="05/26/2012 12:50:57" />
     <file relUrl="Account/ChangePassword.aspx" publishTime="05/26/2012 12:50:56" />
-    <file relUrl="Web.config" publishTime="06/02/2012 21:50:50" />
+    <file relUrl="Web.config" publishTime="06/02/2012 21:52:33" />
     <file relUrl="Styles/Site.css" publishTime="05/26/2012 12:51:28" />
-    <file relUrl="bin/mppl.dll" publishTime="06/02/2012 21:50:44" />
+    <file relUrl="bin/mppl.dll" publishTime="06/02/2012 21:52:28" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="05/26/2012 12:51:29" />
   </publishProfile>
 </publishData>
