@@ -28,7 +28,7 @@ namespace mppl.Control
 
         public bool upload(FileUpload input, string judul, string pengarang)
         {
-            if (cek(input))
+            if (cek(input) != null)
             {
                 ModelDokumen dokumens = new ModelDokumen();
                 //generate filepath
