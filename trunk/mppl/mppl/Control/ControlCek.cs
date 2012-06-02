@@ -56,7 +56,7 @@ namespace mppl.Control
             return false;
         }
 
-        public bool cek(FileUpload input)
+        public Dictionary<dokumen,double> cek(FileUpload input)
         {
             try
             {
@@ -89,22 +89,23 @@ namespace mppl.Control
                         }
 
                         //sorting list trus kembalikan List tersebut sebagai return value
-                        return true;
+                        //bagian e george
+                        return hasil;
                     }
                     else
                     {
-                        return false;
+                        return null;
                     }
                 }
                 else
                 {
-                    return false;
+                    return null;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("file gagal diupload karena : " + ex);
-                return false;
+                return null;
             }
         }
         
