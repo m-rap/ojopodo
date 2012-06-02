@@ -62,35 +62,7 @@ namespace mppl.mppl
         protected void periksa(object sender, EventArgs e)
         {
             controlC.cek(upl_file);
-            /*
-                if (upl_file.HasFile)
-                {
-                    try
-                    {
-                        if (upl_file.PostedFile.ContentType == "application/msword" || upl_file.PostedFile.ContentType == "application/pdf")
-                        {
-                            if (upl_file.PostedFile.ContentLength < 4096000)
-                            {
-                                String filename = Path.GetFileName(upl_file.FileName);
-                                upl_file.SaveAs(Server.MapPath("~/") + filename);
-                                MessageBox.Show("upload file berhasil");
-                            }
-                            else
-                            {
-                                MessageBox.Show("File tidak boleh melebihi 4000 kb!");
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("File yang diperbolehkan hanya .doc dan .pdf");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("file gagal diupload karena : " + ex);
-                    }
-                }
-            */
+           
         }
     }
 }
