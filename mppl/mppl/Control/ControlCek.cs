@@ -43,9 +43,18 @@ namespace mppl.Control
                 string direktoriProject = "~/";
                 string direktoriUpload = "fingerprint_dokumen/";
 
+                
                 //proses menulis ke file mulai dari sini (buat San)
                 //
                 //*fullpath nya pake direktoriProject+direktoriUpload+namafile
+
+                ControlCek tulisCek = new ControlCek();
+                System.IO.File.WriteAllLines(/*@"direktoriProject"*/, tulisCek);
+                System.IO.File.WriteAllLines(/*@"fingerprint_dokumen"*/, tulisCek);
+
+
+
+
                 //
                 //berakhir di sini
 
