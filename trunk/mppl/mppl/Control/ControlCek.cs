@@ -56,7 +56,7 @@ namespace mppl.Control
             return false;
         }
 
-        public Dictionary<dokumen,double> cek(FileUpload input)
+        public SortedDictionary<dokumen,double> cek(FileUpload input)
         {
             try
             {
@@ -64,8 +64,8 @@ namespace mppl.Control
                 {
                     if (input.PostedFile.ContentLength < 4096000)
                     {
-                        Dictionary<dokumen, double> hasil;//berisi dokumen dokumen yang mirip
-                        hasil = new Dictionary<dokumen, double>();
+                        SortedDictionary<dokumen, double> hasil;//berisi dokumen dokumen yang mirip
+                        hasil = new SortedDictionary<dokumen, double>();
                         // String filename = Path.GetFileName(input.FileName);
                         Stream coba = input.FileContent;
                         if (input.PostedFile.ContentType == "application/pdf")
@@ -89,7 +89,7 @@ namespace mppl.Control
                         }
 
                         //sorting list trus kembalikan List tersebut sebagai return value
-                        //bagian e george
+                        
                         return hasil;
                     }
                     else
