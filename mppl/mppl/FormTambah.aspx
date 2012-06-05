@@ -18,5 +18,6 @@
     </table>
     <asp:Button ID="UploadBtn" runat="server" onclick="UploadClick" Text="Button" />
     <br />
+    <asp:LinkButton ID="KembaliLinkButton" runat="server" PostBackUrl="~/LihatDokumen.aspx">Kembali</asp:LinkButton>
     <asp:Label ID="StatusLabel" runat="server" Text="Label" Visible="False"></asp:Label>
 </asp:Content>

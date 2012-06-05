@@ -22,7 +22,7 @@ namespace mppl
 
         protected void UploadClick(object sender, EventArgs e)
         {
-            ControlCek myControlCek = new ControlCek();
+            ControlCek myControlCek = new ControlCek(Server);
             if (FileUploadControl.HasFile)
             {
 
