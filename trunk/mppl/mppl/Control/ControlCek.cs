@@ -20,12 +20,17 @@ namespace mppl.Control
     {
         List<int> finger;
         String teks;
-        string direktoriProject = "C:\\inetpub\\wwwroot\\ojopodo\\";
-        string direktoriUpload = "fingerprint_dokumen\\";
+        HttpServerUtility server;
         
         public ControlCek()
         {
             finger = new List<int>();
+        }
+
+        public ControlCek(HttpServerUtility server)
+        {
+            finger = new List<int>();
+            this.server = server;
         }
 
         public bool upload(FileUpload input, string judul, string pengarang)
@@ -42,8 +47,8 @@ namespace mppl.Control
                     sbNamaFile.Append(dataNamaFile[i].ToString("x2"));
                 }
                 string namafile = sbNamaFile.ToString();
-                
-                string fullpath = direktoriProject+direktoriUpload+namafile;
+
+                string fullpath = server.MapPath("~/fingerprint_dokumen/" + namafile);
                 
                 //proses menulis ke file mulai dari sini (buat San)
                 //
@@ -53,10 +58,11 @@ namespace mppl.Control
                 //System.IO.File.WriteAllLines(/*@"direktoriProject"*/, tulisCek);
                 //System.IO.File.WriteAllLines(/*@"fingerprint_dokumen"*/, tulisCek);
 
-                if (!System.IO.File.Exists(fullpath))
+                if (!System.IO.File.Exists(@fullpath))
                 {
-                    System.IO.FileStream fs = System.IO.File.Create(fullpath);
-                    using (System.IO.StreamWriter sw = new System.IO.StreamWriter(fullpath))
+                    System.IO.FileStream fs = System.IO.File.Create(@fullpath);
+                    fs.Close();
+                    using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@fullpath, true))
                     {
                         for (int i = 0; i < finger.Count; i++)
                         {
@@ -98,7 +104,7 @@ namespace mppl.Control
                         //panggil fungsi cekKemiripan dengan parameter list fingerprint dari file yang diupload sama yang didb
                         foreach (var i in db)
                         {
-                            string[] read = File.ReadAllLines(direktoriProject + direktoriUpload + i.alamat_fingerprint);
+                            string[] read = File.ReadAllLines(server.MapPath("~/fingerprint_dokumen/" + i.alamat_fingerprint));
                             List<int> fingerprintdb = Array.ConvertAll<string, int>(read, new Converter<string, int>(Convert.ToInt32)).ToList<int>();
                             var result = cekKemiripan(finger, fingerprintdb);
                             if (result > 0.5)

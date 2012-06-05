@@ -17,7 +17,7 @@ namespace mppl.mppl
         {
             Panel2.Visible = false;
             Panel1.Visible = true;
-            controlC = new ControlCek();
+            controlC = new ControlCek(Server);
         }
 
         /*protected void rdo_modeUpload_CheckedChanged(object sender, EventArgs e)
