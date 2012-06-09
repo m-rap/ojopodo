@@ -1,144 +1,79 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="mppl.SiteMaster" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head runat="server">
-    <title></title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>OjoPodo</title>    
+    <meta name="keywords" content="Ojo Podo, sistem cek plagiarisme, deteksi plagiarisme, anti contek" />
+    <meta name="description" content="Website untuk mengecek tingkat kemiripan dokumen dalam lingkup ITS" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        /* DEFAULTS
-        ----------------------------------------------------------*/
-        body   
-        {
-            background: #FFFFFF;
-            font-size: 1em;
-            font-family: Microsoft Sans Serif;
-            margin: 0px;
-            padding: 0px;
-            color: #000000;
-        }
-
-        a:link, a:visited
-        {
-            color: #034af3;
-        }
-
-        a:hover
-        {
-            color: #1d60ff;
-            text-decoration: none;
-        }
-
-        a:active
-        {
-            color: #034af3;
-        }
-
-        p
-        {
-            margin-bottom: 10px;
-            line-height: 1em;
-            margin-left: 40px;
-        }
-
-
-        /* HEADINGS   
-        ----------------------------------------------------------*/
-
-        h1, h2, h3, h4, h5, h6
-        {
-            font-size: 1.5em;
-            font-variant: small-caps;
-            text-transform: none;
-            font-weight: 200;
-            margin-bottom: 0px;
-        }
-
-        h1
-        {
-            font-size: 1.6em;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-        }
-
-        h2
-        {
-            font-size: 1.5em;
-            font-weight: 600;
-        }
-
-        h3
-        {
-            font-size: 1.2em;
-        }
-
-        h4
-        {
-            font-size: 1.1em;
-        }
-
-        h5, h6
-        {
-            font-size: 1em;
-        }
-/* DIVS   
-        ----------------------------------------------------------*/
-        #main-wrapper{margin-left: auto; margin-right: auto; left: 0; right: 0; width:1000px;background:#ffffff;
-                      padding:0px 0 0px 0;margin-top:20px; margin-bottom:50px;text-align:left; border: 1px solid #999; }
-        
-        #header-wrapper{text-align:left;margin: 0 auto; width:1000px; height:200px;}
-        #header{height:70px; background-color:#2c96d2; width:750px;float:right;margin:10px 0 0 0;padding:75px 0 75px 10px;
-                /*-moz-border-radius: 15px;border-radius: 15px;}*/
-                }
-        #header-image{height:200px; background-color:#ffffff; width:150px;float:left;margin:30px 0 0 80px;} 
-
-        #center-wrapper{position:relative;width:990px;margin-top:50px;clear:both;padding: 0 0 150px 0;
-            top: 0px;
-            left: -1px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 0;
-        }
-        #ctr-content{width:990px; min-height: 500px;background:White;padding:10px 5px 150px 0;}
-        
-        #footer-wrapper{position:relative;margin: 0 auto; width:1000px;clear: both;margin-top:50px;text-align:center;
-                        background-color:#272727; height:120px;padding-top:50px; color:#b8b8b8;}
-        #footer-image{float:right;margin: 0 30px 30px 0;}
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="main-wrapper">
-        <div id="header-wrapper">
-            <div id="header-image"> 
-                <a href="Default.aspx"><img src="images/Logo.png" width="143px" height="200px"/></a>
-            </div>
-            <div id="header">
-                <h1>Ojo Podo</h1>
-            </div>  
+    
+    <div id="title_bar_wrapper">
+	<div id="title_bar">
+      	<div id="site_title">
+            <h1><a href="http://www.ojoPodo.com" target="_parent">
+                	<img src="images/logo.png" alt="OjoPodo" />
+                <span>sistem cek plagiarisme</span>
+            </a></h1>
         </div>
-        
-        <div id="center-wrapper">
-            <div id="ctr-content">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-                </asp:ContentPlaceHolder>
-            </div>
-        </div>
+    </div> <!-- end of title_bar -->
+    </div> <!-- end of title_bar_wrapper -->
 
-        <div id="footer-wrapper">
-            <div id="footer-image">
-                <img src="/images/Logo ITS Biru kecil.png" width="140px" height="80px"/>
-                <img src="/images/ITS ECO CAMPUS trans.png" width="120px" height="80px"/>
-                <img src="/images/Logo AREK-ITS trans.png" width="110px" height="70px"/>
-            </div>
-            OjoPodo &copy; Tim Simple Jurusan Teknik Informatika
-                         <br />Institut Teknologi Sepuluh Nopember Surabaya
-        </div>
-        
+    <div id="banner_wrapper">
+    <div id="banner">
+    	<div id="banner_content">
+            <h2>Sistem Cek Plagiarisme</h2>
+            <p>Mengecek kemiripan dokumen .doc, .docx
+				dan .pdf dengan cepat dan akurat!</p>
+            <div class="button"><a href="#">Mulai Cek</a></div>
+		</div>
+        <div class="banner_image"></div>
+    </div> <!-- end of banner -->
+    </div> <!-- end of banner_wrapper -->
+
+    <div id="menu_wrapper">
+	<div id="menu">
+        <ul>
+            <li><a href="#" class="current"><span></span>Home</a></li>
+            <li><a href="http://www.templatemo.com" target="_parent"><span></span>About</a></li>
+            <li><a href="http://www.flashmo.com" target="_parent"><span></span>Mulai Cek</a></li>
+            <li><a href="http://www.koflash.com" target="_parent"><span></span>Menu4</a></li>
+            <li><a href="http://www.templatemo.com/page/1" target="_parent" class="last"><span></span>Contact</a></li>
+        </ul>    
+    </div> <!-- end of menu -->
+    </div> <!-- end of menu_wrapper -->
+
+    <div id="main_content">
+        <!-- CONTENT GOES HERE -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
     </div>
+
+    <div id="content_bottom"></div>
+
+    <div id="footer">
+        <ul class="footer_menu">
+			<li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mulai Cek</a></li>
+            <li><a href="#">Menu4</a></li>
+            <li class="last_menu"><a href="#">Contact</a></li>
+        </ul>    
+        OjoPodo © 2012 Tim Simple Jurusan Teknik Informatika
+                <br />Institut Teknologi Sepuluh Nopember Surabaya
+    </div> <!-- end of footer -->
+
     </form>
 </body>
 </html>
