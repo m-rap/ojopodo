@@ -1,0 +1,192 @@
+﻿using mppl.Entitas;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
+using System.Data.EntityClient;
+using System.Data.Objects;
+
+namespace OjopodoTestProject
+{
+    
+    
+    /// <summary>
+    ///This is a test class for ojopodoEntitiesTest and is intended
+    ///to contain all ojopodoEntitiesTest Unit Tests
+    ///</summary>
+    [TestClass()]
+    public class ojopodoEntitiesTest
+    {
+
+
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+        #region Additional test attributes
+        // 
+        //You can use the following additional attributes as you write your tests:
+        //
+        //Use ClassInitialize to run code before running the first test in the class
+        //[ClassInitialize()]
+        //public static void MyClassInitialize(TestContext testContext)
+        //{
+        //}
+        //
+        //Use ClassCleanup to run code after all tests in a class have run
+        //[ClassCleanup()]
+        //public static void MyClassCleanup()
+        //{
+        //}
+        //
+        //Use TestInitialize to run code before running each test
+        //[TestInitialize()]
+        //public void MyTestInitialize()
+        //{
+        //}
+        //
+        //Use TestCleanup to run code after each test has run
+        //[TestCleanup()]
+        //public void MyTestCleanup()
+        //{
+        //}
+        //
+        #endregion
+
+
+        /// <summary>
+        ///A test for ojopodoEntities Constructor
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void ojopodoEntitiesConstructorTest()
+        {
+            EntityConnection connection = null; // TODO: Initialize to an appropriate value
+            ojopodoEntities target = new ojopodoEntities(connection);
+            Assert.Inconclusive("TODO: Implement code to verify target");
+        }
+
+        /// <summary>
+        ///A test for ojopodoEntities Constructor
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void ojopodoEntitiesConstructorTest1()
+        {
+            string connectionString = string.Empty; // TODO: Initialize to an appropriate value
+            ojopodoEntities target = new ojopodoEntities(connectionString);
+            Assert.Inconclusive("TODO: Implement code to verify target");
+        }
+
+        /// <summary>
+        ///A test for ojopodoEntities Constructor
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void ojopodoEntitiesConstructorTest2()
+        {
+            ojopodoEntities target = new ojopodoEntities();
+            Assert.Inconclusive("TODO: Implement code to verify target");
+        }
+
+        /// <summary>
+        ///A test for AddTodokumen
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void AddTodokumenTest()
+        {
+            ojopodoEntities target = new ojopodoEntities(); // TODO: Initialize to an appropriate value
+            dokumen dokumen = null; // TODO: Initialize to an appropriate value
+            target.AddTodokumen(dokumen);
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+
+        /// <summary>
+        ///A test for AddTouser
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void AddTouserTest()
+        {
+            ojopodoEntities target = new ojopodoEntities(); // TODO: Initialize to an appropriate value
+            user user = null; // TODO: Initialize to an appropriate value
+            target.AddTouser(user);
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+
+        /// <summary>
+        ///A test for dokumen
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void dokumenTest()
+        {
+            ojopodoEntities target = new ojopodoEntities(); // TODO: Initialize to an appropriate value
+            ObjectSet<dokumen> actual;
+            actual = target.dokumen;
+            Assert.Inconclusive("Verify the correctness of this test method.");
+        }
+
+        /// <summary>
+        ///A test for user
+        ///</summary>
+        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
+        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
+        // whether you are testing a page, web service, or a WCF service.
+        [TestMethod()]
+        [HostType("ASP.NET")]
+        [AspNetDevelopmentServerHost("C:\\Users\\Admin\\Documents\\Visual Studio 2010\\Projects\\OjoPodo\\mppl\\mppl", "/")]
+        [UrlToTest("http://localhost:1904/")]
+        public void userTest()
+        {
+            ojopodoEntities target = new ojopodoEntities(); // TODO: Initialize to an appropriate value
+            ObjectSet<user> actual;
+            actual = target.user;
+            Assert.Inconclusive("Verify the correctness of this test method.");
+        }
+    }
+}

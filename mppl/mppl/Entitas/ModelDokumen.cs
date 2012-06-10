@@ -14,13 +14,14 @@ namespace mppl.Entitas
             context = new ojopodoEntities();
         }
 
-        public void insert(string judul, string pengarang, string alamat_fingerprint)
+        public void insert(string judul, string pengarang, string alamat_fingerprint, string url_dokumen)
         {
             dokumen dokumenBaru = new dokumen
             {
                 judul = judul,
                 pengarang = pengarang,
-                alamat_fingerprint = alamat_fingerprint
+                alamat_fingerprint = alamat_fingerprint,
+                url_dokumen = url_dokumen
             };
             context.dokumen.AddObject(dokumenBaru);
             context.SaveChanges();

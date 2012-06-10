@@ -246,6 +246,30 @@ namespace mppl.Entitas
         private global::System.String _alamat_fingerprint;
         partial void Onalamat_fingerprintChanging(global::System.String value);
         partial void Onalamat_fingerprintChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String url_dokumen
+        {
+            get
+            {
+                return _url_dokumen;
+            }
+            set
+            {
+                Onurl_dokumenChanging(value);
+                ReportPropertyChanging("url_dokumen");
+                _url_dokumen = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("url_dokumen");
+                Onurl_dokumenChanged();
+            }
+        }
+        private global::System.String _url_dokumen;
+        partial void Onurl_dokumenChanging(global::System.String value);
+        partial void Onurl_dokumenChanged();
 
         #endregion
     

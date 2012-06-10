@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ojopodoModelStoreContainer" CdmEntityContainer="ojopodoEntities">
+    <EntitySetMapping Name="dokumen">
+      <EntityTypeMapping TypeName="ojopodoModel.dokumen">
+        <MappingFragment StoreEntitySet="dokumen">
+          <ScalarProperty Name="url_dokumen" ColumnName="url_dokumen" />
+          <ScalarProperty Name="id_dokumen" ColumnName="id_dokumen" />
+          <ScalarProperty Name="judul" ColumnName="judul" />
+          <ScalarProperty Name="pengarang" ColumnName="pengarang" />
+          <ScalarProperty Name="alamat_fingerprint" ColumnName="alamat_fingerprint" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="ojopodoModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="namauser" ColumnName="namauser" />
+          <ScalarProperty Name="katasandi" ColumnName="katasandi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

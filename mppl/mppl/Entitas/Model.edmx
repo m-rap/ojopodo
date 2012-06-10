@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ojopodoModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+    <Schema Namespace="ojopodoModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="ojopodoModelStoreContainer">
           <EntitySet Name="dokumen" EntityType="ojopodoModel.Store.dokumen" store:Type="Tables" Schema="ojopodo" />
           <EntitySet Name="user" EntityType="ojopodoModel.Store.user" store:Type="Tables" Schema="ojopodo" />
@@ -16,6 +16,7 @@
           <Property Name="id_dokumen" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="judul" Type="varchar" MaxLength="200" />
           <Property Name="pengarang" Type="varchar" MaxLength="200" />
+          <Property Name="url_dokumen" Type="varchar" MaxLength="100" />
           <Property Name="alamat_fingerprint" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="user">
@@ -26,8 +27,7 @@
           <Property Name="namauser" Type="varchar" MaxLength="50" />
           <Property Name="katasandi" Type="varchar" MaxLength="64" />
         </EntityType>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ojopodoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -43,6 +43,7 @@
           <Property Name="judul" Type="String" />
           <Property Name="pengarang" Type="String" />
           <Property Name="alamat_fingerprint" Type="String" />
+          <Property Type="String" Name="url_dokumen" />
         </EntityType>
         <EntityType Name="user">
           <Key>
@@ -59,7 +60,8 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="ojopodoModelStoreContainer" CdmEntityContainer="ojopodoEntities">
           <EntitySetMapping Name="dokumen"><EntityTypeMapping TypeName="ojopodoModel.dokumen"><MappingFragment StoreEntitySet="dokumen">
-            <ScalarProperty Name="id_dokumen" ColumnName="id_dokumen" />
+            <ScalarProperty Name="url_dokumen" ColumnName="url_dokumen" />
+                <ScalarProperty Name="id_dokumen" ColumnName="id_dokumen" />
             <ScalarProperty Name="judul" ColumnName="judul" />
             <ScalarProperty Name="pengarang" ColumnName="pengarang" />
             <ScalarProperty Name="alamat_fingerprint" ColumnName="alamat_fingerprint" />
