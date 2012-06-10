@@ -33,7 +33,7 @@ namespace mppl.Control
             this.server = server;
         }
 
-        public bool upload(FileUpload input, string judul, string pengarang)
+        public bool upload(FileUpload input, string judul, string pengarang, string url_dokumen)
         {
             if (cek(input) != null)
             {
@@ -76,7 +76,7 @@ namespace mppl.Control
                 //berakhir di sini
 
                 //insert dokumen ke database
-                dokumens.insert(judul, pengarang, namafile);
+                dokumens.insert(judul, pengarang, namafile, url_dokumen);
                 return true;
             }
             return false;

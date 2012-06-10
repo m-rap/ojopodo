@@ -12,6 +12,10 @@
             <td><asp:TextBox ID="TextBox_Pengarang" runat="server"></asp:TextBox></td>
         </tr>
         <tr>
+            <td>URL Asal Dokumen:</td>
+            <td><asp:TextBox ID="TextBox_UrlDokumen" runat="server"></asp:TextBox></td>
+        </tr>
+        <tr>
             <td>Dokumen:</td>
             <td><asp:FileUpload ID="FileUploadControl" runat="server" /></td>
         </tr>

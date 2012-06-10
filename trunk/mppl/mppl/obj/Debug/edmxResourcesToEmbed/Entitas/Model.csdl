@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ojopodoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ojopodoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dokumen" EntityType="ojopodoModel.dokumen" />
+    <EntitySet Name="user" EntityType="ojopodoModel.user" />
+  </EntityContainer>
+  <EntityType Name="dokumen">
+    <Key>
+      <PropertyRef Name="id_dokumen" />
+    </Key>
+    <Property Name="id_dokumen" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="judul" Type="String" />
+    <Property Name="pengarang" Type="String" />
+    <Property Name="alamat_fingerprint" Type="String" />
+    <Property Type="String" Name="url_dokumen" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id_user" />
+    </Key>
+    <Property Name="id_user" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namauser" Type="String" />
+    <Property Name="katasandi" Type="String" />
+  </EntityType>
+</Schema>

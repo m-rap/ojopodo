@@ -26,7 +26,7 @@ namespace mppl
             if (FileUploadControl.HasFile)
             {
 
-                if (myControlCek.upload(FileUploadControl, TextBox_Judul.Text, TextBox_Pengarang.Text))
+                if (myControlCek.upload(FileUploadControl, TextBox_Judul.Text, TextBox_Pengarang.Text, TextBox_UrlDokumen.Text))
                 {
                     StatusLabel.Text = "Upload Sukses";
                 }
