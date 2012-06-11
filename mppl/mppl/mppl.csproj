@@ -77,8 +77,9 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="FormEditDokumen.aspx" />
     <Content Include="LihatDokumen.aspx" />
-    <Content Include="FormTambah.aspx" />
+    <Content Include="FormTambahDokumen.aspx" />
     <Content Include="HasilCekDokumenUI.aspx" />
     <Content Include="images\ITS ECO CAMPUS trans.png" />
     <Content Include="images\Logo AREK-ITS trans.png" />
@@ -150,6 +151,13 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entitas\ModelDokumen.cs" />
+    <Compile Include="FormEditDokumen.aspx.cs">
+      <DependentUpon>FormEditDokumen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormEditDokumen.aspx.designer.cs">
+      <DependentUpon>FormEditDokumen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LihatDokumen.aspx.cs">
       <DependentUpon>LihatDokumen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,12 +165,12 @@
     <Compile Include="LihatDokumen.aspx.designer.cs">
       <DependentUpon>LihatDokumen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FormTambah.aspx.cs">
-      <DependentUpon>FormTambah.aspx</DependentUpon>
+    <Compile Include="FormTambahDokumen.aspx.cs">
+      <DependentUpon>FormTambahDokumen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FormTambah.aspx.designer.cs">
-      <DependentUpon>FormTambah.aspx</DependentUpon>
+    <Compile Include="FormTambahDokumen.aspx.designer.cs">
+      <DependentUpon>FormTambahDokumen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -223,9 +231,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -42,7 +42,7 @@ namespace mppl.Entitas
             return results.First<dokumen>();
         }
 
-        public void update(long id, string judul, string pengarang, string alamat_fingerprint)
+        public void update(long id, string judul, string pengarang, string url_dokumen)
         {
             IEnumerable<dokumen> results = from e in context.dokumen
                                           where e.id_dokumen == id
@@ -51,7 +51,7 @@ namespace mppl.Entitas
             {
                 item.judul = judul;
                 item.pengarang = pengarang;
-                item.alamat_fingerprint = alamat_fingerprint;
+                item.url_dokumen = url_dokumen;
             }
             context.SaveChanges();
         }

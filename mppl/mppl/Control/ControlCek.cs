@@ -35,49 +35,66 @@ namespace mppl.Control
 
         public bool upload(FileUpload input, string judul, string pengarang, string url_dokumen)
         {
-            if (cek(input) != null)
+            try
             {
-                ModelDokumen dokumens = new ModelDokumen();
-                //generate filepath
-                MD5 md5 = MD5.Create();
-                byte[] dataNamaFile = md5.ComputeHash(Encoding.UTF8.GetBytes(judul));
-                StringBuilder sbNamaFile = new StringBuilder();
-                for (int i = 0; i < dataNamaFile.Length; i++)
+                if (input.PostedFile.ContentType == "application/msword" || input.PostedFile.ContentType == "application/pdf")
                 {
-                    sbNamaFile.Append(dataNamaFile[i].ToString("x2"));
-                }
-                string namafile = sbNamaFile.ToString();
-
-                string fullpath = server.MapPath("~/fingerprint_dokumen/" + namafile);
-                
-                //proses menulis ke file mulai dari sini (buat San)
-                //
-                //*fullpath nya pake direktoriProject+direktoriUpload+namafile
-
-                //ControlCek tulisCek = new ControlCek();
-                //System.IO.File.WriteAllLines(/*@"direktoriProject"*/, tulisCek);
-                //System.IO.File.WriteAllLines(/*@"fingerprint_dokumen"*/, tulisCek);
-
-                if (!System.IO.File.Exists(@fullpath))
-                {
-                    System.IO.FileStream fs = System.IO.File.Create(@fullpath);
-                    fs.Close();
-                    using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@fullpath, true))
+                    if (input.PostedFile.ContentLength < 10240000)
                     {
-                        for (int i = 0; i < finger.Count; i++)
+                        Stream coba = input.FileContent;
+                        if (input.PostedFile.ContentType == "application/pdf")
+                            ekstrakPdf(coba);
+                        finger = Winnowing.getFingerprint(teks);
+                        finger.Sort();
+
+                        ModelDokumen dokumens = new ModelDokumen();
+                        //generate filepath
+                        MD5 md5 = MD5.Create();
+                        byte[] dataNamaFile = md5.ComputeHash(Encoding.UTF8.GetBytes(judul));
+                        StringBuilder sbNamaFile = new StringBuilder();
+                        for (int i = 0; i < dataNamaFile.Length; i++)
                         {
-                            sw.WriteLine(finger[i]);
+                            sbNamaFile.Append(dataNamaFile[i].ToString("x2"));
                         }
+                        string namafile = sbNamaFile.ToString();
+
+                        string fullpath = server.MapPath("~/fingerprint_dokumen/" + namafile);
+
+                        //proses menulis ke file mulai dari sini (buat San)
+                        //
+                        //*fullpath nya pake direktoriProject+direktoriUpload+namafile
+
+                        //ControlCek tulisCek = new ControlCek();
+                        //System.IO.File.WriteAllLines(/*@"direktoriProject"*/, tulisCek);
+                        //System.IO.File.WriteAllLines(/*@"fingerprint_dokumen"*/, tulisCek);
+
+                        if (!System.IO.File.Exists(@fullpath))
+                        {
+                            System.IO.FileStream fs = System.IO.File.Create(@fullpath);
+                            fs.Close();
+                            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@fullpath, true))
+                            {
+                                for (int i = 0; i < finger.Count; i++)
+                                {
+                                    sw.WriteLine(finger[i]);
+                                }
+                            }
+                        }
+                        //edited by rian
+
+                        //
+                        //berakhir di sini
+
+                        //insert dokumen ke database
+                        dokumens.insert(judul, pengarang, namafile, url_dokumen);
+                        return true;
                     }
                 }
-                //edited by rian
-
-                //
-                //berakhir di sini
-
-                //insert dokumen ke database
-                dokumens.insert(judul, pengarang, namafile, url_dokumen);
-                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("file gagal diupload karena : " + ex);
+                return false;
             }
             return false;
         }

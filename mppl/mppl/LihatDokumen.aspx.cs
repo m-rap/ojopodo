@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using mppl.Entitas;
+using System.Data;
 
 namespace mppl
 {
@@ -13,8 +14,39 @@ namespace mppl
         protected void Page_Load(object sender, EventArgs e)
         {
             ModelDokumen modelDokumen = new ModelDokumen();
-            GridView_Dokumen.DataSource = modelDokumen.get();
+            DataTable tabeldokumen = new DataTable();
+            IEnumerable<dokumen> dok = modelDokumen.get();
+
+            tabeldokumen.Columns.Add(new DataColumn("ID Dokumen"));
+            tabeldokumen.Columns.Add(new DataColumn("Judul Dokumen"));
+            tabeldokumen.Columns.Add(new DataColumn("Pengarang"));
+            tabeldokumen.Columns.Add(new DataColumn("URL Asal Dokumen"));
+            tabeldokumen.Columns.Add(new DataColumn("Alamat File Fingerprint"));
+
+            foreach (dokumen d in dok)
+            {
+                DataRow r = tabeldokumen.NewRow();
+                r["ID Dokumen"] = d.id_dokumen;
+                r["Judul Dokumen"] = d.judul;
+                r["Pengarang"] = d.pengarang;
+                r["URL Asal Dokumen"] = d.url_dokumen;
+                r["Alamat File Fingerprint"] = d.alamat_fingerprint;
+                tabeldokumen.Rows.Add(r);
+            }
+            GridView_Dokumen.DataSource = tabeldokumen;
             GridView_Dokumen.DataBind();
+        }
+
+        protected void GridView_Dokumen_RowDataBound(Object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                HyperLink editlink = (HyperLink)e.Row.FindControl("link_edit");
+                HyperLink deletelink = (HyperLink)e.Row.FindControl("link_hapus");
+                DataRowView row = (DataRowView)e.Row.DataItem;
+                editlink.NavigateUrl = "FormEditDokumen.aspx?id=" + row["ID Dokumen"];
+                deletelink.NavigateUrl = "#";//"HapusDokumen.aspx?id=" + row["ID Dokumen"];
+            }
         }
     }
 }
