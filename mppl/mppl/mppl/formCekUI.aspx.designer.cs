@@ -58,13 +58,13 @@ namespace mppl.mppl {
         protected global::System.Web.UI.WebControls.Label lbl_namaPengarang;
         
         /// <summary>
-        /// TextBox1 control.
+        /// textBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox textBox1;
         
         /// <summary>
         /// lbl_pilihMode control.
@@ -103,13 +103,13 @@ namespace mppl.mppl {
         protected global::System.Web.UI.WebControls.Label lbl_text;
         
         /// <summary>
-        /// uploadText control.
+        /// uploadtext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uploadText;
+        protected global::System.Web.UI.WebControls.TextBox uploadtext;
         
         /// <summary>
         /// Panel2 control.
