@@ -30,16 +30,16 @@ namespace mppl.mppl
         }*/
         protected void upload(object sender, EventArgs e)
         {
-            rdo_modeTeks.Checked = false;
-            Label1.Text = "upload";
+            //rdo_modeTeks.Checked = false;
+            //Label1.Text = "upload";
             Panel2.Visible = true;
             Panel1.Visible = false;
             check = true;
         }
         protected void teks(object sender, EventArgs e)
         {
-            rdo_modeUpload.Checked = false;
-            Label1.Text = "tekse";
+            /*rdo_modeUpload.Checked = false;
+            Label1.Text = "tekse";*/
             Panel1.Visible = true;
             Panel2.Visible = false;
             check = false;
@@ -61,8 +61,14 @@ namespace mppl.mppl
         }
         protected void periksa(object sender, EventArgs e)
         {
-            controlC.cek(upl_file);
-           
+            judulText.Text = txt_judulDokumen.Text;
+            grv_hasil.DataSource = controlC.cek(upl_file);
+            grv_hasil.DataBind();
+            progres_ModalPopup.Show();
+        }
+
+        protected void next_Click(object sender, EventArgs e)
+        {
         }
     }
 }
