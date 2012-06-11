@@ -8,8 +8,9 @@ using System.IO;
 using iTextSharp.text.pdf.parser;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
+using System.Text;
+using Bytescout.Document;
 using mppl.Entitas;
-using Microsoft.Office.Interop.Word;
 using System.Security;
 using System.Security.Cryptography;
 using System.Text;
@@ -158,29 +159,23 @@ namespace mppl.Control
             for (int i = 1; i <= reader.NumberOfPages; i++)
                 teks += PdfTextExtractor.GetTextFromPage(reader, i);
         }
-        void ekstrakDoc(string filepath)
+        void ekstrakDoc(Stream path)
         {
-            try
+            using (Bytescout.Document.Document doc = new Bytescout.Document.Document())
             {
-                object fileName = filepath;
+                doc.Open(path);
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < doc.ParagraphCount; i++)
+                {
+                    Bytescout.Document.Paragraph p = doc.GetParagraph(i);
+                    if (p != null)
+                    {
+                        sb.Append(p.ToString());
+                        sb.AppendLine();
+                    }
+                }
 
-                Microsoft.Office.Interop.Word.Application appClass = new Microsoft.Office.Interop.Word.Application();
-                object missing = System.Reflection.Missing.Value;
-                object visible = true;
-                object readOnly = false;
-
-                Microsoft.Office.Interop.Word.Document wordDoc = appClass.Documents.Open(ref fileName, ref missing, ref readOnly,
-                    ref missing, ref missing, ref missing, ref missing,
-                    ref missing, ref missing, ref missing,
-                    visible, ref missing, ref missing, ref missing, ref missing);
-
-                teks = wordDoc.Content.Text;
-
-                appClass.Application.Quit(ref missing, ref missing, ref missing);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("ekstrak word gagal karena : " + ex);
+                teks = sb.ToString();
             }
         }
         void createFingerPrint(string input)
