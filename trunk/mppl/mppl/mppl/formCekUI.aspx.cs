@@ -61,8 +61,12 @@ namespace mppl.mppl
         }
         protected void periksa(object sender, EventArgs e)
         {
+            SortedDictionary<string, double> tesVar = new SortedDictionary<string, double>();
             judulText.Text = txt_judulDokumen.Text;
-            grv_hasil.DataSource = controlC.cek(upl_file);
+            tesVar.Add("a", 5);
+            tesVar.Add("b", 3);
+            tesVar.Add("c", 6);
+            grv_hasil.DataSource = controlC.cek(upl_file).OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
             grv_hasil.DataBind();
             progres_ModalPopup.Show();
         }
