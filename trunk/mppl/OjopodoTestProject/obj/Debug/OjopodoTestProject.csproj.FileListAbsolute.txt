@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\OjopodoTestProject.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\OjopodoTestProject.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\itextsharp.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\itextsharp.xtra.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\mppl.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\mppl.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\mppl_Accessor.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\bin\Debug\mppl_Accessor.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\obj\Debug\OjopodoTestProject.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjopodoTestProject\obj\Debug\OjopodoTestProject.pdb
