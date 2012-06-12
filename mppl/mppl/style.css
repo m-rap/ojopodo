@@ -242,7 +242,7 @@ h3 {
 
 /* content */
 
-#content {
+#main_content {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0px 25px;	
@@ -259,7 +259,7 @@ h3 {
 	background: url(images/content_bottom.jpg) no-repeat center top;
 }
 
-#content p {
+#main_content p {
 	margin-bottom: 10px;
 }
 
