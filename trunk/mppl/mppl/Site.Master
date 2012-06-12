@@ -11,7 +11,7 @@
     <meta name="keywords" content="Ojo Podo, sistem cek plagiarisme, deteksi plagiarisme, anti contek" />
     <meta name="description" content="Website untuk mengecek tingkat kemiripan dokumen dalam lingkup ITS" />
 
-    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -23,7 +23,7 @@
 	<div id="title_bar">
       	<div id="site_title">
             <h1><a href="http://www.ojoPodo.com" target="_parent">
-                	<img src="images/logo.png" alt="OjoPodo" />
+                	<img src="images/Logo.png" alt="OjoPodo" />
                 <span>sistem cek plagiarisme</span>
             </a></h1>
         </div>
