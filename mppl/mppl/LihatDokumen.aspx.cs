@@ -48,5 +48,11 @@ namespace mppl
                 deletelink.NavigateUrl = "#";//"HapusDokumen.aspx?id=" + row["ID Dokumen"];
             }
         }
+
+        protected void GridView_Dokumen_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView_Dokumen.PageIndex = e.NewPageIndex;
+            GridView_Dokumen.DataBind();
+        }
     }
 }

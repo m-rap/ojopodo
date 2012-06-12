@@ -108,7 +108,6 @@
     <Content Include="images\Logo.png" />
     <Content Include="mppl\formCekUI.aspx" />
     <Content Include="style.css" />
-    <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
