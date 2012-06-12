@@ -13,7 +13,7 @@
             </asp:TemplateField>
         </Columns>
     </asp:GridView>
-    <asp:LinkButton ID="LinkButton_TambahDokumen" runat="server" 
-        PostBackUrl="~/FormTambahDokumen.aspx">Tambah Dokumen</asp:LinkButton>
+    <asp:HyperLink ID="link_TambahDokumen" runat="server" 
+        NavigateUrl="~/FormTambahDokumen.aspx">Tambah Dokumen</asp:HyperLink>
 </asp:Content>
 

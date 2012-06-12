@@ -1,11 +1,3 @@
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\mppl.dll
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\mppl.pdb
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\itextsharp.dll
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\itextsharp.xtra.dll
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\mppl.csproj.ResolveComReference.cache
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\mppl.dll
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\mppl.pdb
 D:\6 MPPL\SVN\mppl\mppl\bin\mppl.dll
 D:\6 MPPL\SVN\mppl\mppl\bin\mppl.pdb
 D:\6 MPPL\SVN\mppl\mppl\bin\Bytescout.Document.dll
@@ -15,3 +7,11 @@ D:\6 MPPL\SVN\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
 D:\6 MPPL\SVN\mppl\mppl\obj\Debug\mppl.csproj.ResolveComReference.cache
 D:\6 MPPL\SVN\mppl\mppl\obj\Debug\mppl.dll
 D:\6 MPPL\SVN\mppl\mppl\obj\Debug\mppl.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\mppl.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\mppl.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\itextsharp.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\bin\itextsharp.xtra.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\mppl.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\mppl.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\mppl\obj\Debug\mppl.pdb

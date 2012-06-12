@@ -45,14 +45,16 @@
     <div id="menu_wrapper">
 	<div id="menu">
         <ul>
-            <li><a href="#" class="current"><span></span>Home</a></li>
-            <li><a href="http://www.templatemo.com" target="_parent"><span></span>About</a></li>
-            <li>
-                <asp:LinkButton ID="DokumenLink" runat="server" 
-                    PostBackUrl="~/LihatDokumen.aspx"><span></span>Dokumen</asp:LinkButton>
-            </li>
-            <li><a href="http://www.flashmo.com" target="_parent"><span></span>Mulai Cek</a></li>
-            <li><a href="http://www.templatemo.com/page/1" target="_parent" class="last"><span></span>Contact</a></li>
+            <li><asp:HyperLink ID="link_Home" runat="server" 
+                    NavigateUrl="~/Default.aspx"><span></span>Home</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_About" runat="server" 
+                    NavigateUrl="~/About.aspx"><span></span>About</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_Dokumen" runat="server" 
+                    NavigateUrl="~/LihatDokumen.aspx"><span></span>Dokumen</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_Cek" runat="server" 
+                    NavigateUrl="#"><span></span>Mulai Cek</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_Contact" runat="server" 
+                    NavigateUrl="#"><span></span>Contact</asp:HyperLink></li>
         </ul>    
     </div> <!-- end of menu -->
     </div> <!-- end of menu_wrapper -->

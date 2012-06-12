@@ -11,7 +11,7 @@
     <meta name="keywords" content="Ojo Podo, sistem cek plagiarisme, deteksi plagiarisme, anti contek" />
     <meta name="description" content="Website untuk mengecek tingkat kemiripan dokumen dalam lingkup ITS" />
 
-    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -23,7 +23,7 @@
 	<div id="title_bar">
       	<div id="site_title">
             <h1><a href="http://www.ojoPodo.com" target="_parent">
-                	<img src="images/logo.png" alt="OjoPodo" />
+                	<img src="images/Logo.png" alt="OjoPodo" />
                 <span>sistem cek plagiarisme</span>
             </a></h1>
         </div>
@@ -45,15 +45,16 @@
     <div id="menu_wrapper">
 	<div id="menu">
         <ul>
-            <li><a href="#" class="current"><span></span>Home</a></li>
-            <li><a href="http://www.templatemo.com" target="_parent"><span></span>About</a></li>
-            <li>
-                <asp:LinkButton ID="DokumenLink" runat="server" 
-                    PostBackUrl="~/LihatDokumen.aspx">Dokumen</asp:LinkButton>
-            </li>
-            <li><a href="http://www.flashmo.com" target="_parent"><span></span>Mulai Cek</a></li>
-            <li><a href="http://www.koflash.com" target="_parent"><span></span>Menu4</a></li>
-            <li><a href="http://www.templatemo.com/page/1" target="_parent" class="last"><span></span>Contact</a></li>
+            <li><asp:HyperLink ID="link_Home" runat="server" 
+                    NavigateUrl="~/Default.aspx"><span></span>Home</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_About" runat="server" 
+                    NavigateUrl="~/About.aspx"><span></span>About</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_Dokumen" runat="server" 
+                    NavigateUrl="~/LihatDokumen.aspx"><span></span>Dokumen</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_Cek" runat="server" 
+                    NavigateUrl="#"><span></span>Mulai Cek</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_Contact" runat="server" 
+                    NavigateUrl="#"><span></span>Contact</asp:HyperLink></li>
         </ul>    
     </div> <!-- end of menu -->
     </div> <!-- end of menu_wrapper -->
