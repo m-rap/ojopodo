@@ -52,7 +52,6 @@
                     PostBackUrl="~/LihatDokumen.aspx">Dokumen</asp:LinkButton>
             </li>
             <li><a href="http://www.flashmo.com" target="_parent"><span></span>Mulai Cek</a></li>
-            <li><a href="http://www.koflash.com" target="_parent"><span></span>Menu4</a></li>
             <li><a href="http://www.templatemo.com/page/1" target="_parent" class="last"><span></span>Contact</a></li>
         </ul>    
     </div> <!-- end of menu -->
