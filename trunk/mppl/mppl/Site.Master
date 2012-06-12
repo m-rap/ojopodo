@@ -49,7 +49,7 @@
             <li><a href="http://www.templatemo.com" target="_parent"><span></span>About</a></li>
             <li>
                 <asp:LinkButton ID="DokumenLink" runat="server" 
-                    PostBackUrl="~/LihatDokumen.aspx">Dokumen</asp:LinkButton>
+                    PostBackUrl="~/LihatDokumen.aspx"><span></span>Dokumen</asp:LinkButton>
             </li>
             <li><a href="http://www.flashmo.com" target="_parent"><span></span>Mulai Cek</a></li>
             <li><a href="http://www.templatemo.com/page/1" target="_parent" class="last"><span></span>Contact</a></li>
