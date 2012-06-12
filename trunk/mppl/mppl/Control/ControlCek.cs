@@ -9,7 +9,7 @@ using iTextSharp.text.pdf.parser;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.Text;
-using Bytescout.Document;
+//using Bytescout.Document;
 using mppl.Entitas;
 using System.Security;
 using System.Security.Cryptography;
@@ -161,22 +161,22 @@ namespace mppl.Control
         }
         void ekstrakDoc(Stream path)
         {
-            using (Bytescout.Document.Document doc = new Bytescout.Document.Document())
-            {
-                doc.Open(path);
-                StringBuilder sb = new StringBuilder();
-                for (int i = 0; i < doc.ParagraphCount; i++)
-                {
-                    Bytescout.Document.Paragraph p = doc.GetParagraph(i);
-                    if (p != null)
-                    {
-                        sb.Append(p.ToString());
-                        sb.AppendLine();
-                    }
-                }
+            //using (Bytescout.Document.Document doc = new Bytescout.Document.Document())
+            //{
+            //    doc.Open(path);
+            //    StringBuilder sb = new StringBuilder();
+            //    for (int i = 0; i < doc.ParagraphCount; i++)
+            //    {
+            //        Bytescout.Document.Paragraph p = doc.GetParagraph(i);
+            //        if (p != null)
+            //        {
+            //            sb.Append(p.ToString());
+            //            sb.AppendLine();
+            //        }
+            //    }
 
-                teks = sb.ToString();
-            }
+            //    teks = sb.ToString();
+            //}
         }
         void createFingerPrint(string input)
         {
