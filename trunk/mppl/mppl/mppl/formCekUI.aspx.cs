@@ -7,17 +7,21 @@ using System.Web.UI.WebControls;
 using System.IO;
 using System.Windows.Forms;
 using mppl.Control;
+using mppl.Entitas;
+using System.Threading;
 namespace mppl.mppl
 {
     public partial class formCekUI : System.Web.UI.Page
     {
         protected bool check;
         ControlCek controlC;
+        SortedDictionary<dokumen, double> sd;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Panel2.Visible = false;
+            Panel2.Visible = true;
             Panel1.Visible = true;
             controlC = new ControlCek(Server);
+            sd = new SortedDictionary<dokumen, double>();
         }
 
         /*protected void rdo_modeUpload_CheckedChanged(object sender, EventArgs e)
@@ -36,43 +40,55 @@ namespace mppl.mppl
             Panel1.Visible = false;
             check = true;
         }
-        protected void teks(object sender, EventArgs e)
-        {
-            /*rdo_modeUpload.Checked = false;
-            Label1.Text = "tekse";*/
-            Panel1.Visible = true;
-            Panel2.Visible = false;
-            check = false;
-        }
-        protected void ganti(object sender, EventArgs e)
-        {
-            if (RadioButtonList1.SelectedItem.Text == "File")
-            {
-                Panel2.Visible = true;
-                Panel1.Visible = false;
-                check = true;
-            }
-            else
-            {
-                Panel1.Visible = true;
-                Panel2.Visible = false;
-                check = false;
-            }
-        }
         protected void periksa(object sender, EventArgs e)
         {
             SortedDictionary<string, double> tesVar = new SortedDictionary<string, double>();
             judulText.Text = txt_judulDokumen.Text;
-            tesVar.Add("a", 5);
-            tesVar.Add("b", 3);
-            tesVar.Add("c", 6);
-            grv_hasil.DataSource = controlC.cek(upl_file).OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
-            grv_hasil.DataBind();
-            progres_ModalPopup.Show();
+            try
+            {
+                sd = controlC.cek(upl_file,double.Parse(temp.Text)/100.0);
+                if (sd == null)
+                {
+                    Response.Write("<script>alert(\"Dokumen yang Anda masukkan salah atau terlalu besar(kami hanya menerima file .pdf dan .doc dan berukuran tidak lebih dari 4MB)\");</script>");
+                }
+                else if (sd.Count == 0)
+                    labelNotFound.Visible = true;
+                else
+                {
+                    thread();
+                }
+            }
+            catch (Exception ex)
+            {
+                labelNotFound.Visible = true;
+            }
+            //progres_ModalPopup.Hide();
+            if(sd!=null) progres_ModalPopup.Show();
         }
 
         protected void next_Click(object sender, EventArgs e)
         {
+        }
+        void showpopup()
+        {
+            progres_ModalPopup.Show();
+        }
+        public void thread()
+        {
+            BindingSource binding = new BindingSource();
+            Dictionary<dokumen, double> temp = new Dictionary<dokumen, double>();
+            temp = sd.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+            
+            foreach(var checking in temp){
+                binding.Add(new Hasil(checking.Key.judul,checking.Key.url_dokumen,checking.Value*100));
+            }
+            grv_hasil.DataSource = binding;
+            grv_hasil.DataBind();
+        }
+
+        public void controlC_passedOne(object sender) 
+        {
+            StatusLabel.Text = controlC.count.ToString();
         }
     }
 }

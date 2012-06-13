@@ -13,6 +13,13 @@ namespace mppl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["sandi"] != "admin")
+            {
+                Response.Redirect("~/LoginAdmin.aspx");
+            }
+            
+
             ModelDokumen modelDokumen = new ModelDokumen();
             DataTable tabeldokumen = new DataTable();
             IEnumerable<dokumen> dok = modelDokumen.get();
@@ -53,6 +60,12 @@ namespace mppl
         {
             GridView_Dokumen.PageIndex = e.NewPageIndex;
             GridView_Dokumen.DataBind();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["sandi"] = "";
+            Response.Redirect("Default.aspx");
         }
     }
 }

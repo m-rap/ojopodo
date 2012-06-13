@@ -106,6 +106,7 @@
     <Content Include="images\Logo AREK-ITS trans.png" />
     <Content Include="images\Logo ITS Biru kecil.png" />
     <Content Include="images\Logo.png" />
+    <Content Include="LoginAdmin.aspx" />
     <Content Include="mppl\formCekUI.aspx" />
     <Content Include="style.css" />
     <Content Include="Default.aspx" />
@@ -166,6 +167,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Entitas\Hasil.cs" />
     <Compile Include="Entitas\Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -202,6 +204,13 @@
     </Compile>
     <Compile Include="HasilCekDokumenUI.aspx.designer.cs">
       <DependentUpon>HasilCekDokumenUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdmin.aspx.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAdmin.aspx.designer.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="mppl\formCekUI.aspx.cs">
       <DependentUpon>formCekUI.aspx</DependentUpon>
@@ -243,6 +252,9 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -19,6 +19,8 @@ namespace mppl.Control
             int r=0, min=0;
             fingerprint = new List<int>();
             setHash(input,hash);
+            if (hash.Count < window)
+                window = hash.Count;
             buffer = new int[window];
             for (int i = 0; i < window; i++) hash[i] = int.MaxValue;
             for(int i =0;i<window;i++)
@@ -60,17 +62,27 @@ namespace mppl.Control
         {
             Regex regexp = new Regex("[^a-zA-Z0-9]");
             input = regexp.Replace(input, "");
-            int prime = primeRollingHash(input.Trim(), 0, 64);
-            string tempString;
-            tempString = input.Substring(1, 65);
-            for (int i = 1; tempString != null; i++)
+            int prime;
+            if (input.Length >= 65)
             {
-                prime = rollHashRight(prime, input, i - 1, i + 64);
+                prime = primeRollingHash(input.Trim(), 0, 64);
                 hash.Add(prime);
-                if (i + 65 < input.Length)
-                    tempString = input.Substring(i + 1, 65);
-                else
-                    tempString = null;
+                string tempString;
+                tempString = input.Substring(1, 65);
+                for (int i = 1; tempString != null; i++)
+                {
+                    prime = rollHashRight(prime, input, i - 1, i + 64);
+                    hash.Add(prime);
+                    if (i + 65 < input.Length)
+                        tempString = input.Substring(i + 1, 65);
+                    else
+                        tempString = null;
+                }
+            }
+            else
+            {
+                prime = primeRollingHash(input.Trim(), 0, input.Length - 1);
+                hash.Add(prime);
             }
         }
         static int primeRollingHash(String input, int start, int end, int mod = 1000007)
@@ -82,6 +94,8 @@ namespace mppl.Control
                 //acc = (acc*primeBase)%mod;
                 acc += (c * ((int)Math.Pow((double)101, (double)end - i) % mod)%mod);
             }
+            if ((acc % mod) < 0)
+                return (acc % mod) + mod;
             return acc % mod;
         }
         public static int rollHashRight(int currentHashValue, String input,
