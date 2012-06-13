@@ -83,6 +83,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="FormEditDokumen.aspx" />
+    <Content Include="HapusDokumen.aspx" />
     <Content Include="images\banner_bg.jpg" />
     <Content Include="images\banner_bg_wrapper.jpg" />
     <Content Include="images\banner_image.png" />
@@ -180,6 +181,13 @@
     </Compile>
     <Compile Include="FormEditDokumen.aspx.designer.cs">
       <DependentUpon>FormEditDokumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HapusDokumen.aspx.cs">
+      <DependentUpon>HapusDokumen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HapusDokumen.aspx.designer.cs">
+      <DependentUpon>HapusDokumen.aspx</DependentUpon>
     </Compile>
     <Compile Include="LihatDokumen.aspx.cs">
       <DependentUpon>LihatDokumen.aspx</DependentUpon>

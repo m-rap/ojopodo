@@ -55,5 +55,18 @@ namespace mppl.Entitas
             }
             context.SaveChanges();
         }
+
+        public void delete(long id)
+        {
+            IEnumerable<dokumen> results = from e in context.dokumen
+                                           where e.id_dokumen == id
+                                           select e;
+            List<dokumen> resultsList = results.ToList<dokumen>();
+            foreach (dokumen item in results)
+            {
+                context.DeleteObject(item);
+            }
+            context.SaveChanges();
+        }
     }
 }
