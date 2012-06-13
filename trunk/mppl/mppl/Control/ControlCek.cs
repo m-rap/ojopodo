@@ -65,16 +65,20 @@ namespace mppl.Control
 
                         ModelDokumen dokumens = new ModelDokumen();
                         //generate filepath
-                        MD5 md5 = MD5.Create();
-                        byte[] dataNamaFile = md5.ComputeHash(Encoding.UTF8.GetBytes(judul));
-                        StringBuilder sbNamaFile = new StringBuilder();
-                        for (int i = 0; i < dataNamaFile.Length; i++)
+                        string fullpath, namafile;
+                        do
                         {
-                            sbNamaFile.Append(dataNamaFile[i].ToString("x2"));
-                        }
-                        string namafile = sbNamaFile.ToString();
+                            MD5 md5 = MD5.Create();
+                            byte[] dataNamaFile = md5.ComputeHash(Encoding.UTF8.GetBytes(judul));
+                            StringBuilder sbNamaFile = new StringBuilder();
+                            for (int i = 0; i < dataNamaFile.Length; i++)
+                            {
+                                sbNamaFile.Append(dataNamaFile[i].ToString("x2"));
+                            }
+                            namafile = sbNamaFile.ToString();
 
-                        string fullpath = server.MapPath("~/fingerprint_dokumen/" + namafile);
+                            fullpath = server.MapPath("~/fingerprint_dokumen/" + namafile);
+                        } while (System.IO.File.Exists(@fullpath));
 
                         //proses menulis ke file mulai dari sini (buat San)
                         //
@@ -83,17 +87,13 @@ namespace mppl.Control
                         //ControlCek tulisCek = new ControlCek();
                         //System.IO.File.WriteAllLines(/*@"direktoriProject"*/, tulisCek);
                         //System.IO.File.WriteAllLines(/*@"fingerprint_dokumen"*/, tulisCek);
-
-                        if (!System.IO.File.Exists(@fullpath))
+                        System.IO.FileStream fs = System.IO.File.Create(@fullpath);
+                        fs.Close();
+                        using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@fullpath, true))
                         {
-                            System.IO.FileStream fs = System.IO.File.Create(@fullpath);
-                            fs.Close();
-                            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@fullpath, true))
+                            for (int i = 0; i < finger.Count; i++)
                             {
-                                for (int i = 0; i < finger.Count; i++)
-                                {
-                                    sw.WriteLine(finger[i]);
-                                }
+                                sw.WriteLine(finger[i]);
                             }
                         }
                         //edited by rian

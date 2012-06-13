@@ -52,7 +52,7 @@ namespace mppl
                 HyperLink deletelink = (HyperLink)e.Row.FindControl("link_hapus");
                 DataRowView row = (DataRowView)e.Row.DataItem;
                 editlink.NavigateUrl = "FormEditDokumen.aspx?id=" + row["ID Dokumen"];
-                deletelink.NavigateUrl = "#";//"HapusDokumen.aspx?id=" + row["ID Dokumen"];
+                deletelink.NavigateUrl = "HapusDokumen.aspx?id=" + row["ID Dokumen"];
             }
         }
 

@@ -23,9 +23,14 @@ namespace mppl
             id = long.Parse(Request.QueryString["id"]);
             ModelDokumen model = new ModelDokumen();
             dok = model.getById(id);
-            TextBox_Judul.Text = dok.judul;
-            TextBox_Pengarang.Text = dok.pengarang;
-            TextBox_UrlDokumen.Text = dok.url_dokumen;
+            if (!Page.IsPostBack)
+            {
+                TextBox_Judul.Text = dok.judul;
+                TextBox_Pengarang.Text = dok.pengarang;
+                TextBox_UrlDokumen.Text = dok.url_dokumen;
+            }
+
+            UpdateBtn.Attributes.Add("onclick", "return window.confirm('Anda yakin akan merubah data?');");
         }
 
         protected void UpdateBtn_Click(object sender, EventArgs e)

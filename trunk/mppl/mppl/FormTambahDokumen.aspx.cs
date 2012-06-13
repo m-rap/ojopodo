@@ -29,6 +29,12 @@ namespace mppl
                 if (myControlCek.upload(FileUploadControl, TextBox_Judul.Text, TextBox_Pengarang.Text, TextBox_UrlDokumen.Text))
                 {
                     StatusLabel.Text = "Upload Sukses";
+                    if (!Page.IsPostBack)
+                    {
+                        TextBox_Judul.Text = "";
+                        TextBox_Pengarang.Text = "";
+                        TextBox_UrlDokumen.Text = "";
+                    }
                 }
                 else
                     StatusLabel.Text = "Upload gagal";

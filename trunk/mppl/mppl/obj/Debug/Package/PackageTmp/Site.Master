@@ -36,7 +36,8 @@
             <h2>Sistem Cek Plagiarisme</h2>
             <p>Mengecek kemiripan dokumen .doc, .docx
 				dan .pdf dengan cepat dan akurat!</p>
-            <div class="button"><a href="#">Mulai Cek</a></div>
+            <div class="button"><asp:HyperLink ID="link_TambahDokumen" runat="server" 
+        NavigateUrl="~/mppl/formCekUI.aspx">Mulai Cek</asp:HyperLink></div>
 		</div>
         <div class="banner_image"></div>
     </div> <!-- end of banner -->
@@ -46,15 +47,15 @@
 	<div id="menu">
         <ul>
             <li><asp:HyperLink ID="link_Home" runat="server" 
-                    NavigateUrl="~/Default.aspx"><span></span>Home</asp:HyperLink></li>
+                    NavigateUrl="~/Default.aspx"><span></span>Halaman Muka</asp:HyperLink></li>
             <li><asp:HyperLink ID="link_About" runat="server" 
-                    NavigateUrl="~/About.aspx"><span></span>About</asp:HyperLink></li>
+                    NavigateUrl="~/About.aspx"><span></span>Tentang Kami</asp:HyperLink></li>
+                    <% if (Session["sandi"] == "admin") { %>
             <li><asp:HyperLink ID="link_Dokumen" runat="server" 
                     NavigateUrl="~/LihatDokumen.aspx"><span></span>Dokumen</asp:HyperLink></li>
+                     <% } %>
             <li><asp:HyperLink ID="link_Cek" runat="server" 
-                    NavigateUrl="#"><span></span>Mulai Cek</asp:HyperLink></li>
-            <li><asp:HyperLink ID="link_Contact" runat="server" 
-                    NavigateUrl="#"><span></span>Contact</asp:HyperLink></li>
+                    NavigateUrl="~/mppl/formCekUI.aspx"><span></span>Mulai Cek</asp:HyperLink></li
         </ul>    
     </div> <!-- end of menu -->
     </div> <!-- end of menu_wrapper -->
@@ -69,11 +70,12 @@
 
     <div id="footer">
         <ul class="footer_menu">
-			<li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Mulai Cek</a></li>
-            <li><a href="#">Menu4</a></li>
-            <li class="last_menu"><a href="#">Contact</a></li>
+			<li><asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/Default.aspx"><span></span>Halaman Muka</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink2" runat="server" 
+                    NavigateUrl="~/About.aspx"><span></span>Tentang Kami</asp:HyperLink></li>
+             <li><asp:HyperLink ID="HyperLink4" runat="server" 
+                    NavigateUrl="~/mppl/formCekUI.aspx"><span></span>Mulai Cek</asp:HyperLink></li>
         </ul>    
         OjoPodo © 2012 Tim Simple Jurusan Teknik Informatika
                 <br />Institut Teknologi Sepuluh Nopember Surabaya
