@@ -141,6 +141,13 @@ h3 {
 	padding: 50px 50px;
 	background: url(images/banner_bg.jpg) no-repeat center top;
 }
+#banner2 {
+	width: 700px;
+	height: 210px;
+	margin: 0 auto;
+	padding: 50px 50px;
+	background: url(images/banner_bg.jpg) no-repeat center top;
+}
 
 #banner #banner_content {
 	float: left;

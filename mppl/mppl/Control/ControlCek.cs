@@ -14,6 +14,7 @@ using mppl.Entitas;
 using System.Security;
 using System.Security.Cryptography;
 using System.Text;
+using mppl.mppl;
 
 namespace mppl.Control
 {
@@ -22,10 +23,22 @@ namespace mppl.Control
         List<int> finger;
         String teks;
         HttpServerUtility server;
+        private int _count;
+        public int count
+        {
+            get
+            {
+                return _count;
+            }
+        }
+
+        public delegate void EachDokumenChecked(object sender);
+        public event EachDokumenChecked passedOne;
         
         public ControlCek()
         {
             finger = new List<int>();
+            teks = "";
         }
 
         public ControlCek(HttpServerUtility server)
@@ -45,6 +58,8 @@ namespace mppl.Control
                         Stream coba = input.FileContent;
                         if (input.PostedFile.ContentType == "application/pdf")
                             ekstrakPdf(coba);
+                        else
+                            ekstrakDoc(coba);
                         finger = Winnowing.getFingerprint(teks);
                         finger.Sort();
 
@@ -100,13 +115,13 @@ namespace mppl.Control
             return false;
         }
 
-        public SortedDictionary<dokumen,double> cek(FileUpload input)
+        public SortedDictionary<dokumen,double> cek(FileUpload input,double threshold)
         {
             try
             {
                 if (input.PostedFile.ContentType == "application/msword" || input.PostedFile.ContentType == "application/pdf")
                 {
-                    if (input.PostedFile.ContentLength < 4096000)
+                    if (input.PostedFile.ContentLength < 10240000)
                     {
                         SortedDictionary<dokumen, double> hasil;//berisi dokumen dokumen yang mirip
                         hasil = new SortedDictionary<dokumen, double>();
@@ -114,24 +129,31 @@ namespace mppl.Control
                         Stream coba = input.FileContent;
                         if (input.PostedFile.ContentType == "application/pdf")
                             ekstrakPdf(coba);
+                        else
+                            ekstrakDoc(coba);
+                       
+                        teks = teks.Trim();
                         finger = Winnowing.getFingerprint(teks);
                         finger.Sort();
-                        //queri fingerprint dari db
                         ModelDokumen dokumens = new ModelDokumen();
                         List<dokumen> db = dokumens.get().ToList<dokumen>();
                         //panggil fungsi cekKemiripan dengan parameter list fingerprint dari file yang diupload sama yang didb
+                        _count = 0;
                         foreach (var i in db)
                         {
                             string[] read = File.ReadAllLines(server.MapPath("~/fingerprint_dokumen/" + i.alamat_fingerprint));
                             List<int> fingerprintdb = Array.ConvertAll<string, int>(read, new Converter<string, int>(Convert.ToInt32)).ToList<int>();
                             var result = cekKemiripan(finger, fingerprintdb);
-                            if (result > 0.5)
+                            if (result > threshold)
                             {
                                 //hasil fungsi masukan ke list
                                 hasil[i] = result;
                             }
+                            _count++;
+                            //passedOne(this);
                         }
-
+                         
+                       // var result = cekKemiripan(finger, finger2);
                         //sorting list trus kembalikan List tersebut sebagai return value
                         
                         return hasil;
@@ -148,7 +170,8 @@ namespace mppl.Control
             }
             catch (Exception ex)
             {
-                Console.WriteLine("file gagal diupload karena : " + ex);
+               // Console.WriteLine("file gagal diupload karena : " + ex);
+                Console.WriteLine(ex.StackTrace);
                 return null;
             }
         }

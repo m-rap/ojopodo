@@ -20,7 +20,7 @@
     <div id="buttonmulai" style="float:right;">
         <asp:Button ID="btn_mulai" runat="server" Text="Mulai Pengecekan" 
             onclick="btn_mulai_Click" Font-Bold="True" 
-            Font-Names="Microsoft Sans Serif" Font-Size="1em" Height="25px"/>
+            Font-Names="Microsoft Sans Serif" Font-Size="1em" Height="25px" PostBackUrl="~/mppl/formCekUI.aspx" />
     </div>
     </div>
 </asp:Content>

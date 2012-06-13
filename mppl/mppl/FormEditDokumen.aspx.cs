@@ -15,6 +15,11 @@ namespace mppl
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["sandi"] != "admin")
+            {
+                Response.Redirect("~/LoginAdmin.aspx");
+            }
+
             id = long.Parse(Request.QueryString["id"]);
             ModelDokumen model = new ModelDokumen();
             dok = model.getById(id);

@@ -31,5 +31,8 @@
     </asp:GridView>
     <asp:HyperLink ID="link_TambahDokumen" runat="server" 
         NavigateUrl="~/FormTambahDokumen.aspx">Tambah Dokumen</asp:HyperLink>
+    <br />
+    <br />
+<asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Logout" />
 </asp:Content>
 
