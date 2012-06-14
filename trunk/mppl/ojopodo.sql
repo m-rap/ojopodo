@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 11, 2012 at 11:26 PM
+-- Generation Time: Jun 14, 2012 at 10:09 AM
 -- Server version: 5.5.21
 -- PHP Version: 5.3.10
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `dokumen` (
   `url_dokumen` varchar(100) DEFAULT NULL,
   `alamat_fingerprint` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id_dokumen`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=226 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=305 ;
 
 --
 -- Dumping data for table `dokumen`
@@ -252,7 +252,6 @@ INSERT INTO `dokumen` (`id_dokumen`, `judul`, `pengarang`, `url_dokumen`, `alama
 (209, 'ANALISIS KINERJA SISTEM KOOPERATIF MENGGUNAKAN SKEMA DISTRIBUTED-ALAMOUTI', 'ADI NUGROHO', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12768-Paper.pdf', '62dc78dda60997cbdfa95bae5e978642'),
 (210, 'INTEGRASI PLC S7 LITE 300 DAN DCS CENTUM CS 3000 UNTUK SISTEM KONTROL ALIRAN UDARA MELALUI CONTROL VALVE', 'SAMSUL RAJAB', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12767-Paper.pdf', '8dfbbc8c442d5b22fdfc22090dbfacc1'),
 (211, 'PENINGKATAN KINERJA SISTEM LMDS MENGGUNAKAN ACM DAN MAXIMAL RATIO COMBINING DIBAWAH PENGARUH INTERFERENSI DAN REDAMAN HUJAN', 'RHEZA ALDILA AGUSTANTO', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12766-Paper.pdf', '62359e4b719cd2d310555165e751b007'),
-(212, 'DETEKSI KADAR PH AIR UNTUK MONITORING KUALITAS AIR BERBASISKAN SENSOR NIRKABEL', 'IB MAHADIRA RIZATIVA', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12765-Paper.pdf', '2c3ed48d86a9b232962352fba842fc2c'),
 (213, 'OPTIMASI LINTAS LAPISAN PADA SISTEM KOMUNIKASI KOOPERATIF DI DALAM GEDUNG', 'BAYU SAMPURNA', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12764-Paper.pdf', 'c764c78095fc78fe23fa51fd0df13042'),
 (214, 'PENINGKATAN KINERJA SISTEM LMDS DENGAN METODE ADAPTIVE CODED MODULATION MENGGUNAKAN RELAY DECODE AND FORWARD DI BAWAH PENGARUH REDAMAN HUJAN TROPIS', 'LAURENTIUS ADITYA KURNIA NUGROHO', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12763-Paper.pdf', '21cbf4aa0c7ecd2eb3003bfaafde35e4'),
 (215, 'PENGATURAN KECEPATAN PADA MOTOR DC SHUNT MENGGUNAKAN SUCCESSIVE SLIDING MODE CONTROL', 'DANU BHRAMA PUTRA', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12762-Paper.pdf', '3d60b4041b7c83a82bcfef295f77273c'),
@@ -265,7 +264,80 @@ INSERT INTO `dokumen` (`id_dokumen`, `judul`, `pengarang`, `url_dokumen`, `alama
 (222, 'PENINGKATAN KINERJA SISTEM LMDS DENGAN M-QAM ADAPTIF MENGGUNAKAN REGENERATIVE RELAY DIBAWAH PENGARUH INTERFERENSI DAN REDAMAN HUJAN TROPIS', 'BAGUS WIRATAMA', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12754-Paper.pdf', '4d8a4f46a5418da64ec8b09658ecfd5d'),
 (223, 'PERANCANGAN KONTROLER STATE DEPENDENT RICCATI EQUATION (SDRE) UNTUK STABILISASI PENDULUM TERBALIK DUA TINGKAT', 'DYAH TRI UTAMI', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12753-Paper.pdf', '95d72c753d2eaa0b8aec6d7f66412e9d'),
 (224, 'SISTEM PEMANTAUAN LINGKUNGAN BERBASIS WSN DENGAN LAJU SAMPLING YANG ADAPTIF', 'MARCHO SENDA DJISOKO ', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12752-Paper.pdf', '4b83bb314310238defe9bba073139f3b'),
-(225, 'DISKLESS CLUSTER BERBASIS JOB SCHEDULER CONDOR MENGGUNAKAN DISKLESS REMOTE BOOT IN LINUX', 'MUHAMMAD SYAIFUDDIN ZUHRI', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12751-Paper.pdf', 'aae48e9c5da114c7ff271e9ba3c56bd4');
+(225, 'DISKLESS CLUSTER BERBASIS JOB SCHEDULER CONDOR MENGGUNAKAN DISKLESS REMOTE BOOT IN LINUX', 'MUHAMMAD SYAIFUDDIN ZUHRI', 'http://digilib.its.ac.id/public/ITS-Undergraduate-12751-Paper.pdf', 'aae48e9c5da114c7ff271e9ba3c56bd4'),
+(228, 'Implementasi Hukum Fisika dalam Game Physics Puzzle “Cannon Ball” Menggunakan Box2D', 'Mahdi Bashroni Rizal', 'digilib.its.ac.id/public/ITS-Undergraduate-18431-Paper-pdf.pdf', 'b4935dcfdb59499282addec4a00bbbd4'),
+(229, 'Sistem Informasi Geografis untuk Perguruan Tinggi Negeri Di Indonesia', 'I G.L.A. Oka Cahyadi P.', 'digilib.its.ac.id/public/ITS-Undergraduate-10277-Paper.pdf', 'e35f4872417b3855d8c53f9d776a73ca'),
+(230, 'ANALISIS ALGORITMA ENKRIPSI ELGAMAL, GRAIN V1, DAN AES DENGAN STUDI KASUS APLIKASI RESEP MASAKAN', 'Dimas Zulhazmi W.', 'digilib.its.ac.id/public/ITS-Undergraduate-18425-Paper-pdf.pdf', '43606cf02b65da642912547eda816f08'),
+(231, 'KLASIFIKASI KATEGORI DAN IDENTIFIKASI TOPIK PADA ARTIKEL BERITA BERBAHASA INDONESIA', 'Aini Rachmania Kusuma', 'digilib.its.ac.id/public/ITS-Undergraduate-18420-Paper-481845.pdf', 'c1971f2e890b9b017b14c0bb3fe7ee06'),
+(232, 'MIGRASI DATA DAN KOSTUMISASI FITUR UNTUK MIGRASI DARI SISTEM RBTC DAN DIGILIB KE SISTEM MANAJEMEN PERPUSTAKAAN OPEN SOUCE SENAYAN DALAM STUDI KASUS RUANG BACA TEKNIK INFORMATIKA ITS', 'Anak Agung Ngurah Perwira Redi', 'digilib.its.ac.id/public/ITS-Undergraduate-18075-Paperpdf.pdf', '189b177e1d52eb6e2504e300d1ecf91b'),
+(233, 'INFORMATICS MEDIA BOARD NEWS READER VIA BLUETOOTH DENGAN PENERAPAN ALGORITMA WEB CRAWLER', 'Fajri Aryuanda', 'digilib.its.ac.id/public/ITS-Undergraduate-10276-Paper.pdf', '0d56ac694dbbf6e9baa4759a201323a3'),
+(234, 'IMPLEMENTASI AUTOMATED PATH DAN ROUTE FINDING UNTUK UNIT BEHAVIOR PADA REAL-TIME STRATEGY GAME DENGAN MENGGUNAKAN FUZZY LOGIC', 'Wijanarko Sukma Pamungkas', 'digilib.its.ac.id/public/ITS-Undergraduate-10275-Paper.pdf', '402bc6d6a0f648a03e672a71c365f556'),
+(235, 'PEMBUATAN APLIKASI CONTEXT AWARE PEMANDU TURIS PADA MOBILE DEVICE BERBASIS GLOBAL POSITIONING SYSTEM (GPS) DAN WEB SEMANTIK UNTUK SISTEM PARIWISATA DI INDONESIA', 'Koharudin', 'digilib.its.ac.id/public/ITS-Undergraduate-17700-Paper.pdf', '710cbad9a6269540b68b1873e3e20666'),
+(236, 'IMPLEMENTASI REMOTE SERVER MENGGUNAKAN METODE PORT KNOCKING DENGAN ASYMMETRIC ENCRYPTION', 'M. Fahru Rozi', 'digilib.its.ac.id/public/ITS-Undergraduate-10274-Paper.pdf', '5f9f12a3a10b070b6ade57f15b25c378'),
+(237, 'DETEKSI KULIT PADA CITRA TUNGGAL MENGGUNAKAN DYNAMIC SKIN COLOR MODELING', 'Sita I. Wardhany', 'digilib.its.ac.id/public/ITS-Undergraduate-17697-Paper.pdf', '0184962e8706451741d69202963f750b'),
+(238, 'PREDIKSI UMUR BUG DALAM POYEK PENGEMBANGAN PERANGKAT LUNAK', 'Median Yuli Hartanto', 'digilib.its.ac.id/public/ITS-Undergraduate-17687-Paper.pdf', '4bf01e038dddf06ec1801dd351793d02'),
+(239, 'RANCANG BANGUN APLIKASI PEMANTAU PENGGUNAAN PERANGKAT BERGERAK ANAK BERBASIS ANDROID', 'Billy Pramboro Putra', 'digilib.its.ac.id/public/ITS-Undergraduate-17685-Paper.pdf', '3196229dd2d70a7d842b634dde347a19'),
+(240, 'RANCANG BANGUN APLIKASI RUN FASTER PADA IPHONE OS UNTUK PANDUAN PENINGKATAN KECEPATAN LARI', 'Aditya Wibisana', 'digilib.its.ac.id/public/ITS-Undergraduate-17683-Paper.pdf', 'c529e6c90fd1a23e715a64505a9ceb7a'),
+(241, 'Pembangunan Aplikasi Customer Relationship Management Berorientasi Servis Pada Platform Java Menggunakan Framework Apache Open For Business', 'Arini Rusda', 'digilib.its.ac.id/public/ITS-Undergraduate-17679-paper.pdf', 'bec385e2fe2debe7f52d68f6be364fff'),
+(242, 'Perancangan Sistem dengan Konsep DRM (Manajemen Lisensi Digital) dalam Studi Kasus Penjualan Lagu secara Online', 'Royyana Muslim Ijtihadie', 'digilib.its.ac.id/public/ITS-Undergraduate-10273-Paper.pdf', '4bc4b505e46547520173007220349af1'),
+(243, 'Rancang Bangun Aplikasi Pelacakan Aset Bergerak Menggunakan Teknologi GPS dengan Model Perangkat Lunak Sebagai Layanan Berbasis SOA pada Platform Java', 'Kemas Dimas Ramanditya', 'digilib.its.ac.id/public/ITS-Undergraduate-17666-paper.pdf', '2afdd64e4b149d0906ec9952226f147f'),
+(244, 'IMPLEMENTASI ROBOT PENDETEKSI WARNA BENDA BESERTA LOKASINYA', 'Swandana Hersa Pradika', 'digilib.its.ac.id/public/ITS-Undergraduate-10272-Paper.pdf', '6bbdd3d8f9db428bba5fb36e5fede266'),
+(245, 'IMPLEMENTASI ALGORITMA PROBABILISTIC LATENT SEMANTIC ANALYSIS DALAM PENGKLASTERAN DOKUMEN BERBASIS TOPIK', 'Ida Ayu Gde Suwiprabayanti Putra', 'digilib.its.ac.id/public/ITS-Undergraduate-17658-paper.pdf', 'c338de449ad139298a3dde69c61fdc52'),
+(246, 'PENGENDALIAN ROBOT MOBILE BERBASIS IP (Internet Protocol) MELALUI JARINGAN WIFI', 'Gama Wardhana', 'digilib.its.ac.id/public/ITS-Undergraduate-10271-Paper.pdf', '908f13c5529faab254f4b47a856ce030'),
+(247, 'Penerapan Perilaku Cerdas pada Obyek di Dalam Game Flash Tower Defense', 'Irsyad Arif M', 'digilib.its.ac.id/public/ITS-Undergraduate-17655-Paper.pdf', '43e5ac22fab27ccb1ca86ebea7f70cfc'),
+(248, 'KLASIFIKASI CITRA GIGI BERBASIS TEKSTUR DENGAN FILTER GABOR', 'L. Roidel Simarmata', 'digilib.its.ac.id/public/ITS-Undergraduate-9823-Paper.pdf', 'e1f17e022e70cc90209ab2e1670be8b4'),
+(249, 'RANCANG BANGUN APLIKASI GENERAL LEDGER BERORIENTASI SERVICE PADA PLATFORM JAVA', 'Izzuddin Gumilar Aprilian', 'digilib.its.ac.id/public/ITS-Undergraduate-17650-Paper.pdf', '5e91ec7a1a56d1234edc92c7f0b915c3'),
+(250, 'SIMULASI PENCARIAN STRATEGI BOARDING PESAWAT TERBANG YANG EFISIEN', 'Antonius Malem Barus', 'digilib.its.ac.id/public/ITS-Undergraduate-9822-Paper.pdf', '44bdcfe7e1c19e6a01da0a091ac4bb49'),
+(251, 'PEMBANGUNAN APLIKASI BISNIS INTELIJEN BERORIENTASI SERVIS PADA ENTERPRISE RESOURCE PLANNING DENGAN PENTAHO BERPLATFORM JAVA', 'Innarcaya Nadiar Krisanti Nasution', 'digilib.its.ac.id/public/ITS-Undergraduate-17641-Paper.pdf', 'ab023bb7c4e7078e771de39e344a37f2'),
+(252, 'PEMODELAN DAN SIMULASI TINGGI GENANGAN BANJIR DI KECAMATAN GUBENG KOTA SURABAYA MENGGUNAKAN SISTEM INFORMASI GEOGRAFIS', 'Ratri Enggar Pawening', 'digilib.its.ac.id/public/ITS-Undergraduate-9821-Paper.pdf', '429fb1f07dbe8538bc96117b377a2913'),
+(253, 'RANCANG BANGUN APLIKASI ACCOUNT PAYABLE, ACCOUNT RECEIVABLE, DAN FIXED ASSET BERORIENTASI SOAD PADA PLATFORM JAVA', 'Tommy Adhyasa S.', 'digilib.its.ac.id/public/ITS-Undergraduate-17639-paper.pdf', 'c72fdafa5c39194a00cb2c6b00997e19'),
+(254, 'SEGMENTASI ENDAPAN URIN PADA CITRA MIKROSKOPIK BERBASIS WAVELET', 'Miftahus Sholihin', 'digilib.its.ac.id/public/ITS-Undergraduate-9820-Paper.pdf', '335a7fc8e1976492b7e9e08e9f65052e'),
+(255, 'PEMBANGUNAN APLIKASI SOFTPHONE PADA JARINGAN VOIP BERBASIS SIP MENGGUNAKAN SISTEM OPERASI ANDROID', 'Hostanto Aribagyo', 'digilib.its.ac.id/public/ITS-Undergraduate-17603-Paper.pdf', 'f6953dd66f07d33496a35ff3822ff9cc'),
+(256, 'PENGEMBANGAN SISTEM PENJADUALAN HIDUP DAN MATI KOMPUTER SERVER MENGGUNAKAN MOBILE BERBASIS MICROCONTROLLER', 'Adong Purba', 'digilib.its.ac.id/public/ITS-Undergraduate-9819-Paper.pdf', '66a207a7e492ded963a192743edf25e0'),
+(257, 'SKEMA NUMERIK UNTUK MENYELESAIKAN PERSAMAAN BURGERS’ MENGGUNAKAN METODE CUBIC B-SPLINE QUASI-INTERPOLANT DAN MULTI-NODE HIGHER ORDER EXPANSIONS', 'Nafanisya Mulia', 'digilib.its.ac.id/public/ITS-Undergraduate-17458-5107100124-Paper.pdf', '53bb1e930e1fdf3093c5385afda2a4cb'),
+(258, 'PERANCANGAN DAN IMPLEMENTASI VVOIP (VIDEO VOICE OVER INTERNET PROTOCOL) DI LINGKUNGAN ITS', 'Hadi Suryanto', 'digilib.its.ac.id/public/ITS-Undergraduate-9818-Paper.pdf', '59519b6101dbb875fea066070bea34d9'),
+(259, 'KLASTERISASI BERDASARKAN KESAMAAN POLA DENGAN MENGGUNAKAN ALGORITMA PCLUSTER', 'Kartika Wijayati', 'digilib.its.ac.id/public/ITS-Undergraduate-9817-Paper.pdf', 'e2dcc79b8055f0023a914e1f39ab5897'),
+(260, 'SISTEM PEMBELAJARAN UNTUK PELATIHAN DAN TEST TOEFL MENGGUNAKAN VoIP', 'Syifa Primastuti', 'digilib.its.ac.id/public/ITS-Undergraduate-17457-5107100059-Paper.pdf', '0dbcddc3cdb74237f0776ec0e0d19421'),
+(261, 'IMPLEMENTASI APLIKASI KUIS MOBILE MENGGUNAKAN GOOGLE GEARS DALAM SISTEM OPERASI ANDROID', 'Yogie Setiarko', 'digilib.its.ac.id/public/ITS-Undergraduate-17456-5106100069-Paper.pdf', '78d06c27ddf910c377fb4941868d7095'),
+(262, 'PERANCANGAN DAN PEMBUATAN APLIKASI UNTUK PENCARIAN WEB SERVICE MENGGUNAKAN LUCENE', 'Olga Ceria Sari', 'digilib.its.ac.id/public/ITS-Undergraduate-9816-Paper.pdf', '47edae10b7baa22af6f54fdadfbd359b'),
+(263, 'EKSTRAKSI FITUR EEG DENGAN MENGGUNAKAN FAKTORISASI KERNEL MATRIKS NONNEGATIF', 'Rahmah Mustika Ningrum', 'digilib.its.ac.id/public/ITS-Undergraduate-9815-Paper.pdf', '7a2d741ef5d3a4017615d8150349b246'),
+(264, 'IMPLEMENTASI METODE POHON KEPUTUSAN UNTUK KLASIFIKASI DATA DENGAN NILAI FITUR YANG TIDAK PASTI', 'Ratih Ariadni', 'digilib.its.ac.id/public/ITS-Undergraduate-17454-5107100002-Paper.pdf', 'c7c5be05593e1c54acd16412f3e1d7a2'),
+(265, 'PENDETEKSIAN SERAT ASING DENGAN SEGMENTASI CITRA', 'Ovy Rochmawanti', 'digilib.its.ac.id/public/ITS-Undergraduate-9814-Paper.pdf', '9cb019a797b4ce1454d00b7729a71b16'),
+(266, 'DETEKSI OBYEK PEJALAN KAKGGUNAKAN METODE PRINCIPAL COMPONENT ANALYSIS DAN SUPPORT VECTOR MACHINE', 'Anugrah Pratama Effendi', 'digilib.its.ac.id/public/ITS-Undergraduate-9813-Paper.pdf', '765d0962016e5cd1747ecff1c45454a2'),
+(267, 'Restorasi Citra Dengan Menggunakan Metode Iteratif Lanczos – Hybrid Regularization', 'Alfa Masjita Rahmat', 'digilib.its.ac.id/public/ITS-Undergraduate-9812-Paper.pdf', '617b107146da6961903282af79971f0f'),
+(268, 'PERANCANGAN DAN PEMBUATAN PERANGKAT LUNAK PENDATAAN DAN PENCARIAN DISTRIBUTOR SUMBER DAYA MENGGUNAKAN CELL ID BERBASIS MOBILE', 'Doni Setio Pambudi', 'digilib.its.ac.id/public/ITS-Undergraduate-9811-Paper.pdf', '8cd83e3ca093308bd8ae626ddb0af046'),
+(269, 'IMPLEMENTASI PENGEMBANGAN METODE DIFFERENTIAL EVOLUTION UNTUK CLUSTERING PIXEL', 'Hisyam Fahmi', 'digilib.its.ac.id/public/ITS-Undergraduate-17453-5107100138-Paper.pdf', 'f7e87be4d77da5c47c198473d571e3d7'),
+(270, 'IMPLEMENTASI PEMANTAUAN SIMPUL-SIMPUL JARINGAN DENGAN PROTOKOL SNMP MENGGUNAKAN PYTHON-FUSE', 'Ibnu Febry K.', 'digilib.its.ac.id/public/ITS-Undergraduate-9810-Paper.pdf', '5a867afc25f3ea783137a4f8ef612282'),
+(271, 'IMPLEMENTASI KOMPRESI PADA SERVER FTP DAN KLIEN ANDROID DI JARINGAN GPRS DAN 3G', 'Hikmah', 'digilib.its.ac.id/public/ITS-Undergraduate-17452-5107100085-Paper1.pdf', '7c43da1d680558b09440643da01dda99'),
+(272, 'PENERAPAN METODE PARTICLE SWARM OPTIMIZATION PADA METODE K-HARMONIC MEANS UNTUK DATA CLUSTERING', 'Yoke Okta', 'digilib.its.ac.id/public/ITS-Undergraduate-9809-Paper.pdf', 'cead79e19abea0446fa29fa5b6613ec8'),
+(273, 'Implementasi Database Abstraction Layer untuk MySQL Menggunakan Google Go', 'Isar Norwandi', 'digilib.its.ac.id/public/ITS-Undergraduate-17451-Paper-1158285.pdf', '5045cd4a80072ea7168b00ba59549bf2'),
+(274, 'PERANCANGAN DAN IMPLEMENTASI GOOGLE GEARS PADA WINDOWS MOBILE DENGAN STUDI KASUS WEB PENJUALAN BARANG', 'Pranesti Novitasari', 'digilib.its.ac.id/public/ITS-Undergraduate-9808-Paper.pdf', 'eb1376987a12d0ddedd32966867579b7'),
+(275, 'IMPLEMENTASI KOMPRESI CITRA BERBASIS ROUGH FUZZY SET', 'Nadya Anisa Syafa', 'digilib.its.ac.id/public/ITS-Undergraduate-9807-Paper.pdf', '610ab0b2a0c0e7a0eaa54d8f530739f6'),
+(276, 'Implementasi Key-Value Store dengan Struktur Data List dan Tree Menggunakan Python', 'Mukhammad Miftakhuddin', 'digilib.its.ac.id/public/ITS-Undergraduate-17450-5107100099-Paper.pdf', 'f58777fcf12f35dbbd972cfac13b73d9'),
+(277, 'Rancang Bangun File System Menggunakan Andrew File System dengan Cache Based dalam Level User Space', 'Sukma Permata Adi', 'digilib.its.ac.id/public/ITS-Undergraduate-17449-5107100100-Paper.pdf', '72f71c1e09813d1cd8156d061a8399ce'),
+(278, 'IMPLEMENTASI ANALISIS DISKRIMINAN BERBASIS VARIABLE PREDICTIVE MODEL PADA KLASIFIKASI KESAMAAN POLA', 'Deneng Eka Putra', 'digilib.its.ac.id/public/ITS-Undergraduate-9806-Paper.pdf', '05f10286aeeb6804cfa7e0207a9dd0df'),
+(279, 'IMPLEMENTASI FITUR-FITUR SOCIAL NETWORK BERBASIS DESKTOP CLIENT DENGAN MENGGUNAKAN TWITTER DAN FACEBOOK API', 'Benartha Verly Putranggalih', 'digilib.its.ac.id/public/ITS-Undergraduate-17446-5107100061-Paper.pdf', '74007d481c724d95b5796a576e34d79a'),
+(280, 'KLASIFIKASI GIGI MOLAR DAN PREMOLAR PADA DENTAL PANORAMIC RADIOGRAPH', 'Evan Yofiyanto', 'digilib.its.ac.id/public/ITS-Undergraduate-9805-Paper.pdf', 'e6bd0d20eca22ebe2d12b0944ff1fecf'),
+(281, 'SEGMENTASI CITRA MEDIS MENGGUNAKAN GENERALIZED GRADIENT VECTOR FLOW DAN GROWING NEURAL GAS', 'David Agustinus W.', 'digilib.its.ac.id/public/ITS-Undergraduate-9804-Paper.pdf', 'a9fd216f9b675f9af6502a29fd904edb'),
+(282, 'IMPLEMENTASI SISTEM PEREKOMENDASIAN PENERIMA BEASISWA DENGAN ANALYTICAL HIERARCHY PROCESS', 'Dimas F Putranto', 'digilib.its.ac.id/public/ITS-Undergraduate-17445-5108100601-Paper.pdf', '919ed7e501a70c027c3e48f3f4ebb6dd'),
+(283, 'Pembuatan Aplikasi OLAP Untuk Pelaporan pada PT. Aneka Tuna Indonesia Menggunakan SQL Server 2005', 'Muhamad Adi Prasetyo', 'digilib.its.ac.id/public/ITS-Undergraduate-9803-Paper.pdf', '5572e0856ca66a451c8631db7898592b'),
+(284, 'IMPLEMENTASI METODE ANT COLONY OPTIMIZATION UNTUK PEMILIHAN FITUR PADA KATEGORISASI DOKUMEN TEKS', 'Yudis Anggara Putra', 'digilib.its.ac.id/public/ITS-Undergraduate-9802-Paper.pdf', '1a26c76618f07bfcd03ef69c4b3e5e35'),
+(285, 'ANALISIS KINERJA TRANSMISI VIDEO PADA WIFI BERBASIS H.263 MENGGUNAKAN OPNET', 'Rendara Sirajul M.', 'digilib.its.ac.id/public/ITS-Undergraduate-17444-Paper-1510985.pdf', '7ef3ad20694e0516b687e425dc7d9a0c'),
+(286, 'PEMANFAATAN METODE VIDEO ENKRIPSI PADA VIDEO STREAMING UNTUK PERLINDUNGAN HAK CIPTA', 'I Ketut Wiratanaya', 'digilib.its.ac.id/public/ITS-Undergraduate-9801-Paper.pdf', 'bad3dd6d0dc3361a76a6b41003d39d63'),
+(287, 'KLASIFIKASI ARITMIA EKG MENGGUNAKAN JARINGAN SYARAF TIRUAN DENGAN FUNGSI AKTIVASI ADAPTIF', 'Asti Rahma Julian', 'digilib.its.ac.id/public/ITS-Undergraduate-17443-5107100104-Paper.pdf', 'fb9e54e148ac39065d8dd3696b045b95'),
+(288, 'IMPLEMENTASI ABSTRAKSI PEMANGGILAN SISTEM BERKAS PADA SISTEM OPERASI UNIX/LINUX DENGAN MENGGUNAKAN BASIS DATA', 'Fahim Nur Cahya Bagar', 'digilib.its.ac.id/public/ITS-Undergraduate-9800-Paper.pdf', 'baef2c393423936cd54eb190c10d5e30'),
+(289, 'APLIKASI GIS BERBASIS WEB MENGGUNAKAN GEOSERVER PADA SISTEM INFORMASI TRAFO GARDU INDUK DI PLN SURABAYA', 'Budiawan', 'digilib.its.ac.id/public/ITS-Undergraduate-9799-Paper.pdf', 'd5faacb4c3922ac5cabab4fff1dc447a'),
+(290, 'IMPLEMENTASI PENGENALAN POLA DENGAN METODE KERNEL REGULARIZED DISCRIMINANT ANALYSIS (KRDA)', 'Dhany Dwi Satyarini', 'digilib.its.ac.id/public/ITS-Undergraduate-9798-Paper.pdf', 'bbb7b1a9ce04c2fefd6cabad821b41f6'),
+(291, 'PERANCANGAN DAN PEMBUATAN PERANGKAT LUNAK BLUETOOTH WEB INTERNET GATEWAY (BWIG) DI RUANG KELAS TEKNIK INFORMATIKA ITS', 'Anis Rosyda Aprilia', 'digilib.its.ac.id/public/ITS-Undergraduate-9797-Paper.pdf', '6ab8493dd1c727144e5ee707119039ce'),
+(292, 'PERANCANGAN DAN PEMBUATAN SISTEM INFORMASI LOKASI BERBASISKAN PYS60 UNTUK GEO-LOCATION SHARING', 'Wima Sigit Sevanda', 'digilib.its.ac.id/public/ITS-Undergraduate-9796-Paper.pdf', '08b471df71bc3979c9013e196dabb6de'),
+(293, 'APLIKASI VISUALISASI PEMBENTUKAN BAYANGAN BENDA UNTUK PEMBELAJARAN FISIKA SMA MATERI LENSA TIPIS BIKONVEKS DAN BIKONKAF', 'Frizco Surgaria', 'digilib.its.ac.id/public/ITS-Undergraduate-9795-Paper.pdf', 'afcd3d27b4c1c6d6bf0865a2b0a7226a'),
+(294, 'RANCANG BANGUN SISTEM PENCEGAHAN DATA FLOODING PADA JARINGAN KOMPUTER', 'Johan Anggi Pratama', 'digilib.its.ac.id/public/ITS-Undergraduate-9794-Paper.pdf', '20e842aa420fedcc7414185466bce8c8'),
+(295, 'PENGENALAN CITRA PENYAMARAN WAJAH MENGGUNAKAN METODE NEURAL NETWORK', 'Prisma Yogiswari', 'digilib.its.ac.id/public/ITS-Undergraduate-9793-Paper.pdf', '4d5732d7cee53cfbf5e49cdcaf6020ac'),
+(296, 'Pengenalan Ekspresi Wajah Berdasarkan Bentuk dan Tekstur', 'Pangondian Marhutala Sinaga', 'digilib.its.ac.id/public/ITS-Undergraduate-9792-Paper.pdf', '8f38281dca990760da2516adf743f14c'),
+(297, 'Pengembangan Aplikasi Multi Level Marketing Pulsa Elektrik', 'Aris Sofan Lutfianto', 'digilib.its.ac.id/public/ITS-Undergraduate-9791-Paper.pdf', 'afac8c58be6e5c574bdfa6cef667a255'),
+(301, 'dokumen seratus', 'coba', 'desktop', '62661b92d42a93e99fae5f0585810f4d'),
+(302, 'APLIKASI PENDETEKSI PENJIPLAKAN PADA FILE TEKS DENGAN ALGORITMA WINNOWING', 'Putu Yuwono Kusmawan', 'http://digilib.its.ac.id', '5e9a5eaa9cdfe2be6df6b91474626ac3'),
+(304, 'Test Document', 'admin', 'okezone.com', 'a5decd745d43af4aa8cf62eef5be43ac');
 
 -- --------------------------------------------------------
 
