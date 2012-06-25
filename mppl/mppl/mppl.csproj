@@ -102,7 +102,6 @@
     <Content Include="images\site_title_bg_wrapper.jpg" />
     <Content Include="LihatDokumen.aspx" />
     <Content Include="FormTambahDokumen.aspx" />
-    <Content Include="HasilCekDokumenUI.aspx" />
     <Content Include="images\ITS ECO CAMPUS trans.png" />
     <Content Include="images\Logo AREK-ITS trans.png" />
     <Content Include="images\Logo ITS Biru kecil.png" />
@@ -206,13 +205,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HasilCekDokumenUI.aspx.cs">
-      <DependentUpon>HasilCekDokumenUI.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HasilCekDokumenUI.aspx.designer.cs">
-      <DependentUpon>HasilCekDokumenUI.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LoginAdmin.aspx.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -272,7 +264,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1904</DevelopmentServerPort>
+          <DevelopmentServerPort>30611</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
