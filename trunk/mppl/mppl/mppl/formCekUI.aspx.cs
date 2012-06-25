@@ -15,13 +15,13 @@ namespace mppl.mppl
     {
         protected bool check;
         ControlCek controlC;
-        SortedDictionary<dokumen, double> sd;
+        Dictionary<dokumen, double> sd;
         protected void Page_Load(object sender, EventArgs e)
         {
             Panel2.Visible = true;
             Panel1.Visible = true;
             controlC = new ControlCek(Server);
-            sd = new SortedDictionary<dokumen, double>();
+            sd = new Dictionary<dokumen, double>();
         }
 
         /*protected void rdo_modeUpload_CheckedChanged(object sender, EventArgs e)
@@ -42,10 +42,10 @@ namespace mppl.mppl
         }
         protected void periksa(object sender, EventArgs e)
         {
-            SortedDictionary<string, double> tesVar = new SortedDictionary<string, double>();
             judulText.Text = txt_judulDokumen.Text;
             try
             {
+                //melakukan pengecekan dokumen yang dimasukkan
                 sd = controlC.cek(upl_file,double.Parse(temp.Text)/100.0);
                 if (sd == null)
                 {
@@ -75,6 +75,7 @@ namespace mppl.mppl
         }
         public void thread()
         {
+            //menampilkan hasil dalam grid view dan terurut secara descending
             BindingSource binding = new BindingSource();
             Dictionary<dokumen, double> temp = new Dictionary<dokumen, double>();
             temp = sd.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
@@ -88,7 +89,7 @@ namespace mppl.mppl
 
         public void controlC_passedOne(object sender) 
         {
-            StatusLabel.Text = controlC.count.ToString();
+            //StatusLabel.Text = controlC.count.ToString();
         }
     }
 }

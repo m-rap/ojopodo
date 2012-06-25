@@ -115,7 +115,7 @@ namespace mppl.Control
             return false;
         }
 
-        public SortedDictionary<dokumen,double> cek(FileUpload input,double threshold)
+        public Dictionary<dokumen,double> cek(FileUpload input,double threshold)
         {
             try
             {
@@ -123,8 +123,8 @@ namespace mppl.Control
                 {
                     if (input.PostedFile.ContentLength < 10240000)
                     {
-                        SortedDictionary<dokumen, double> hasil;//berisi dokumen dokumen yang mirip
-                        hasil = new SortedDictionary<dokumen, double>();
+                        Dictionary<dokumen, double> hasil;//berisi dokumen dokumen yang mirip
+                        hasil = new Dictionary<dokumen, double>();
                         // String filename = Path.GetFileName(input.FileName);
                         Stream coba = input.FileContent;
                         if (input.PostedFile.ContentType == "application/pdf")
@@ -143,11 +143,12 @@ namespace mppl.Control
                         {
                             string[] read = File.ReadAllLines(server.MapPath("~/fingerprint_dokumen/" + i.alamat_fingerprint));
                             List<int> fingerprintdb = Array.ConvertAll<string, int>(read, new Converter<string, int>(Convert.ToInt32)).ToList<int>();
-                            var result = cekKemiripan(finger, fingerprintdb);
+                            double result = cekKemiripan(finger, fingerprintdb);
                             if (result > threshold)
                             {
                                 //hasil fungsi masukan ke list
-                                hasil[i] = result;
+                                hasil.Add(i, result);
+                                //hasil[i] = result;
                             }
                             _count++;
                             //passedOne(this);

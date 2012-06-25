@@ -7,7 +7,7 @@
     <div id="web_des" style="margin:50px 50px 50px 50px;">
         <p>
             Ojo Podo adalah alat untuk mendeteksi tingkat plagiarisme suatu dokumen 
-            (doc, docx, pdf). Kami memiliki database dokumen yang menyimpan lebih dari 100
+            (doc,  pdf). Kami memiliki database dokumen yang menyimpan lebih dari 100
              dokumen dan akan terus berkembang. Saat ini, Ojo Podo terus meningkatkan efisiensi
              algoritma pendeteksian algoritma untuk mencapai hasil yang akurat dan cepat.
         </p>

@@ -34,8 +34,7 @@
     <div id="banner">
     	<div id="banner_content">
             <h2>Sistem Cek Plagiarisme</h2>
-            <p>Mengecek kemiripan dokumen .doc, .docx
-				dan .pdf dengan cepat dan akurat!</p>
+            <p>Mengecek kemiripan dokumen .doc dan .pdf dengan cepat dan akurat!</p>
             <div class="button"><asp:HyperLink ID="link_TambahDokumen" runat="server" 
         NavigateUrl="~/mppl/formCekUI.aspx">Mulai Cek</asp:HyperLink></div>
 		</div>

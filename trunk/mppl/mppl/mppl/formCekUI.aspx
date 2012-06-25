@@ -35,9 +35,6 @@
         <div id="dinamikInput" >
         <asp:Panel id="Panel1" runat="server">
         </asp:Panel>
-      
-           
-            
             <asp:Panel id="Panel2" runat="server">
               <div>
                 <asp:Label id="lbl_file" runat="server" text="Pilih File"></asp:Label>
@@ -55,42 +52,32 @@
         
         <asp:Button id="progressCek" runat="server" Enabled="False" BackColor="Transparent" BorderColor="Transparent"/>
         <act:ModalPopupExtender id="progres_ModalPopup" runat="server" 
-            DynamicServicePath="" Enabled="True" TargetControlid="progressCek" PopupControlid="loadingHasil" OkControlid="next">
+            DynamicServicePath="" Enabled="True" TargetControlid="progressCek" PopupControlid="formHasil" OkControlid="tutupHasil">
         </act:ModalPopupExtender>
     </div>
-    <asp:Label id="StatusLabel" runat="server" text="Label" Visible="true"></asp:Label>
+    <asp:Panel id="formHasil" runat="server" BackColor="White">
+        <div align="center">
+            <asp:Label id="LabelHasilCek" runat="server" text="Hasil Pengecekan" 
+                font-bold="True" font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
+        </div>
+        <div>
+            <asp:Label id="lbl_judul" runat="server" text="Judul Karya Anda:" 
+                font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
+            <asp:Label id="judulText" runat="server" text="label" 
+                font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
+        </div>
+        <div>
+            <asp:Label id="lbl_hasil" runat="server" text="Hasil Pengecekan" 
+                font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
 
-<asp:Panel id="loadingHasil" runat="server">Loading. . .
-<asp:Button id="next" runat="server" text="next" onclick="next_Click" />
-<act:ModalPopupExtender id="cek_ModalPopup" runat="server" 
-            DynamicServicePath="" Enabled="True"  DropShadow="true" TargetControlid="next" PopupControlid="formHasil" OkControlid="tutupHasil">
-        </act:ModalPopupExtender>
-<asp:Button id="cancel" runat="server" text="Cancel"/>
-</asp:Panel>
-<asp:Panel id="formHasil" runat="server" BackColor="White" width="100%" Height="100%">
-    <div align="center">
-    
-        <asp:Label id="LabelHasilCek" runat="server" text="Hasil Pengecekan" 
-            font-bold="True" font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
-    
-    </div>
-    <div><asp:Label id="lbl_judul" runat="server" text="Judul Karya Anda:" 
-            font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
-        <asp:Label id="judulText" runat="server" text="label" 
-            font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
-    </div>
-    <div>
-        <asp:Label id="lbl_hasil" runat="server" text="Hasil Pengecekan" 
-            font-names="Microsoft Sans Serif" font-size="1em"></asp:Label>
-
-        <asp:GridView id="grv_hasil" runat="server" font-names="Microsoft San serif" 
-            font-size="1em" width="433px" AllowPaging="True" AllowSorting="True" 
-            BorderStyle="Dashed">
-        </asp:GridView>
-        <asp:Label id="labelNotFound" runat="server" font-names="Microsoft San serif" 
-            font-size="1em" text="Tidak ditemukan dokumen yang kembar" Visible="false"></asp:Label>
-        <br />
-        <asp:Button id="tutupHasil" text="Close this window" runat="server"/>
-    </div>
+            <asp:GridView id="grv_hasil" runat="server" font-names="Microsoft San serif" 
+                font-size="1em" width="433px" AllowPaging="True" AllowSorting="True" 
+                BorderStyle="Dashed">
+            </asp:GridView>
+            <asp:Label id="labelNotFound" runat="server" font-names="Microsoft San serif" 
+                font-size="1em" text="Tidak ditemukan dokumen yang kembar" Visible="false"></asp:Label>
+            <br />
+            <asp:Button id="tutupHasil" text="Close this window" runat="server"/>
+        </div>
     </asp:Panel>
 </asp:Content>
