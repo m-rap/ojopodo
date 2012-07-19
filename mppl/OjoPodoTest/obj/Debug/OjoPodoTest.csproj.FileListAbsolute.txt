@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\OjoPodoTest.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\OjoPodoTest.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\AjaxControlToolkit.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\Bytescout.Document.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\itextsharp.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\itextsharp.xtra.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\mppl.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\mppl.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\mppl_Accessor.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bin\Debug\mppl_Accessor.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\obj\Debug\OjoPodoTest.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\obj\Debug\OjoPodoTest.pdb

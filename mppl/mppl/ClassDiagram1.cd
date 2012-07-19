@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="mppl.About" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>About.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl._Default" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAA=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.FormEditDokumen" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAIAAAAAAAAAAAAIABAAAAAAAAAAAAgEAQIAAgA=</HashCode>
+      <FileName>FormEditDokumen.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.FormTambah" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAIAAQAAAAEAAAAAAAAAACAAAAAAAAgAQQIAAAA=</HashCode>
+      <FileName>FormTambahDokumen.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Global" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAECIBAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.HasilCekDokumenUI" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAABAAAAAIAAIAAAAAAAAIAIAABA=</HashCode>
+      <FileName>HasilCekDokumenUI.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.FormDokumen" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAIAAAA=</HashCode>
+      <FileName>LihatDokumen.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.SiteMaster" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAABAACAIACAIAAAAAAABAAAAAIAAEA=</HashCode>
+      <FileName>Site.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Account.ChangePassword" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePassword.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Account.ChangePasswordSuccess" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePasswordSuccess.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Account.Login" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAE=</HashCode>
+      <FileName>Account\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Account.Register" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\Register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Control.ControlCek" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAQBASAAAAIAABAAAAACAAAAAI=</HashCode>
+      <FileName>Control\ControlCek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Control.Winnowing" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQKACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Control\Winnowing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Entitas.ojopodoEntities" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAQAQAAAAAAAAEAAAAAAAAAIAAACAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Entitas.dokumen" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SQAAAgEAgECAIAAAAQAAAAAAAMAAAkAAABQEEAACIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Entitas.user" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQABAACAAAAEQKAAAAAEAACAQAgAAAAAIAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.Entitas.ModelDokumen" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAAAAAAAAQAAAAAAAAAAAAAAAgAAEAAA=</HashCode>
+      <FileName>Entitas\ModelDokumen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mppl.mppl.formCekUI" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhiAABCAAIICAkPAABABAAQAAIIECLhEBIAIQYIARo=</HashCode>
+      <FileName>mppl\formCekUI.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
