@@ -33,7 +33,7 @@
             <li>- Dwi Sulistyo Nugroho</li>
             <li>- Vika Fitratunnany I</li></ul>
         <li>Tim Penguji</li>
-            <ul><li>- Christian Chandra B</li>
+            <ul><li>- Christian Candrabiantara</li>
             <li>- Desak Gede Kantia M</li>
             <li>- Rheza Andana</li></ul>
         </ul>

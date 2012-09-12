@@ -28,9 +28,9 @@ namespace mppl
             ControlCek myControlCek = new ControlCek(Server);
             if (FileUploadControl.HasFile)
             {
-
-                if (myControlCek.upload(FileUploadControl, TextBox_Judul.Text, TextBox_Pengarang.Text, TextBox_UrlDokumen.Text))
+                try
                 {
+                    myControlCek.upload(FileUploadControl, TextBox_Judul.Text, TextBox_Pengarang.Text, TextBox_UrlDokumen.Text);
                     StatusLabel.Text = "Upload Sukses";
                     if (!Page.IsPostBack)
                     {
@@ -39,8 +39,10 @@ namespace mppl
                         TextBox_UrlDokumen.Text = "";
                     }
                 }
-                else
-                    StatusLabel.Text = "Upload gagal";
+                catch (Exception ex)
+                {
+                    StatusLabel.Text = ex.Message;
+                }
                 StatusLabel.Visible = true;
             }
         }
