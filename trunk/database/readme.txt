@@ -1,0 +1,4 @@
+- buat user di mysql 'simpleteam', password 'simpleteam123'
+- buat database 'ojopodo'
+- import ojopodo.sql
+- ekstrak semua isi fingerprint_dokumen.zip ke <ojopodo_webroot>/fingerprint_dokumen
