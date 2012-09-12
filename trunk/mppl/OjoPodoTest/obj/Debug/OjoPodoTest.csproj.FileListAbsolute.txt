@@ -11,3 +11,5 @@ C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\bi
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\obj\Debug\OjoPodoTest.dll
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OjoPodo\mppl\OjoPodoTest\obj\Debug\OjoPodoTest.pdb
+D:\KuliaH\semester 6\Manajemen Proyek Perangkat Loenak\Mppl\mppl\OjoPodoTest\obj\Debug\ResolveAssemblyReference.cache
+D:\KuliaH\semester 6\Manajemen Proyek Perangkat Loenak\Mppl\mppl\OjoPodoTest\obj\Debug\OjoPodoTest.dll

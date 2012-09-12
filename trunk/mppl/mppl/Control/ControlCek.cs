@@ -51,17 +51,21 @@ namespace mppl.Control
             this.server = server;
         }
 
-        public bool upload(FileUpload input, string judul, string pengarang, string url_dokumen)
+        public void upload(FileUpload input, string judul, string pengarang, string url_dokumen)
         {
             try
             {
-                if (input.PostedFile.ContentType == "application/msword" || input.PostedFile.ContentType == "application/pdf")
+                if (input.PostedFile.ContentType == "application/msword" || input.PostedFile.ContentType == "application/pdf" || input.PostedFile.ContentType == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
                 {
                     if (input.PostedFile.ContentLength < 10240000)
                     {
                         Stream coba = input.FileContent;
                         if (input.PostedFile.ContentType == "application/pdf")
                             ekstrakPdf(coba);
+                        else if (input.PostedFile.ContentType == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+                            ekstrakDocx(coba);
+                        else
+                            ekstrakDoc(coba);
                         finger = Winnowing.getFingerprint(teks);
                         finger.Sort();
 
@@ -105,19 +109,24 @@ namespace mppl.Control
 
                         //insert dokumen ke database
                         dokumens.insert(judul, pengarang, namafile, url_dokumen);
-                        return true;
                     }
+                    else
+                    {
+                        throw new ArgumentException("File terlalu besar.");
+                    }
+                }
+                else
+                {
+                    throw new ArgumentException("Format file tidak didukung.");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("file gagal diupload karena : " + ex);
-                return false;
+                throw ex;
             }
-            return false;
         }
 
-        public Dictionary<dokumen,double> cek(FileUpload input)
+        public Dictionary<dokumen,double> cek(FileUpload input,double treshold)
         {
             try
             {
@@ -133,6 +142,8 @@ namespace mppl.Control
                             ekstrakPdf(coba);
                         else if (input.PostedFile.ContentType == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
                             ekstrakDocx(coba);
+                        else
+                            ekstrakDoc(coba);
                         finger = Winnowing.getFingerprint(teks);
                         finger.Sort();
                         //queri fingerprint dari db
@@ -144,11 +155,11 @@ namespace mppl.Control
                             string[] read = File.ReadAllLines(server.MapPath("~/fingerprint_dokumen/" + i.alamat_fingerprint));
                             List<int> fingerprintdb = Array.ConvertAll<string, int>(read, new Converter<string, int>(Convert.ToInt32)).ToList<int>();
                             double result;
-                            if(finger.Count>fingerprintdb.Count)
-                                result = cekKemiripan(fingerprintdb,finger);
+                            if (finger.Count > fingerprintdb.Count)
+                                result = cekKemiripan(fingerprintdb, finger);
                             else
                                 result = cekKemiripan(finger, fingerprintdb);
-                            if (result > 0.5)
+                            if (result > treshold)
                             {
                                 //hasil fungsi masukan ke list
                                 hasil[i] = result;
@@ -156,23 +167,22 @@ namespace mppl.Control
                         }
 
                         //sorting list trus kembalikan List tersebut sebagai return value
-                        
+
                         return hasil;
                     }
                     else
                     {
-                        return null;
+                        throw new ArgumentException("File terlalu besar.");
                     }
                 }
                 else
                 {
-                    return null;
+                    throw new ArgumentException("Format file tidak didukung.");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("file gagal diupload karena : " + ex);
-                return null;
+                throw ex;
             }
         }
         
@@ -196,6 +206,25 @@ namespace mppl.Control
                 throw new Exception("It is not a valid Docx file.");
 
             teks = ReadDocumentXml();
+        }
+        void ekstrakDoc(Stream path)
+        {
+            using (Bytescout.Document.Document doc = new Bytescout.Document.Document())
+            {
+                doc.Open(path);
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < doc.ParagraphCount; i++)
+                {
+                    Bytescout.Document.Paragraph p = doc.GetParagraph(i);
+                    if (p != null)
+                    {
+                        sb.Append(p.ToString());
+                        sb.AppendLine();
+                    }
+                }
+
+                teks = sb.ToString();
+            }
         }
         void createFingerPrint(string input)
         {

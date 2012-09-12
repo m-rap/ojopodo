@@ -60,6 +60,7 @@ namespace mppl.mppl
             }
             catch (Exception ex)
             {
+                Response.Write("<script>alert(\"" + ex.Message + "\")</script>");
                 labelNotFound.Visible = true;
             }
             //progres_ModalPopup.Hide();
@@ -67,10 +68,10 @@ namespace mppl.mppl
         }
 
         protected void next_Click(object sender, EventArgs e)
-        {
-        }
-        void showpopup()
-        {
+        {                                                                          
+        }                                                                          
+        void showpopup()                                                           
+        {                                                                          
             progres_ModalPopup.Show();
         }
         public void thread()

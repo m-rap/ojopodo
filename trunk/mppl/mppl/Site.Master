@@ -47,14 +47,14 @@
         <ul>
             <li><asp:HyperLink ID="link_Home" runat="server" 
                     NavigateUrl="~/Default.aspx"><span></span>Halaman Muka</asp:HyperLink></li>
-            <li><asp:HyperLink ID="link_About" runat="server" 
-                    NavigateUrl="~/About.aspx"><span></span>Tentang Kami</asp:HyperLink></li>
                     <% if (Session["sandi"] == "admin") { %>
             <li><asp:HyperLink ID="link_Dokumen" runat="server" 
                     NavigateUrl="~/LihatDokumen.aspx"><span></span>Dokumen</asp:HyperLink></li>
                      <% } %>
             <li><asp:HyperLink ID="link_Cek" runat="server" 
-                    NavigateUrl="~/mppl/formCekUI.aspx"><span></span>Mulai Cek</asp:HyperLink></li
+                    NavigateUrl="~/mppl/formCekUI.aspx"><span></span>Mulai Cek</asp:HyperLink></li>
+            <li><asp:HyperLink ID="link_About" runat="server" 
+                    NavigateUrl="~/About.aspx"><span></span>Tentang Kami</asp:HyperLink></li>
         </ul>    
     </div> <!-- end of menu -->
     </div> <!-- end of menu_wrapper -->
@@ -76,7 +76,7 @@
              <li><asp:HyperLink ID="HyperLink4" runat="server" 
                     NavigateUrl="~/mppl/formCekUI.aspx"><span></span>Mulai Cek</asp:HyperLink></li>
         </ul>    
-        OjoPodo © 2012 Tim Simple Jurusan Teknik Informatika
+        OjoPodo © 2012 Tim Simple Jurusan Teknik Informatika | Free CSS by <a href="http://www.templatemo.com">http://www.templatemo.com</a>
                 <br />Institut Teknologi Sepuluh Nopember Surabaya
     </div> <!-- end of footer -->
 
